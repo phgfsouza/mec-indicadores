@@ -1,0 +1,221 @@
+﻿"indicador_code","indicador_nome","cod_regiao","sigla_regiao","nome_regiao","bloco_var","bloco_nome","grupo_code","grupo_nome","serie_var","serie_nome","unidade","valor_2010","valor_2017","valor_2024"
+"I3","Quantidade de vagas presenciais por território em anos selecionados",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_vg_total","Vagas","Percentual",0.8168407585174245,0.6701285806745135,0.9740852838456259
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_vg_total","Vagas","Quantidade",25487,40712,49431
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_vg_total","Vagas","Percentual",0.3052376264024778,0.20313560655590912,0.2276629500570192
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_vg_total","Vagas","Quantidade",9524,12341,11553
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_vg_total","Vagas","Percentual",0.091500779439214,0.061281408573669045,0.057620225566235965
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_vg_total","Vagas","Quantidade",2855,3723,2924
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_vg_total","Vagas","Percentual",2.185538582241093,3.8229689895991146,6.39761857420683
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_vg_total","Vagas","Quantidade",68193,232255,324654
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_vg_total","Vagas","Percentual",1.6500907636453142,1.559441484896429,1.4959976210965698
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_vg_total","Vagas","Quantidade",51486,94740,75916
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_vg_total","Vagas","Percentual",2.5045894611613644,1.9965591550770239,2.91019580432534
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_vg_total","Vagas","Quantidade",78148,121296,147681
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_vg_total","Vagas","Percentual",1.36558904067442,0.8468290698064871,1.2011767610772617
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_vg_total","Vagas","Quantidade",42609,51447,60955
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_vg_total","Vagas","Percentual",0.24543361434168154,0.1914982292092575,0.24191035877261038
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_vg_total","Vagas","Quantidade",7658,11634,12276
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_vg_total","Vagas","Percentual",6.9051199413369435,11.88031377134644,15.874628320971457
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_vg_total","Vagas","Quantidade",215453,721759,805575
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_vg_total","Vagas","Percentual",5.02863285336287,3.831808129111352,3.9684255352187865
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_vg_total","Vagas","Quantidade",156903,232792,201382
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_vg_total","Vagas","Percentual",2.3432211863885297,2.131121474467232,3.2350485466165164
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_vg_total","Vagas","Quantidade",73113,129471,164166
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_vg_total","Vagas","Percentual",1.55647472976022,1.3473021366027287,1.9444461413465122
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_vg_total","Vagas","Quantidade",48565,81852,98673
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_vg_total","Vagas","Percentual",1.0515699033905606,0.48756825231282586,0.4427732039151012
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_vg_total","Vagas","Quantidade",32811,29621,22469
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_vg_total","Vagas","Percentual",18.596067165097534,22.883495203161942,24.45115454260793
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_vg_total","Vagas","Quantidade",580233,1390230,1240800
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_vg_total","Vagas","Percentual",30.743172215043177,23.957228440894305,15.43961926509777
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_vg_total","Vagas","Quantidade",959246,1455462,783500
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_vg_total","Vagas","Percentual",1.3771267921974033,1.3116657547703372,2.355157749161659
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_vg_total","Vagas","Quantidade",42969,79687,119515
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_vg_total","Vagas","Percentual",0.7605942198428814,0.5488332006639396,0.7297905039740024
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_vg_total","Vagas","Quantidade",23732,33343,37034
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_vg_total","Vagas","Percentual",0.24245302853157755,0.21490466568300376,0.08140531867787988
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_vg_total","Vagas","Quantidade",7565,13056,4131
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_vg_total","Vagas","Percentual",4.7117292781982645,6.176649133237601,4.622407213011766
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_vg_total","Vagas","Quantidade",147015,375247,234569
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_vg_total","Vagas","Percentual",6.949828728488503,6.743736720715454,4.461547465646108
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_vg_total","Vagas","Quantidade",216848,409699,226406
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_vg_total","Vagas","Percentual",0.9235649601050192,0.8194227992517841,1.0024815714793283
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_vg_total","Vagas","Quantidade",28817,49782,50872
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_vg_total","Vagas","Percentual",0.44510081430886306,0.3135013987897128,0.4950531144579275
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_vg_total","Vagas","Quantidade",13888,19046,25122
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_vg_total","Vagas","Percentual",0.25145888458146165,0.14947528102537969,0.22466764421363072
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_vg_total","Vagas","Quantidade",7846,9081,11401
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_vg_total","Vagas","Percentual",3.5663189957541075,4.431322355023298,5.523304563289335
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_vg_total","Vagas","Quantidade",111276,269214,280286
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_vg_total","Vagas","Percentual",5.382745677189096,3.419808758550263,1.6418217213667974
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_vg_total","Vagas","Quantidade",167952,207762,83316
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_vg_total","Vagas","Percentual",0,0.009267105298677322,0.017893011222346874
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_vg_total","Vagas","Quantidade",0,563,908
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_vg_total","Vagas","Percentual",1.1718189137078743,1.051742380398377,0.993475947989667
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_vg_total","Vagas","Quantidade",36563,63896,50415
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_vg_total","Vagas","Percentual",0.1030385309621972,0.10778153729260942,0.16062327585170635
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_vg_total","Vagas","Quantidade",3215,6548,8151
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_vg_total","Vagas","Percentual",0.29411651590671345,0.2791489143166407,0.6343151302159951
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_vg_total","Vagas","Quantidade",9177,16959,32189
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_vg_total","Vagas","Percentual",1.6477191147211454,1.7683875500143862,2.451638126853961
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_vg_total","Vagas","Quantidade",51412,107434,124411
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_vg_total","Vagas","Percentual",0.050766106701126086,0.066779122907165,0.07358205275797712
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_vg_total","Vagas","Quantidade",1584,4057,3734
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_vg_total","Vagas","Percentual",0.2871618156831374,0.3454671509922551,0.39886832615806506
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_vg_total","Vagas","Quantidade",8960,20988,20241
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_vg_total","Vagas","Percentual",0.4249417984534285,0.9308091252840212,1.2460275248901047
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_vg_total","Vagas","Quantidade",13259,56549,63231
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_vg_total","Vagas","Percentual",0.16444500851229668,0.18224758413313555,0.35760404697348974
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_vg_total","Vagas","Quantidade",5131,11072,18147
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_vg_total","Vagas","Percentual",0.7667797366315919,1.4198094169591648,2.6045957844617327
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_vg_total","Vagas","Quantidade",23925,86257,132173
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_vg_total","Vagas","Percentual",0.13842096896601236,0.15551618270320308,0.2143614273972349
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_vg_total","Vagas","Quantidade",4319,9448,10878
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_vg_total","Vagas","Percentual",0.02868413225852768,0.05430227421018914,0.08000619555366553
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_vg_total","Vagas","Quantidade",895,3299,4060
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_vg_total","Vagas","Percentual",3.3142832235964965,2.438219846682903,2.5330040336128494
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_vg_total","Vagas","Quantidade",103412,148128,128540
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_vg_total","Vagas","Percentual",0.40555196603285953,0.4242951568099562,0.47077537235888417
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_vg_total","Vagas","Quantidade",12654,25777,23890
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_vg_total","Vagas","Percentual",0.9132450823539064,1.0179495434921877,1.9741430223069492
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_vg_total","Vagas","Quantidade",28495,61843,100180
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_vg_total","Vagas","Percentual",5.571580210448587,5.76611472248394,5.966570416191836
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_vg_total","Vagas","Quantidade",173844,350306,302780
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_vg_total","Vagas","Percentual",0.2483501015322134,0.2260482363529941,0.3012252968555003
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_vg_total","Vagas","Quantidade",7749,13733,15286
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_vg_total","Vagas","Percentual",0.9086620310544992,1.0287474494885152,1.235800131911693
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_vg_total","Vagas","Quantidade",28352,62499,62712
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_vg_total","Vagas","Percentual",1.2643773203700286,2.799636953331319,3.548767421792466
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_vg_total","Vagas","Quantidade",39451,170085,180086
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_vg_total","Vagas","Percentual",0.26485549607203657,0.3270646221753435,0.7237604803682335
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_vg_total","Vagas","Quantidade",8264,19870,36728
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_vg_total","Vagas","Percentual",2.5310301417348677,4.162839664922542,6.8109116627159505
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_vg_total","Vagas","Quantidade",78973,252903,345627
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_vg_total","Vagas","Percentual",0.598745205423256,0.5017898846006718,0.551372746697429
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_vg_total","Vagas","Quantidade",18682,30485,27980
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_vg_total","Vagas","Percentual",0.2447605788361742,0.23436064874345952,0.5955140959684169
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_vg_total","Vagas","Quantidade",7637,14238,30220
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_vg_total","Vagas","Percentual",9.592903257235452,6.858003585694881,3.744289951911547
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_vg_total","Vagas","Quantidade",299317,416641,190008
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_vg_total","Vagas","Percentual",1.7167212786905421,1.4620792684813733,1.3478679235653126
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_vg_total","Vagas","Quantidade",53565,88825,68399
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_vg_total","Vagas","Percentual",3.045453613110988,2.568107462867384,3.6021705720265627
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_vg_total","Vagas","Quantidade",95024,156019,182796
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_vg_total","Vagas","Percentual",18.228782074949233,16.054889574950966,13.166536837236855
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_vg_total","Vagas","Quantidade",568773,975375,668150
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_vg_total","Vagas","Percentual",0.8899452341394376,0.6775356808244333,0.7408061353322534
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_vg_total","Vagas","Quantidade",27768,41162,37593
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_vg_total","Vagas","Percentual",4.005458638442763,3.2142699595012685,3.148086147360771
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_vg_total","Vagas","Quantidade",124978,195275,159753
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_vg_total","Vagas","Percentual",6.7208043607572865,9.503309492346984,7.2752825982386415
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_vg_total","Vagas","Quantidade",209702,577350,369192
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_vg_total","Vagas","Percentual",0.6451526059934773,0.8467467686937101,1.4688231029516177
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_vg_total","Vagas","Quantidade",20130,51442,74537
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_vg_total","Vagas","Percentual",7.8452543946013575,8.150065215401764,9.587501061658568
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_vg_total","Vagas","Quantidade",244787,495137,486528
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_vg_total","Vagas","Percentual",1.3552691629233073,1.2373478499328094,0.8361632733332848
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_vg_total","Vagas","Quantidade",42287,75172,42432
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_vg_total","Vagas","Percentual",0,0.04882102009924856,0.20019284251962763
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_vg_total","Vagas","Quantidade",0,2966,10159
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_vg_total","Vagas","Percentual",2.385654472545279,1.819134416152614,1.3321425678875232
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_vg_total","Vagas","Quantidade",74437,110517,67601
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_vg_total","Vagas","Percentual",0.5412807929768424,0.6723671709420449,0.4753077430429588
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_vg_total","Vagas","Quantidade",16889,40848,24120
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_vg_total","Vagas","Percentual",0.7939575513301745,0.8692314327043553,1.0266804897403878
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_vg_total","Vagas","Quantidade",24773,52808,52100
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_vg_total","Vagas","Percentual",5.33726770660267,5.024022048797318,3.1868477696893573
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_vg_total","Vagas","Quantidade",166533,305222,161720
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_vg_total","Vagas","Percentual",0.23860711135724982,0.2104933260381627,0.2646707419904635
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_vg_total","Vagas","Quantidade",7445,12788,13431
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_vg_total","Vagas","Percentual",0.8922848337538203,0.9599766396521494,0.7510335283106653
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_vg_total","Vagas","Quantidade",27841,58321,38112
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_vg_total","Vagas","Percentual",1.471512009517363,2.688036644405862,2.0085496275869246
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_vg_total","Vagas","Quantidade",45914,163305,101926
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_vg_total","Vagas","Percentual",0.39129002317806083,0.4351589036965051,0.6307089396282313
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_vg_total","Vagas","Quantidade",12209,26437,32006
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_vg_total","Vagas","Percentual",1.5848063196111009,1.8657333062068866,2.1407569098454324
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_vg_total","Vagas","Quantidade",49449,113348,108635
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_vg_total","Vagas","Percentual",0.4050712263860686,0.40281456637518903,0.2334170902298444
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_vg_total","Vagas","Quantidade",12639,24472,11845
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_vg_total","Vagas","Percentual",0.01794761348019609,0.04919960521802223,0.09232242023865099
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_vg_total","Vagas","Quantidade",560,2989,4685
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_vg_total","Vagas","Percentual",1.9614177589071442,1.3462816028042952,1.0438837923803754
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_vg_total","Vagas","Quantidade",61200,81790,52973
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_vg_total","Vagas","Percentual",0.31728816688203804,0.22874771285207593,0.1991090147473489
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_vg_total","Vagas","Quantidade",9900,13897,10104
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_vg_total","Vagas","Percentual",0.5106416528213649,0.4166740737668166,0.7215731188641801
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_vg_total","Vagas","Quantidade",15933,25314,36617
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_vg_total","Vagas","Percentual",3.9303350563042274,3.005669559056974,2.4439133907315385
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_vg_total","Vagas","Quantidade",122634,182602,124019
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_vg_total","Vagas","Percentual",0.11694793140934917,0.10753463395427877,0.09445066386421648
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_vg_total","Vagas","Quantidade",3649,6533,4793
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_vg_total","Vagas","Percentual",0.7926435296289459,0.5952674884926584,0.535292683748712
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_vg_total","Vagas","Quantidade",24732,36164,27164
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_vg_total","Vagas","Percentual",0.8629276659897852,1.1462075976436863,0.7644926986464173
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_vg_total","Vagas","Quantidade",26925,69635,38795
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_vg_total","Vagas","Percentual",0.28437352573174984,0.33035666668641894,0.4876830856064322
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_vg_total","Vagas","Quantidade",8873,20070,24748
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_vg_total","Vagas","Percentual",1.4577308063093553,1.6904648564372309,2.26963388494912
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_vg_total","Vagas","Quantidade",45484,102700,115175
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_vg_total","Vagas","Percentual",0.31693562447439133,0.2171267957279797,0.23497386103002657
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_vg_total","Vagas","Quantidade",9889,13191,11924
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_vg_total","Vagas","Percentual",0.24867059463007404,0.3358379207973595,0.08109002332594425
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_vg_total","Vagas","Quantidade",7759,20403,4115
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_vg_total","Vagas","Percentual",0.22956920599757963,0.2190526417669588,0.43881230605640986
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_vg_total","Vagas","Quantidade",7163,13308,22268
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_vg_total","Vagas","Percentual",0.0038459171743277336,0,0
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_vg_total","Vagas","Quantidade",120,0,0
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_vg_total","Vagas","Percentual",0,0.25417875670013357,1.1736475356613822
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_vg_total","Vagas","Quantidade",0,15442,59558
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_vg_total","Vagas","Percentual",4.567122792443542,5.507886751035183,7.459434789728545
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_vg_total","Vagas","Quantidade",142503,334618,378537
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_vg_total","Vagas","Percentual",0.28488631468832687,0.4439486625410765,0.2869581821804132
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_vg_total","Vagas","Quantidade",8889,26971,14562
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_vg_total","Vagas","Percentual",0,2.5581819486664914,2.7256494936455176
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_vg_total","Vagas","Quantidade",0,155416,138316
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_vg_total","Vagas","Percentual",0.35542684552745474,0.1742972966388884,0
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_vg_total","Vagas","Quantidade",11090,10589,0
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_vg_total","Vagas","Percentual",0.3653621315611347,0.772017358292298,0.22064762847645147
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_vg_total","Vagas","Quantidade",11400,46902,11197
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_vg_total","Vagas","Percentual",15.043689619100363,14.798563088411806,20.963081476063074
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_vg_total","Vagas","Quantidade",469392,899050,1063794
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_vg_total","Vagas","Percentual",10.76706177055771,11.388268338498552,6.668634635154998
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_vg_total","Vagas","Quantidade",335953,691866,338407
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_vg_total","Vagas","Percentual",0.34267122023260105,4.322092318145815,6.902899081643169
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_vg_total","Vagas","Quantidade",10692,262578,350295
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_vg_total","Vagas","Percentual",1.5642627120382335,1.7661324995242995,1.6235345909545311
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_vg_total","Vagas","Quantidade",48808,107297,82388
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_vg_total","Vagas","Percentual",2.5170886919779294,0.5692438766326072,1.2021423530925646
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_vg_total","Vagas","Quantidade",78538,34583,61004
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_vg_total","Vagas","Percentual",39.099420804873546,32.76097847463776,29.115831038738566
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_vg_total","Vagas","Quantidade",1219977,1990312,1477514
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_vg_total","Vagas","Percentual",0.43266568211187006,0.6983907828020961,0.5656595673320122
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_vg_total","Vagas","Quantidade",13500,42429,28705
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_vg_total","Vagas","Percentual",1.4668328102885977,0.7726593069719577,0.17995482211725952
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_vg_total","Vagas","Quantidade",45768,46941,9132
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_vg_total","Vagas","Percentual",0,0.39014019500754865,0.04163869241499884
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_vg_total","Vagas","Quantidade",0,23702,2113
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_vg_total","Vagas","Percentual",0,0.4976912891843828,0
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_vg_total","Vagas","Quantidade",0,30236,0
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_vg_total","Vagas","Percentual",12.142233554858162,12.63690790110435,11.463055168607145
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_vg_total","Vagas","Quantidade",378861,767724,581705
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_vg_total","Vagas","Percentual",1.2668451172235555,1.4460140912673252,0.6367783751529922
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_vg_total","Vagas","Quantidade",39528,87849,32314
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_vg_total","Vagas","Percentual",0.03012635119890058,0,0.5202570366532817
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_vg_total","Vagas","Quantidade",940,0,26401
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_vg_total","Vagas","Percentual",0,0,0
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_vg_total","Vagas","Quantidade",0,0,0
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_vg_total","Vagas","Percentual",0.21735841896908908,0.029068753032796005,0
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_vg_total","Vagas","Quantidade",6782,1766,0
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_vg_total","Vagas","Percentual",9.054859444547002,7.658447748340316,7.730293203000745
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_vg_total","Vagas","Quantidade",282529,465270,392282
+"","",1,"N","NORTE","total","Total",1,"Total","pct_vg_total","Vagas","Percentual",5.049208510245523,6.316956070299636,9.15298465477228
+"","",1,"N","NORTE","total","Total",1,"Total","qt_vg_total","Vagas","Quantidade",157545,383771,464478
+"","",2,"NE","NORDESTE","total","Total",1,"Total","pct_vg_total","Vagas","Percentual",16.04936491087728,18.74700835455056,24.196336780365456
+"","",2,"NE","NORDESTE","total","Total",1,"Total","qt_vg_total","Vagas","Quantidade",500771,1138928,1227869
+"","",3,"SE","SUDESTE","total","Total",1,"Total","pct_vg_total","Vagas","Percentual",54.29050519968002,50.80671550743903,45.51304169958383
+"","",3,"SE","SUDESTE","total","Total",1,"Total","qt_vg_total","Vagas","Quantidade",1693968,3086636,2309608
+"","",4,"S","SUL","total","Total",1,"Total","pct_vg_total","Vagas","Percentual",14.04173204725863,14.995789475070335,12.250308250471416
+"","",4,"S","SUL","total","Total",1,"Total","qt_vg_total","Vagas","Quantidade",438129,911032,621655
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","pct_vg_total","Vagas","Percentual",10.569189331938547,9.133530592640437,8.887328614807018
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","qt_vg_total","Vagas","Quantidade",329779,554885,450997

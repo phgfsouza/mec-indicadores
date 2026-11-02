@@ -7,7 +7,33 @@
 
 # INSTRUCOES ===================================================================
 
-# to do
+# Este script produz as dez figuras da dimensao A utilizadas no primeiro
+# relatorio descritivo, a partir dos resultados dos indicadores ja calculados.
+
+# Etapas:
+# 1. Leitura dos CSV dos indicadores e preparacao dos rotulos como fatores.
+# 2. Selecao e transformacao dos dados de cada figura, conforme descrito
+#    nas secoes abaixo, e construcao dos objetos ggplot.
+# 3. Exportacao das figuras, dos objetos ggplot e dos dados usados nos graficos.
+
+# Observacoes:
+# - Os resultados de A.1 a A.5 devem estar atualizados antes da execucao.
+#   O script le os CSV disponiveis, mas as dez figuras ativas usam a dimensao A.
+# - Os blocos de figuras da dimensao B estao comentados e nao sao executados.
+#   No relatorio atual, B e apresentado em tabelas construidas no arquivo QMD.
+# - As figuras sao exportadas com 12 por 8 polegadas; o PNG usa 300 dpi.
+#   A pasta de destino deve existir, e arquivos com os mesmos nomes sao
+#   atualizados. A renderizacao do relatorio e feita em `master.R`.
+
+# Inputs do script:
+# - `code/_setup.R` e funcoes graficas de `code/helpers/`.
+# - `results/indicador*.csv`, com A.1 a A.5 utilizados nas figuras ativas.
+
+# Outputs do script:
+# - `produtos/relatorio-1/figuras/figura01` a `figura10`, nos formatos
+#   `.pdf`, `.svg` e `.png`.
+# - Arquivos `.rds` com os objetos ggplot e `.csv` com os dados de cada figura,
+#   na mesma pasta e com os mesmos nomes-base.
 
 # CONFIGURACAO =================================================================
 
@@ -149,7 +175,10 @@ gfx.plots[[nome]] <- ggplot_barras(
 nome <- paste0('figura', sprintf('%02d', length(gfx.data) + 1))
 
 gfx.data[[nome]] <- indicadores$indicadorA2.csv |> 
-  filter(serie_var == 'tx_ocupacao_vaga') |>
+  filter(
+    bloco_var %in% c('total', 'tp_modalidade_ensino'),
+    serie_var == 'tx_ocupacao_vaga'
+  ) |>
   mutate(lbl = if_else(ano %in% c(2010, 2017, 2024), sprintf('%.1f', valor), "")) |> 
   arrange(grupo_nome, serie_nome, ano)
 
@@ -717,12 +746,15 @@ gfx.plots[[nome]] <- gfx.data[[nome]] |>
 
 # OUTPUTS ======================================================================
 
+# Caminho
+path <- 'produtos/relatorio-1/figuras'
+
 # Graficos
 pmap(
   .l = expand_grid(gfx = names(gfx.plots),  fmt = c('.pdf', '.svg', '.png')),
   .f = \(gfx, fmt)
     ggsave(
-      filename = here('produtos/relatorio/figuras', paste0(gfx, fmt)),
+      filename = here(path, paste0(gfx, fmt)),
       plot = gfx.plots[[gfx]],
       height = 8,
       width = 12, 
@@ -733,11 +765,11 @@ pmap(
 # Objetos ggplot
 walk(
   .x = names(gfx.plots), 
-  ~ saveRDS(gfx.plots[[.x]], here('produtos/relatorio/figuras', paste0(.x, '.rds')))
+  .f = ~ saveRDS(gfx.plots[[.x]], here(path, paste0(.x, '.rds')))
 )
 
 # Planilhas
 walk(
   .x = names(gfx.data), 
-  .f = ~ write_csv(gfx.data[[.x]], here('produtos/relatorio/figuras', paste0(.x, '.csv')))
+  .f = ~ write_csv(gfx.data[[.x]], here(path, paste0(.x, '.csv')))
 )

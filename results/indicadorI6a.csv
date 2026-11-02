@@ -1,0 +1,241 @@
+﻿"indicador_code","indicador_nome","cod_regiao","sigla_regiao","nome_regiao","bloco_var","bloco_nome","grupo_code","grupo_nome","serie_var","serie_nome","unidade","valor_2010","valor_2017","valor_2024"
+"I6","Quantidade de concluintes por região em anos selecionados",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_conc","Concluintes","Percentual",1.4085490517426391,1.711247507851518,1.3151786283472893
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_conc","Concluintes","Quantidade",13717,20531,17536
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_conc","Concluintes","Percentual",0.5683691041332294,0.5140160431016664,0.3827187808198117
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_conc","Concluintes","Quantidade",5535,6167,5103
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_conc","Concluintes","Percentual",0.1085395019094532,0.0446753038920858,0.04102433335458299
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_conc","Concluintes","Quantidade",1057,536,547
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_conc","Concluintes","Percentual",2.6067964006370663,3.7287208860379675,4.948869580869311
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_conc","Concluintes","Quantidade",25386,44736,65986
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_conc","Concluintes","Percentual",1.416969334766835,1.7023291169626127,0.576590630402256
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_conc","Concluintes","Quantidade",13799,20424,7688
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_conc","Concluintes","Percentual",2.6700512096968803,3.5312660447686555,3.3919698804894423
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_conc","Concluintes","Quantidade",26002,42367,45227
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_conc","Concluintes","Percentual",2.0767293156260944,2.0408945729507706,1.5880241946068376
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_conc","Concluintes","Quantidade",20224,24486,21174
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_conc","Concluintes","Percentual",0.3774751267920057,0.2652179421354795,0.1270479354710486
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_conc","Concluintes","Quantidade",3676,3182,1694
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_conc","Concluintes","Percentual",6.722363758280373,9.761470550973188,12.660394268593135
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_conc","Concluintes","Quantidade",65465,117115,168808
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_conc","Concluintes","Percentual",4.34589290426857,3.3704849604256824,1.983117774336167
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_conc","Concluintes","Quantidade",42322,40438,26442
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_conc","Concluintes","Percentual",3.2938709581357903,4.035863600296057,4.058184054509114
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_conc","Concluintes","Quantidade",32077,48421,54110
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_conc","Concluintes","Percentual",2.6458172244077307,2.919147701889032,3.226747565352063
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_conc","Concluintes","Quantidade",25766,35023,43024
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_conc","Concluintes","Percentual",0.9386561844411653,0.6656286882130545,0.3967435529172651
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_conc","Concluintes","Quantidade",9141,7986,5290
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_conc","Concluintes","Percentual",16.138499279655054,18.699615258950065,26.806214399016017
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_conc","Concluintes","Quantidade",157163,224352,357422
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_conc","Concluintes","Percentual",28.429956081035982,20.486544065185935,12.530271383090025
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_conc","Concluintes","Quantidade",276862,245791,167073
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_conc","Concluintes","Percentual",1.7393018763881916,2.0439785025104853,1.8478949717067097
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_conc","Concluintes","Quantidade",16938,24523,24639
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_conc","Concluintes","Percentual",1.4720092335591406,1.0177801041534698,0.9217350218058956
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_conc","Concluintes","Quantidade",14335,12211,12290
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_conc","Concluintes","Percentual",0.2257046595997901,0.2006221202765868,0.07574876908250242
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_conc","Concluintes","Quantidade",2198,2407,1010
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_conc","Concluintes","Percentual",5.82960838495891,7.370841696061238,11.160868635884666
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_conc","Concluintes","Quantidade",56771,88433,148814
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_conc","Concluintes","Percentual",8.233291129231834,6.25029172306646,3.3354207994120095
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_conc","Concluintes","Quantidade",80179,74989,44473
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_conc","Concluintes","Percentual",1.1512169876129421,1.2959172106607277,1.166606042651807
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_conc","Concluintes","Quantidade",11211,15548,15555
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_conc","Concluintes","Percentual",0.6849181435535032,0.5042641577371625,0.4840421343153174
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_conc","Concluintes","Quantidade",6670,6050,6454
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_conc","Concluintes","Percentual",0.20270291085076692,0.14977895726507126,0.144147657600564
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_conc","Concluintes","Quantidade",1974,1797,1922
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_conc","Concluintes","Percentual",3.0693985350761266,4.711160824426056,5.369537745011644
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_conc","Concluintes","Quantidade",29891,56523,71595
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_conc","Concluintes","Percentual",3.643312703639924,2.978242460208974,1.4609012603545193
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_conc","Concluintes","Quantidade",35480,35732,19479
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_conc","Concluintes","Percentual",0,0,0
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_conc","Concluintes","Quantidade",0,0,0
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_conc","Concluintes","Percentual",1.8814198240160849,2.5178201118882986,1.628523536492532
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_conc","Concluintes","Quantidade",18322,30208,21714
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_conc","Concluintes","Percentual",0.08892640364577718,0.09443492408532317,0.10672326574693161
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_conc","Concluintes","Quantidade",866,1133,1423
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_conc","Concluintes","Percentual",0.21594945365712404,0.23454534543345046,0.2798204529176401
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_conc","Concluintes","Quantidade",2103,2814,3731
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_conc","Concluintes","Percentual",1.9923211126274467,2.3407858852711523,2.0590915397624787
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_conc","Concluintes","Quantidade",19402,28084,27455
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_conc","Concluintes","Percentual",0.06099570873624901,0.08234925418914324,0.0497991907631501
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_conc","Concluintes","Quantidade",594,988,664
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_conc","Concluintes","Percentual",0.4001688164059973,0.19003674043648439,0.2777954858233554
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_conc","Concluintes","Quantidade",3897,2280,3704
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_conc","Concluintes","Percentual",0.33722206648121505,0.6073674243687113,0.48126717940833463
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_conc","Concluintes","Quantidade",3284,7287,6417
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_conc","Concluintes","Percentual",0.10843681553110936,0.18745290756212868,0.24989593919098815
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_conc","Concluintes","Quantidade",1056,2249,3332
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_conc","Concluintes","Percentual",0.919967263582584,1.2998346346960412,1.8239703604816422
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_conc","Concluintes","Quantidade",8959,15595,24320
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_conc","Concluintes","Percentual",0.10381592850563594,0.14636162991511692,0.3074950032061979
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_conc","Concluintes","Quantidade",1011,1756,4100
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_conc","Concluintes","Percentual",0,0,0
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_conc","Concluintes","Quantidade",0,0,0
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_conc","Concluintes","Percentual",4.676234983400747,4.103543351714665,3.860037274394291
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_conc","Concluintes","Quantidade",45539,49233,51468
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_conc","Concluintes","Percentual",0.26564966077554913,0.4054117129311667,0.42186814464264955
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_conc","Concluintes","Quantidade",2587,4864,5625
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_conc","Concluintes","Percentual",0.727122245052827,0.8860879770088884,1.0928072418823194
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_conc","Concluintes","Quantidade",7081,10631,14571
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_conc","Concluintes","Percentual",5.450798335248434,6.1775276553467,5.306538768745008
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_conc","Concluintes","Quantidade",53082,74116,70755
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_conc","Concluintes","Percentual",0.13872929714254614,0.28013749324869475,0.20722163264846946
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_conc","Concluintes","Quantidade",1351,3361,2763
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_conc","Concluintes","Percentual",0.4563382653600852,0.49659600856165526,1.2039554357241695
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_conc","Concluintes","Quantidade",4444,5958,16053
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_conc","Concluintes","Percentual",0.7591603950961093,1.724500070013536,1.3871024595850316
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_conc","Concluintes","Quantidade",7393,20690,18495
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_conc","Concluintes","Percentual",0.24644730802524853,0.2833047722559695,0.4556925949953313
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_conc","Concluintes","Quantidade",2400,3399,6076
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_conc","Concluintes","Percentual",3.0742247948582877,4.193977502317114,5.070592602870203
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_conc","Concluintes","Quantidade",29938,50318,67609
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_conc","Concluintes","Percentual",0.39780702970408865,0.4182475278553854,0.7447378980091574
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_conc","Concluintes","Quantidade",3874,5018,9930
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_conc","Concluintes","Percentual",0,0,0
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_conc","Concluintes","Quantidade",0,0,0
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_conc","Concluintes","Percentual",11.186037938509344,9.156270212241033,5.980777812360549
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_conc","Concluintes","Quantidade",108934,109854,79745
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_conc","Concluintes","Percentual",1.4179961985502738,1.4280260850431084,1.6294985206490396
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_conc","Concluintes","Quantidade",13809,17133,21727
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_conc","Concluintes","Percentual",2.491890343270294,2.339202245767515,3.076000014999756
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_conc","Concluintes","Quantidade",24267,28065,41014
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_conc","Concluintes","Percentual",19.710547636724346,16.176960879103294,15.543797413292033
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_conc","Concluintes","Quantidade",191949,194086,207254
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_conc","Concluintes","Percentual",0.6768059196643388,0.7190556840989258,0.6434145445136517
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_conc","Concluintes","Quantidade",6591,8627,8579
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_conc","Concluintes","Percentual",2.322765878137967,1.9283728187449574,4.203156698703646
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_conc","Concluintes","Quantidade",22620,23136,56043
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_conc","Concluintes","Percentual",4.101191264675167,6.881247041094611,4.391778633597204
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_conc","Concluintes","Quantidade",39939,82559,58558
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_conc","Concluintes","Percentual",0.7666565007152106,0.7775669962859486,1.155506223023876
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_conc","Concluintes","Quantidade",7466,9329,15407
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_conc","Concluintes","Percentual",7.8238805387748895,6.415156930339866,8.849106202024217
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_conc","Concluintes","Quantidade",76192,76967,117990
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_conc","Concluintes","Percentual",0.9490275086538945,0.9849404218148842,1.5451248917205096
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_conc","Concluintes","Quantidade",9242,11817,20602
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_conc","Concluintes","Percentual",0,0,0
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_conc","Concluintes","Quantidade",0,0,0
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_conc","Concluintes","Percentual",4.1586956365477254,3.3572323982636645,2.938002257463316
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_conc","Concluintes","Quantidade",40499,40279,39174
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_conc","Concluintes","Percentual",0.46455317562759346,0.5417714091391003,0.6311897431666735
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_conc","Concluintes","Quantidade",4524,6500,8416
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_conc","Concluintes","Percentual",0.7545395080706359,0.7247234465329964,0.8256615829992763
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_conc","Concluintes","Quantidade",7348,8695,11009
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_conc","Concluintes","Percentual",7.1888679750965,6.660787752298778,5.850954921982518
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_conc","Concluintes","Quantidade",70008,79914,78014
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_conc","Concluintes","Percentual",0.2314550967870459,0.1696161257843183,0.1545724881970668
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_conc","Concluintes","Quantidade",2254,2035,2061
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_conc","Concluintes","Percentual",0.5583058390555318,0.5401877696354629,1.2064303955060731
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_conc","Concluintes","Quantidade",5437,6481,16086
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_conc","Concluintes","Percentual",1.3078137145873188,1.9873008781697794,1.5049255449598944
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_conc","Concluintes","Quantidade",12736,23843,20066
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_conc","Concluintes","Percentual",0.4589054248186815,0.534686706096512,0.673939048490462
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_conc","Concluintes","Quantidade",4469,6415,8986
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_conc","Concluintes","Percentual",2.1065083653458117,1.9728814237419234,2.987501453101387
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_conc","Concluintes","Quantidade",20514,23670,39834
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_conc","Concluintes","Percentual",0.27027054780102255,0.3943262364057051,0.5684907620251171
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_conc","Concluintes","Quantidade",2632,4731,7580
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_conc","Concluintes","Percentual",0.0033886504853471674,0,0
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_conc","Concluintes","Quantidade",33,0,0
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_conc","Concluintes","Percentual",2.179313007591604,1.9822999113161879,1.1477813485530861
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_conc","Concluintes","Quantidade",21223,23783,15304
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_conc","Concluintes","Percentual",0.11603560752855452,0.17636743103666708,0.19882176914625138
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_conc","Concluintes","Quantidade",1130,2116,2651
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_conc","Concluintes","Percentual",0.38681958722129633,0.4223316507858186,0.5129166651041921
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_conc","Concluintes","Quantidade",3767,5067,6839
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_conc","Concluintes","Percentual",3.536005438270597,3.589110561375199,2.9502270588102943
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_conc","Concluintes","Quantidade",34435,43061,39337
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_conc","Concluintes","Percentual",0.07485836981266925,0.08751691993785465,0.07799873252059654
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_conc","Concluintes","Quantidade",729,1050,1040
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_conc","Concluintes","Percentual",0.40314672137796903,0.3380653593027985,0.6386146225123842
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_conc","Concluintes","Quantidade",3926,4056,8515
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_conc","Concluintes","Percentual",0.3574512830149542,0.9492668582592635,0.5276164262330737
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_conc","Concluintes","Quantidade",3481,11389,7035
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_conc","Concluintes","Percentual",0.2710920388277734,0.3678211120816691,0.44264280705438536
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_conc","Concluintes","Quantidade",2640,4413,5902
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_conc","Concluintes","Percentual",1.1207191332448176,1.4967893792799942,1.8212704043559291
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_conc","Concluintes","Quantidade",10914,17958,24284
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_conc","Concluintes","Percentual",0.30271944335768025,0.22979442692253835,0.3073450056436583
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_conc","Concluintes","Quantidade",2948,2757,4098
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_conc","Concluintes","Percentual",0.626181535140819,1.9329570383607497,1.8150455055105355
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_conc","Concluintes","Quantidade",6098,23191,24201
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_conc","Concluintes","Percentual",0.6402495689739269,0.26863526948543387,0.6369646493244485
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_conc","Concluintes","Quantidade",6235,3223,8493
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_conc","Concluintes","Percentual",0.3367086345894958,0,0.09232349974312917
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_conc","Concluintes","Quantidade",3279,0,1231
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_conc","Concluintes","Percentual",0.01129550161782389,0.17845116722566362,0.4157182445785256
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_conc","Concluintes","Quantidade",110,2141,5543
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_conc","Concluintes","Percentual",4.494788152867158,5.320945382774003,4.304330054636612
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_conc","Concluintes","Quantidade",43772,63839,57392
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_conc","Concluintes","Percentual",0.9885617643162782,2.5663294903681377,4.005384912495172
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_conc","Concluintes","Quantidade",9627,30790,53406
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_conc","Concluintes","Percentual",0.5665207493230401,0.9045082049196178,2.0254920857536063
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_conc","Concluintes","Quantidade",5517,10852,27007
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_conc","Concluintes","Percentual",0.7358505872120545,0.14352774869808163,0.18824694098720895
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_conc","Concluintes","Quantidade",7166,1722,2510
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_conc","Concluintes","Percentual",0.13647019681898137,0.4665902074401051,0.04694923707489753
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_conc","Concluintes","Quantidade",1329,5598,626
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_conc","Concluintes","Percentual",13.765109016993568,14.888378419827834,13.484480877185746
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_conc","Concluintes","Quantidade",134050,178626,179796
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_conc","Concluintes","Percentual",8.800119937689905,10.501280247514519,10.110810699326136
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_conc","Concluintes","Quantidade",85699,125991,134813
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_conc","Concluintes","Percentual",2.0008440820299866,3.207370091551033,6.7042160564890825
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_conc","Concluintes","Quantidade",19485,38481,89391
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_conc","Concluintes","Percentual",2.451226537446128,2.3647071767208327,3.9268611885056868
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_conc","Concluintes","Quantidade",23871,28371,52359
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_conc","Concluintes","Percentual",3.2609086306874135,1.536713764661168,2.226638817119222
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_conc","Concluintes","Quantidade",31756,18437,29689
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_conc","Concluintes","Percentual",34.93370053982229,29.19672803408659,24.049634193444355
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_conc","Concluintes","Quantidade",340198,350293,320667
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_conc","Concluintes","Percentual",0.948000644870456,2.841549366210801,5.959403159698655
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_conc","Concluintes","Quantidade",9232,34092,79460
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_conc","Concluintes","Percentual",4.027154385889249,1.8031819485100453,0.4706923512492922
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_conc","Concluintes","Quantidade",39218,21634,6276
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_conc","Concluintes","Percentual",0.508400259180419,0.7228064092391195,0.28619534932557344
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_conc","Concluintes","Quantidade",4951,8672,3816
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_conc","Concluintes","Percentual",1.0268637834385355e-4,0.3593194684305632,0.041924318729820644
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_conc","Concluintes","Quantidade",1,4311,559
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_conc","Concluintes","Percentual",12.0162573074194,11.156656953677711,10.583453018888443
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_conc","Concluintes","Quantidade",117019,133854,141115
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_conc","Concluintes","Percentual",1.4583519452394083,2.613838675477259,2.148865080942435
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_conc","Concluintes","Quantidade",14202,31360,28652
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_conc","Concluintes","Percentual",0.29399110119845273,0.14011042134812732,0.6954636987148959
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_conc","Concluintes","Quantidade",2863,1681,9273
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_conc","Concluintes","Percentual",0.07136703294897821,0.004917617406031833,0.19207187883196897
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_conc","Concluintes","Quantidade",695,59,2561
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_conc","Concluintes","Percentual",0.179495789345056,0.04059118096165259,0.021074657536815027
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_conc","Concluintes","Quantidade",1748,487,281
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_conc","Concluintes","Percentual",6.7483434120013674,6.83990571510492,5.567759523907736
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_conc","Concluintes","Quantidade",65718,82063,74238
+"","",1,"N","NORTE","total","Total",1,"Total","pct_conc","Concluintes","Percentual",6.1092233931892235,7.70098885784585,7.264381953793251
+"","",1,"N","NORTE","total","Total",1,"Total","qt_conc","Concluintes","Quantidade",59494,92394,96860
+"","",2,"NE","NORDESTE","total","Total",1,"Total","pct_conc","Concluintes","Percentual",16.192512314663922,18.969334071253776,19.750554053496632
+"","",2,"NE","NORDESTE","total","Total",1,"Total","qt_conc","Concluintes","Quantidade",157689,227588,263345
+"","",3,"SE","SUDESTE","total","Total",1,"Total","pct_conc","Concluintes","Percentual",51.446799727675725,46.806799314534146,47.018160954884486
+"","",3,"SE","SUDESTE","total","Total",1,"Total","qt_conc","Concluintes","Quantidade",501009,561573,626919
+"","",4,"S","SUL","total","Total",1,"Total","pct_conc","Concluintes","Percentual",17.499915283737867,16.88351414606824,17.341668197891785
+"","",4,"S","SUL","total","Total",1,"Total","qt_conc","Concluintes","Quantidade",170421,202563,231226
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","pct_conc","Concluintes","Percentual",8.751549280733263,9.639363610297991,8.625234839933851
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","qt_conc","Concluintes","Quantidade",85226,115650,115005
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_conc","Concluintes","Percentual",4.5879246980250326,5.405295023704583,3.9978850343681915
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_conc","Concluintes","Quantidade",44679,64851,53306
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_conc","Concluintes","Percentual",1.5212986951641905,2.295693834141267,3.2664969194250593
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_conc","Concluintes","Quantidade",14815,27543,43554
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_conc","Concluintes","Percentual",13.742928759271296,15.730541237972675,12.15670245358513
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_conc","Concluintes","Quantidade",133834,188730,162092
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_conc","Concluintes","Percentual",2.4495835553926266,3.238792833281101,7.593851599911502
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_conc","Concluintes","Quantidade",23855,38858,101253
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_conc","Concluintes","Percentual",45.938702393311424,38.24272692720593,25.552159777403617
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_conc","Concluintes","Quantidade",447369,458824,340701
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_conc","Concluintes","Percentual",5.5080973343643045,8.564072387328217,21.466001177480866
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_conc","Concluintes","Quantidade",53640,102749,286218
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_conc","Concluintes","Percentual",13.63726447595547,12.106090510832095,7.99704504801797
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_conc","Concluintes","Quantidade",132805,145245,106629
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_conc","Concluintes","Percentual",3.862650807782395,4.777423635236145,9.344623149873815
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_conc","Concluintes","Quantidade",37616,57318,124597
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_conc","Concluintes","Percentual",7.249555624697717,7.497782904694907,4.976769127501678
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_conc","Concluintes","Quantidade",70599,89956,66358
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_conc","Concluintes","Percentual",1.501993656035546,2.1415807056030833,3.648465712432173
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_conc","Concluintes","Quantidade",14627,25694,48647

@@ -18,6 +18,14 @@
 # 3. As planilhas com resultados separados para cada indicador sao gravadas em 
 #    `results/` no formato csv.
 
+# Observacoes:
+# - Os percentuais das contagens usam a soma dos grupos do bloco e ano;
+#   a taxa de ocupacao corresponde a ingressantes por 100 vagas oferecidas.
+# - Mantenedoras nao sao apresentadas por organizacao academica, pois uma
+#   mesma mantenedora pode reunir IES com organizacoes distintas.
+# - `compacta_csv()` mantem o codigo e o nome do indicador apenas na primeira
+#   linha do CSV. A conversao para Excel e feita em `07-planilhas.R`.
+
 # Inputs para o script:
 # - `data/clean/ces_cursos.parquet`
 # - `data/clean/ces_ies.parquet`
@@ -69,9 +77,18 @@ data_A <- data_A |>
     .by = !matches('^qt')
   ) |>
   mutate(total = 1L) |>
+  combina_variaveis(catadm_it, co_cine_area_geral) |> 
+  combina_variaveis(catadm_it, co_cine_area_geral, tp_modalidade_ensino) |>
+  combina_variaveis(catadm_it, fx_ranking) |>
+  combina_variaveis(catadm_it, tp_modalidade_ensino) |> 
   combina_variaveis(catadm_it, tp_organizacao_academica_harm) |>
-  combina_variaveis(fx_ranking, tp_modalidade_ensino) |>
-  combina_variaveis(co_cine_area_geral, tp_modalidade_ensino)
+  combina_variaveis(catadm_it, tp_organizacao_academica_harm, tp_modalidade_ensino) |>
+  combina_variaveis(co_cine_area_geral, tp_modalidade_ensino) |>
+  combina_variaveis(fx_ranking, co_cine_area_geral) |> 
+  combina_variaveis(fx_ranking, co_cine_area_geral, tp_modalidade_ensino) |>
+  combina_variaveis(fx_ranking, tp_modalidade_ensino) |> 
+  combina_variaveis(fx_ranking, tp_organizacao_academica_harm) |>
+  combina_variaveis(fx_ranking, tp_organizacao_academica_harm, tp_modalidade_ensino)  
 
 # Data frame especial para o indicador A3
 # - descarta variaveis nao transponiveis para formato long;
@@ -93,6 +110,7 @@ data_A3 <- data_A |>
 
 rotulos_vars <- read_csv(here('data/clean/rotulos_variaveis.csv'))
 
+
 # INDICADOR A.1 ================================================================
 
 # Numero e distribuicao de IES e mantenedoras por categoria administrativa e 
@@ -109,9 +127,12 @@ A1$name <- 'Número e distribuição de IES e mantenedoras por categoria adminis
 A1$by <- c(
   'total', 
   'catadm_it', 
+  'fx_ranking',
   'tp_organizacao_academica_harm', 
-  'catadm_it_tp_organizacao_academica_harm'
-) |> set_names()
+  'catadm_it_tp_organizacao_academica_harm',
+  'catadm_it_fx_ranking'
+) |> 
+  set_names()
 
 # Funcao para calcular o indicador
 A1$fn <- function(df){
@@ -131,12 +152,14 @@ A1$output <- calcula_dimensao_A(data_A, A1, rotulos_vars)
 #   um tipo de organizacao academica, as informacoes para mantenedoras sao 
 #   excluidas quando a desagregacao for por organizacao academica
 A1$output <- A1$output |> 
-  filter(!(
-    str_detect(bloco_var, "organizacao_academica") & str_detect(serie_var, "mantenedoras")
-  )) 
+  filter(
+    !(str_detect(bloco_var, "organizacao_academica") &
+      str_detect(serie_var, "mantenedoras")
+  )
+) 
 
 # Output 
-write_excel_csv(A1$output, here('results/indicadorA1.csv'))
+write_excel_csv(compacta_csv(A1$output), here('results/indicadorA1.csv'))
 
 # INDICADOR A.2 ================================================================
  
@@ -151,7 +174,19 @@ A2$id   <- 'A2'
 A2$name <- 'Número de vagas oferecidas e taxa de ocupação por modalidade (presencial e ensino a distância) entre 2010 e 2024'
 
 # Blocos para desagregacoes
-A2$by <- c('total', 'tp_modalidade_ensino') |> set_names()
+A2$by <- c(
+  'total', 
+  'catadm_it',
+  'fx_ranking',
+  'tp_organizacao_academica_harm',
+  'tp_modalidade_ensino',
+  'co_cine_area_geral',
+  'catadm_it_tp_organizacao_academica_harm',          
+  'catadm_it_tp_modalidade_ensino',                   
+  'catadm_it_co_cine_area_geral',                   
+  'fx_ranking_tp_modalidade_ensino'
+  ) |> 
+  set_names()
 
 # Funcao para calcular o indicador
 A2$fn <- function(df){
@@ -167,7 +202,7 @@ A2$fn <- function(df){
 A2$output <- calcula_dimensao_A(data_A, A2, rotulos_vars)
 
 # Output
-write_excel_csv(A2$output, here('results/indicadorA2.csv'))
+write_excel_csv(compacta_csv(A2$output), here('results/indicadorA2.csv'))
 
 
 # INDICADOR A.3 ================================================================
@@ -183,7 +218,17 @@ A3$id   <- 'A3'
 A3$name <- 'Distribuição de ingressantes e matrículas por modalidade (presencial e EaD) e turno entre 2010 e 2024'
 
 # Blocos para desagregacoes
-A3$by <- c('total', 'tp_modalidade_ensino', 'turno') |> set_names()
+A3$by <- c(
+  'total', 
+  'catadm_it',
+  'tp_modalidade_ensino', 
+  'turno',
+  'tp_organizacao_academica_harm',
+  'catadm_it_tp_modalidade_ensino',
+  'catadm_it_tp_organizacao_academica_harm',
+  'catadm_it_tp_organizacao_academica_harm_tp_modalidade_ensino'
+) |> 
+  set_names()
 
 # Funcao para calcular o indicador
 A3$fn <- function(df){
@@ -198,7 +243,8 @@ A3$fn <- function(df){
 A3$output <- calcula_dimensao_A(data_A3, A3, rotulos_vars)
 
 # Output
-write_excel_csv(A3$output, here('results/indicadorA3.csv'))
+write_excel_csv(compacta_csv(A3$output), here('results/indicadorA3.csv'))
+
 
 # INDICADOR A.4 ================================================================
 
@@ -217,8 +263,12 @@ A4$by <- c(
   'total', 
   'fx_ranking', 
   'tp_modalidade_ensino',
-  'fx_ranking_tp_modalidade_ensino'
-) |> set_names()
+  'tp_organizacao_academica_harm',
+  'fx_ranking_tp_modalidade_ensino',
+  'fx_ranking_tp_organizacao_academica_harm',
+  'fx_ranking_tp_organizacao_academica_harm_tp_modalidade_ensino'
+) |> 
+  set_names()
 
 # Funcao para calculo do indicador
 A4$fn <- function(df){
@@ -233,7 +283,7 @@ A4$fn <- function(df){
 A4$output <- calcula_dimensao_A(data_A, A4, rotulos_vars)
 
 # Output
-write_excel_csv(A4$output, here('results/indicadorA4.csv'))
+write_excel_csv(compacta_csv(A4$output), here('results/indicadorA4.csv'))
 
 # INDICADOR A.5 ================================================================
 
@@ -251,8 +301,11 @@ A5$name <- 'Distribuição de ingressantes e matrículas por área de conhecimen
 A5$by <- c(
   'total', 
   'co_cine_area_geral', 
-  'tp_modalidade_ensino',
-  'co_cine_area_geral_tp_modalidade_ensino'
+  'co_cine_area_geral_tp_modalidade_ensino',
+  'catadm_it_co_cine_area_geral',
+  'catadm_it_co_cine_area_geral_tp_modalidade_ensino',
+  'fx_ranking_co_cine_area_geral',
+  'fx_ranking_co_cine_area_geral_tp_modalidade_ensino'
 ) |> set_names()
 
 # Funcao para calculo do indicador
@@ -268,5 +321,5 @@ A5$fn <- function(df){
 A5$output <- calcula_dimensao_A(data_A, A5, rotulos_vars)
 
 # Output
-write_excel_csv(A5$output, here('results/indicadorA5.csv'))
+write_excel_csv(compacta_csv(A5$output), here('results/indicadorA5.csv'))
 

@@ -1,0 +1,131 @@
+﻿"indicador_code","indicador_nome","cod_regiao","sigla_regiao","nome_regiao","bloco_var","bloco_nome","grupo_code","grupo_nome","serie_var","serie_nome","unidade","valor_2010","valor_2017","valor_2024"
+"I2","Número de IES e mantenedoras com oferta local em anos selecionados",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ies","IES","Quantidade",19,18,21
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mantenedoras","Mantenedoras","Quantidade",19,18,21
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ies","IES","Quantidade",6,5,5
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mantenedoras","Mantenedoras","Quantidade",6,5,5
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ies","IES","Quantidade",6,2,1
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mantenedoras","Mantenedoras","Quantidade",6,2,1
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ies","IES","Quantidade",82,104,219
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",67,93,158
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ies","IES","Quantidade",63,73,68
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",51,59,63
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ies","IES","Quantidade",30,33,35
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mantenedoras","Mantenedoras","Quantidade",30,33,35
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ies","IES","Quantidade",18,15,16
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mantenedoras","Mantenedoras","Quantidade",18,15,16
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ies","IES","Quantidade",22,23,20
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mantenedoras","Mantenedoras","Quantidade",13,14,14
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ies","IES","Quantidade",234,336,519
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",204,252,360
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ies","IES","Quantidade",161,154,142
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",129,122,124
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ies","IES","Quantidade",41,38,42
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mantenedoras","Mantenedoras","Quantidade",41,37,38
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ies","IES","Quantidade",69,91,101
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mantenedoras","Mantenedoras","Quantidade",18,16,16
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ies","IES","Quantidade",38,29,26
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mantenedoras","Mantenedoras","Quantidade",31,27,24
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ies","IES","Quantidade",387,473,552
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",294,268,371
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ies","IES","Quantidade",659,516,437
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",414,372,346
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ies","IES","Quantidade",19,18,20
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mantenedoras","Mantenedoras","Quantidade",19,18,20
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ies","IES","Quantidade",16,9,10
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mantenedoras","Mantenedoras","Quantidade",5,4,5
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ies","IES","Quantidade",7,6,5
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mantenedoras","Mantenedoras","Quantidade",7,6,5
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ies","IES","Quantidade",175,208,280
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",153,163,212
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ies","IES","Quantidade",188,199,167
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",137,150,139
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ies","IES","Quantidade",11,11,16
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mantenedoras","Mantenedoras","Quantidade",11,11,16
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ies","IES","Quantidade",5,4,8
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mantenedoras","Mantenedoras","Quantidade",5,4,6
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ies","IES","Quantidade",5,4,5
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mantenedoras","Mantenedoras","Quantidade",5,4,5
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ies","IES","Quantidade",129,175,287
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",103,132,232
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ies","IES","Quantidade",116,86,106
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mantenedoras","Mantenedoras","Quantidade",90,73,92
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ies","IES","Quantidade",7,10,15
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",4,5,5
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ies","IES","Quantidade",9,4,15
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",3,3,5
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ies","IES","Quantidade",3,2,4
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",3,2,4
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ies","IES","Quantidade",1,11,5
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",1,4,3
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ies","IES","Quantidade",156,175,275
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",138,163,231
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ies","IES","Quantidade",13,24,30
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",4,5,5
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ies","IES","Quantidade",4,9,33
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",3,3,5
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ies","IES","Quantidade",8,4,4
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",3,2,4
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ies","IES","Quantidade",2,19,4
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",2,4,3
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ies","IES","Quantidade",438,505,661
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",382,422,532
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ies","IES","Quantidade",38,51,30
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",5,5,5
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ies","IES","Quantidade",6,76,43
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",5,5,5
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ies","IES","Quantidade",5,15,80
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",5,5,5
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ies","IES","Quantidade",76,4,7
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",5,4,5
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ies","IES","Quantidade",1069,1001,998
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",778,701,775
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ies","IES","Quantidade",14,20,21
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",4,5,5
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ies","IES","Quantidade",18,12,21
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",4,3,5
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ies","IES","Quantidade",3,8,4
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",3,3,4
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ies","IES","Quantidade",1,4,3
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",1,4,3
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ies","IES","Quantidade",369,396,433
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",309,326,364
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ies","IES","Quantidade",18,20,17
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",4,5,5
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ies","IES","Quantidade",5,2,16
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",3,2,5
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ies","IES","Quantidade",3,2,4
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",3,2,4
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ies","IES","Quantidade",2,6,3
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",2,4,3
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ies","IES","Quantidade",238,250,382
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mantenedoras","Mantenedoras","Quantidade",202,211,334
+"","",1,"N","NORTE","total","Total",1,"Total","qt_ies","IES","Quantidade",176,202,314
+"","",1,"N","NORTE","total","Total",1,"Total","qt_mantenedoras","Mantenedoras","Quantidade",149,177,248
+"","",2,"NE","NORDESTE","total","Total",1,"Total","qt_ies","IES","Quantidade",465,561,732
+"","",2,"NE","NORDESTE","total","Total",1,"Total","qt_mantenedoras","Mantenedoras","Quantidade",394,436,549
+"","",3,"SE","SUDESTE","total","Total",1,"Total","qt_ies","IES","Quantidade",1194,1147,1158
+"","",3,"SE","SUDESTE","total","Total",1,"Total","qt_mantenedoras","Mantenedoras","Quantidade",798,720,795
+"","",4,"S","SUL","total","Total",1,"Total","qt_ies","IES","Quantidade",405,440,482
+"","",4,"S","SUL","total","Total",1,"Total","qt_mantenedoras","Mantenedoras","Quantidade",321,341,381
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","qt_ies","IES","Quantidade",266,280,422
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","qt_mantenedoras","Mantenedoras","Quantidade",214,224,351
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ies","IES","Quantidade",148,166,195
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mantenedoras","Mantenedoras","Quantidade",124,147,143
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ies","IES","Quantidade",36,52,157
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mantenedoras","Mantenedoras","Quantidade",35,51,151
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ies","IES","Quantidade",433,517,588
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mantenedoras","Mantenedoras","Quantidade",364,397,426
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ies","IES","Quantidade",62,90,272
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mantenedoras","Mantenedoras","Quantidade",61,89,261
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ies","IES","Quantidade",1167,1118,1002
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mantenedoras","Mantenedoras","Quantidade",775,698,667
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ies","IES","Quantidade",76,137,418
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mantenedoras","Mantenedoras","Quantidade",75,136,398
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ies","IES","Quantidade",385,404,361
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mantenedoras","Mantenedoras","Quantidade",304,310,272
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ies","IES","Quantidade",54,101,262
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mantenedoras","Mantenedoras","Quantidade",51,98,249
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ies","IES","Quantidade",243,241,278
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mantenedoras","Mantenedoras","Quantidade",194,190,226
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ies","IES","Quantidade",37,59,225
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mantenedoras","Mantenedoras","Quantidade",36,59,219

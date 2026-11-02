@@ -7,26 +7,42 @@
 
 # INSTRUCOES ===================================================================
 
-# Este script faz o pre-processamento dos dados brutos que serão utilizados no
-# projeto e salva os arquivos processados na pasta `data/clean`.
+# Este script prepara os dados brutos utilizados nos indicadores, salva as
+# bases em `data/clean` e exporta diagnosticos para `results`.
 
-# Inputs:
-# - Script com a configuracao do projeto
-#   - `code/_setup.R`
-# - Scripts com funcoes auxiliares
-#   - `code/helpers/detecta_siglas_comerciais.R`
-# - `code/helpers/moda.R`
-# - `code/helpers/padroniza_chr.R`
-# - Microdados do Censo da Educacao Superior, 2010-2024
-#   - `data/raw/CES-CURSOS/*.parquet
-#   - `data/raw/CES-IES/*.parquet`
+# Etapas:
+# 1. Obtencao das malhas de 2010 com `geobr` e agregacao em areas minimas
+#    comparaveis (AMC), com apoio da DTB 2010 e de `gera_amc()`.
+# 2. Agregacao da populacao RIPSA por AMC e ano, entre 2010 e 2024.
+# 3. Padronizacao dos microdados de cursos e IES, harmonizacao de categorias
+#    e mantenedoras, e calculo do ranking anual de mantenedoras por matriculas.
+# 4. Importacao das trajetorias, incorporacao dos atributos contemporaneos do
+#    CES e imputacao das lacunas cadastrais, com marcas de imputacao.
+# 5. Construcao dos rotulos de variaveis e grupos usados nos indicadores.
 
-# Outputs:
-# - Microdados limpos do Censo da Educacao Superior, 2010-2024
-#   - `data/clean/ces_cursos.parquet
-#   - `data/clean/ces_ies.parquet`
-# - Rotulos de valores para variaveis selecionadas
-#   - `data/clean/rotulos_variaveis.csv`
+# Observacoes:
+# - A geografia usa AMC com referencia em 2010; nao corrige todas as revisoes
+#   de fronteiras entre municipios que continuam existindo.
+# - A imputacao cadastral nas trajetorias e uma convencao de continuidade;
+#   valores preenchidos nao representam confirmacao historica dos atributos.
+# - As fontes brutas sao somente lidas. A consulta das malhas pode exigir
+#   acesso a internet, e a execucao atualiza os arquivos derivados.
+
+# Inputs do script:
+# - `code/_setup.R` e funcoes de `code/helpers/`.
+# - Malhas municipais, de UF e de regiao de 2010, obtidas com `geobr`.
+# - `data/raw/IBGE-DTB/dtb_2010.xls`.
+# - `data/raw/RIPSA-POP/ripsa_pop_2000_2025.parquet`.
+# - `data/raw/CES-CURSOS/*.parquet` e `data/raw/CES-IES/*.parquet`.
+# - `data/raw/INEP-TRAJETORIA/*.xlsx`.
+
+# Outputs do script:
+# - `data/clean/geobr_*.gpkg` e `data/clean/ripsa_pop.parquet`.
+# - `data/clean/ces_cursos.parquet`, `data/clean/ces_ies.parquet` e
+#   `data/clean/ces_mantenedoras.parquet`.
+# - `data/clean/trajetorias.parquet` e `data/clean/rotulos_variaveis.csv`.
+# - `results/tp_categoria_administrativa.xlsx`.
+# - `results/trajetorias_pre_imputacao.xlsx`.
 
 
 # CONFIGURACAO =================================================================
@@ -34,16 +50,88 @@
 source('code/_setup.R')
 
 
-# CENSO DA EDUCACAO SUPERIOR - CURSOS ==========================================
+# GEOGRAFIA ====================================================================
 
-## Importacao dos dados brutos -------------------------------------------------
+# Inicializa lista vazia
+geobr <- list()
 
+# Municipios com AMC de 2010
+geobr$municipio_amc <- read_municipality(year = 2010, simplified = FALSE) |> 
+  gera_amc(code_muni, here("data/raw/IBGE-DTB/dtb_2010.xls")) |>
+  rename(ano = year) |> 
+  group_by(across(cod_regiao:nome_muni_amc), ano) |>
+  summarise(num_muni = n(), .groups = "drop")
+
+# Microrregioes com AMC de 2010
+geobr$microrregiao_amc <- geobr$municipio_amc |>
+  group_by(across(cod_regiao:nome_micro_amc), ano) |>
+  summarise(
+    num_muni = sum(num_muni), 
+    num_muni_amc = n(), 
+    .groups = "drop"
+  )
+
+# Mesorregioes com AMC de 2010
+geobr$mesorregiao_amc <- geobr$microrregiao_amc |>
+  group_by(across(cod_regiao:nome_meso_amc), ano) |>
+  summarise(    
+    num_muni = sum(num_muni), 
+    num_muni_amc = sum(num_muni_amc), 
+    num_micro_amc = n(),
+    .groups = "drop"
+  )
+
+# Unidades da Federacao
+geobr$uf <- read_state(year = 2010, simplified = FALSE) |>
+  select(cod_uf = code_state, ano = year, geometry) |> 
+  inner_join(
+    st_drop_geometry(geobr$mesorregiao_amc) |>
+      distinct(cod_regiao, nome_regiao, cod_uf, nome_uf)
+  ) |>
+  select(cod_regiao, nome_regiao, cod_uf, nome_uf, ano, geometry)
+
+# Regioes
+geobr$regiao <- read_region(year = 2010, simplified = FALSE) |>
+  select(cod_regiao = code_region, geometry, ano = year) |> 
+  inner_join(
+    st_drop_geometry(geobr$uf) |> distinct(cod_regiao, nome_regiao)
+  ) |>
+  select(cod_regiao, nome_regiao, ano, geometry)
+
+# Outputs
+imap(
+  .x = geobr, 
+  .f = \(x, idx) write_sf(x, here("data/clean/", sprintf("geobr_%s.gpkg", idx)))
+)
+
+
+# POPULACAO ====================================================================
+
+pop <- read_parquet(here("data/raw/RIPSA-POP/ripsa_pop_2000_2025.parquet")) |>
+  gera_amc(cod_muni7, here("data/raw/IBGE-DTB/dtb_2010.xls")) |>
+  filter(ano %in% 2010:2024) |>
+  summarise(
+    populacao_total = sum(populacao),
+    populacao_18mais = sum( populacao * (idade >= 18)),
+    .by = c(cod_regiao:nome_muni_amc, ano)
+  ) |>
+  arrange(cod_muni_amc, ano) |>
+  mutate(across(where(is.character), padroniza_chr))
+
+write_parquet(pop, here("data/clean/ripsa_pop.parquet"))
+
+
+# CENSO DO ENSINO SUPERIOR =====================================================
+
+## Cursos ----------------------------------------------------------------------
+
+# Importacao dos dados brutos 
 ces_cursos <- map(
   .x = list.files(here('data/raw/ces-cursos'), '\\.parquet$', full.names = TRUE),
   .f = ~ read_parquet(.x) |> 
     select(
-      NU_ANO_CENSO:TP_DIMENSAO, 
-      CO_IES:CO_CURSO, 
+      NU_ANO_CENSO, CO_MUNICIPIO, TP_DIMENSAO, 
+      CO_IES, NO_CURSO, CO_CURSO, 
       CO_CINE_AREA_GERAL:NO_CINE_AREA_GERAL, 
       TP_GRAU_ACADEMICO:TP_NIVEL_ACADEMICO,  
       QT_VG_TOTAL:QT_VG_PROG_ESPECIAL, 
@@ -54,20 +142,22 @@ ces_cursos <- map(
   ) |> 
   bind_rows()
   
-## Pre-processamento -----------------------------------------------------------
-
+# Pre-processamento 
 ces_cursos <- ces_cursos |> 
-  # Padroniza nomes de variaveis
+  # Gera AMC de municipios com referencia 2010
+  gera_amc(CO_MUNICIPIO, here("data/raw/IBGE-DTB/dtb_2010.xls")) |> 
+  # Padronizacoes
   rename_with(tolower, .cols = everything()) |> 
-  rename_with(~ paste0(.x, '_oferta'), .cols = no_regiao:in_capital) |> 
   rename(ano = nu_ano_censo) |> 
-  # Padroniza conteudo de variaveis do tipo character
   mutate(across(where(is.character), padroniza_chr)) |> 
+  # Descarta variaveis
+  select(-co_municipio) |> 
+  # Ordena variaveis
+  relocate(cod_regiao:nome_muni_amc, ano) |>
   # Ordena por chaves de identificacao 
-  arrange(co_ies, co_curso, ano, tp_dimensao, co_municipio_oferta)
+  arrange(co_ies, co_curso, ano, tp_dimensao, cod_muni_amc)
 
-## Filtros ---------------------------------------------------------------------
-
+# Filtros 
 ces_cursos <- ces_cursos |>
   filter(
     # exclui cursos EaD ofertados no exterior
@@ -76,16 +166,7 @@ ces_cursos <- ces_cursos |>
     tp_nivel_academico != 2 
   )
 
-## Ensino a Distancia (EaD) ----------------------------------------------------
-
-# Problema: 
-# CES nao inclui explicitamente variaveis para ingressantes, matriculas e 
-# concluintes em EaD.
-
-# Solucao:
-# Criacao de variaveis com valores validos para tp_dimensao != 3: `qt_ing_ead`,
-# `qt_mat_ead` e `qt_conc_ead`.
-
+# Ensino a Distancia (EaD)
 ces_cursos  <- ces_cursos  |>
   mutate(
     qt_ing_ead = qt_ing - qt_ing_diurno - qt_ing_noturno,
@@ -93,37 +174,138 @@ ces_cursos  <- ces_cursos  |>
     qt_conc_ead = qt_conc - qt_conc_diurno - qt_conc_noturno
   )
 
-## Output ----------------------------------------------------------------------
-
+# Output 
 write_parquet(ces_cursos, here('data/clean/ces_cursos.parquet'))
 
+## IES -------------------------------------------------------------------------
 
-# CENSO DA EDUCACAO SUPERIOR - IES =============================================
-
-## Importacao dos dados brutos -------------------------------------------------
-
+# Importacao dos dados brutos
 ces_ies <- map(
   .x = list.files(here('data/raw/ces-ies'), '\\.parquet$', full.names = TRUE),
   .f = read_parquet
 ) |> 
   bind_rows()
 
-## Pre-processamento -----------------------------------------------------------
-
+# Pre-processamento
 ces_ies <- ces_ies |> 
-  # Padroniza nomes de variaveis
+  # Gera AMC de municipios com referencia 2010
+  gera_amc(CO_MUNICIPIO_IES, here("data/raw/IBGE-DTB/dtb_2010.xls")) |> 
+  # Padronizacoes
   rename_with(tolower, .cols = everything()) |> 
+  rename_with(~ paste0(.x, "_ies"), .cols = cod_regiao:nome_muni_amc) |>
   rename(ano = nu_ano_censo) |>
-  # Padroniza conteudo de variaveis do tipo character
   mutate(across(where(is.character), padroniza_chr)) |> 
+  # Ordena variaveis
+  relocate(cod_regiao_ies:nome_muni_amc_ies, ano) |>
   # Ordena por chaves de identificacao
-  arrange(co_ies, ano)
+  arrange(co_ies, ano) |>
+  # Descarta variaveis
+  select(-matches("regiao_ies$"))
+ 
+# Filtro para manter somente IES com pelo menos um curso com dados validos no ano
+ces_ies <- inner_join(ces_ies, ces_cursos |> select(co_ies, ano) |> distinct())
 
-## Filtros ---------------------------------------------------------------------
-
+# Correcao para IES declaradas em algum ano como publicas federais e estaduais,
+# de forma a gerar variaveis consistentes ao longo do tempo para IES publicas
+# (`tp_categoria_administrativa_harm`, `co_mantenedora_harm` e
+# `no_mantenedora_harm`)
 ces_ies <- ces_ies |> 
-  # mantem somente IES com pelo menos um curso com dados validos no ano
-  inner_join(ces_cursos |> select(co_ies, ano) |> distinct())
+  mutate(
+    min = min(tp_categoria_administrativa),
+    # Reclassificacao pelo valor modal dos ultimos cinco anos
+    w = as.integer((max(ano) - ano) < 5), 
+     across(
+      .cols = c(tp_categoria_administrativa, co_mantenedora, no_mantenedora),
+      .fns = ~ if_else(min <= 2, moda(.x, w)[1], .x),
+      .names = '{.col}_harm'
+    ),   
+    .by = co_ies
+  ) |> 
+  select(-min, -w)
+
+# Correcao para IES declaradas em algum ano como publicas municipais
+ces_ies <- ces_ies |>
+  mutate(
+    min = min(tp_categoria_administrativa_harm),
+    moda = moda(tp_categoria_administrativa_harm)[1],
+    ind_muni = max(str_detect(no_mantenedora_harm, '(AUTARQUIA|MUNICIPIO|MUNICIPAL)')), 
+    tp_categoria_administrativa_harm = case_when(
+      # Reclassificacao como municipal para mantenedoras com nomes indicativos 
+      # de orgaos publicos em algum ano
+      min >= 3 & ind_muni == 1 ~ 3L, 
+      # Reclassificacao pelo valor modal para mantenedoras de IES declaradas 
+      # como municipais em algum ano
+      min == 3 ~ moda, 
+      .default = tp_categoria_administrativa_harm
+    ),
+    .by = c(co_mantenedora_harm, co_ies)
+  ) |> 
+  select(-min, -moda, -ind_muni)
+
+# Harmonizacao de categoria administrativa por mantenedora-ano (`catadm_it`)
+ces_ies <- ces_ies |>
+  mutate(
+    min = min(tp_categoria_administrativa_harm),
+    ind_restrito = detecta_sigla_comercial(no_mantenedora_harm, restrito = TRUE),
+    ind_amplo = detecta_sigla_comercial(no_mantenedora_harm, restrito = FALSE),
+    # Classificacao inicial conforme o valor modal das IES mantidas a cada ano
+    catadm_it = moda(tp_categoria_administrativa_harm)[1],
+    catadm_it = case_when(
+      # Reclassifica como publicas as mantenedoras com alguma IES publica no ano
+      min <= 3 ~ min,
+      # Reclassifica como com fins lucrativos as mantenedoras com valor modal
+      # sem fins lucrativos, mas cujo nome denota empresas exclusivamente 
+      # comerciais
+      catadm_it == 5 & ind_restrito == TRUE ~ 4L, 
+      # Reclassifica como com fins lucrativos as mantenedoras com valor modal 
+      # sem fins lucrativos, mas que possuem alguma IES declarada como com fins
+      # lucrativos e cujo nome denota empresa tipicamente comercial 
+      catadm_it == 5 & min == 4 & ind_amplo == TRUE ~ 4L,       
+      # Reclassifica como sem fins lucrativos as mantenedoras com valor modal 
+      # especial
+      catadm_it == 7 ~ 5L,
+      .default = catadm_it
+    ), 
+    .by = c(co_mantenedora_harm, ano)
+  ) |> 
+  select(-min, -ind_restrito, -ind_amplo)
+ 
+# Agregacao de tipo de organizacao academica (`tp_organicao_academica_harm`)
+ces_ies <- ces_ies |>
+  mutate(
+    across(
+      .cols = tp_organizacao_academica, 
+      .fns = ~ if_else(.x == 5, 4, .x), .names = '{.col}_harm'
+    )
+  )
+
+# Output
+write_parquet(ces_ies, here('data/clean/ces_ies.parquet'))
+
+## Mantenedoras ----------------------------------------------------------------
+
+# Pre-processamento
+ces_mantenedoras <- full_join(
+  ces_ies |> select(co_mantenedora_harm, no_mantenedora_harm, catadm_it, co_ies, ano),
+  ces_cursos |> select(co_ies, co_curso, ano, qt_mat)
+) |>
+  summarise(
+    num_ies = n_distinct(co_ies),
+    num_cursos = n_distinct(co_curso), 
+    qt_mat = sum(qt_mat, na.rm = TRUE),
+    .by = c(matches('harm$'), catadm_it, ano)
+  ) 
+
+# Ranking de mantenedoras por matriculas no ano
+ces_mantenedoras <- ces_mantenedoras |>
+  mutate(
+    ranking = row_number(desc(qt_mat)), 
+    fx_ranking = cut(ranking, breaks = c(seq(0, 20, 5), Inf), labels = FALSE),
+    .by = ano
+  )
+
+# Output
+write_parquet(ces_mantenedoras, here('data/clean/ces_mantenedoras.parquet'))
 
 ## Diagnostico de `tp_categoria_administrativa` --------------------------------
 
@@ -209,165 +391,327 @@ diag.tp_categoria_administrativa$combinacoes_em_um_mesmo_ano <-
     cumulative_percent = cumsum(percent)
   )
 
-## Correcoes para IES publicas -------------------------------------------------
+# Output
+write_xlsx(
+  diag.tp_categoria_administrativa, 
+  here("results/tp_categoria_administrativa.xlsx")
+)
 
-# Problema:
-# IES publicas cuja declaracao de categoria administrativa e mantenedora varia 
-# artificialmente ao longo do tempo. 
-
-# Solucao:
-# Criacao de variaveis consistentes ao longo do tempo para IES publicas:
-# `tp_categoria_harm`, `co_mantenedora_harm` e `no_mantenedora_harm`.
-
-# Correcao para IES declaradas em algum ano como publicas federais e estaduais
-ces_ies <- ces_ies |> 
-  mutate(
-    min = min(tp_categoria_administrativa),
-    # Reclassificacao pelo valor modal das ultimas cinco aparicoes para evitar 
-    # variacoes espurias
-    w = as.integer((max(ano) - ano) < 5), 
-     across(
-      .cols = c(tp_categoria_administrativa, co_mantenedora, no_mantenedora),
-      .fns = ~ if_else(min <= 2, moda(.x, w)[1], .x),
-      .names = '{.col}_harm'
-    ),   
-    .by = co_ies
-  ) |> 
-  select(-min, -w)
-
-# Correcao para IES declaradas em algum ano como publicas municipais
-ces_ies <- ces_ies |>
-  mutate(
-    min = min(tp_categoria_administrativa_harm),
-    moda = moda(tp_categoria_administrativa_harm)[1],
-    ind_muni = max(str_detect(no_mantenedora_harm, '(AUTARQUIA|MUNICIPIO|MUNICIPAL)')), 
-    tp_categoria_administrativa_harm = case_when(
-      # Reclassificacao como municipal para mantenedoras com nomes indicativos 
-      # de orgaos publicos em algum ano
-      min >= 3 & ind_muni == 1 ~ 3L, 
-      # Reclassificacao pelo valor modal para mantenedoras de IES declaradas 
-      # como municipais em algum ano
-      min == 3 ~ moda, 
-      .default = tp_categoria_administrativa_harm
-    ),
-    .by = c(co_mantenedora_harm, co_ies)
-  ) |> 
-  select(-min, -moda, -ind_muni)
-
-## Categoria administrativa harmonizada por mantenedora-ano --------------------
-
-# Problema:
-# Classificacoes inconsistentes para IES de uma mesma mantenedora e/ou erroneas 
-# para algumas mantenedoras em determinado ano.
-
-# Solucao:
-# Criacao de variavel `catadm_it` corrigida para as combinacoes mantenedora-ano.
-
-ces_ies <- ces_ies |>
-  mutate(
-    min = min(tp_categoria_administrativa_harm),
-    ind_restrito = detecta_sigla_comercial(no_mantenedora_harm, restrito = TRUE),
-    ind_amplo = detecta_sigla_comercial(no_mantenedora_harm, restrito = FALSE),
-    # Classificacao inicial conforme o valor modal das IES mantidas a cada ano
-    catadm_it = moda(tp_categoria_administrativa_harm)[1],
-    catadm_it = case_when(
-      # Reclassifica como publicas as mantenedoras com alguma IES publica no ano
-      min <= 3 ~ min,
-      # Reclassifica como com fins lucrativos as mantenedoras com valor modal
-      # sem fins lucrativos, mas cujo nome denota empresas exclusivamente 
-      # comerciais
-      catadm_it == 5 & ind_restrito == TRUE ~ 4L, 
-      # Reclassifica como com fins lucrativos as mantenedoras com valor modal 
-      # sem fins lucrativos, mas que possuem alguma IES declarada como com fins
-      # lucrativos e cujo nome denota empresa tipicamente comercial 
-      catadm_it == 5 & min == 4 & ind_amplo == TRUE ~ 4L,       
-      # Reclassifica como sem fins lucrativos as mantenedoras com valor modal 
-      # especial
-      catadm_it == 7 ~ 5L,
-      .default = catadm_it
-    ), 
-    .by = c(co_mantenedora_harm, ano)
-  ) |> 
-  select(-min, -ind_restrito, -ind_amplo)
-
-## Categoria administrativa harmonizada so por mantenedora ---------------------
-
-# Problema:
-# Mesmo apos a harmonizacao, a categoria administrativa de muitas mantenedoras 
-# varia ao longo do tempo. Essa variacao pode ser legitima, mas em muitos casos 
-# e' artificial
-
-# Solucao:
-# Como nao e' possivel discriminar entre variacoes legitimas e artificiais, 
-# sao criadas duas novas variaveis invariantes no tempo:
-# - `catadm_i`
-# - `catadm_i5`
-
-ces_ies <- ces_ies |> 
-  # Peso para evitar dupla contagem de mantenedoras com multiplas IES no mesmo ano
-  mutate(w = 1 / n(), .by = c(co_mantenedora_harm, ano)) |>
-  mutate(
-    # Peso que leva em conta somente os cinco anos anteriores 'a ultima aparicao
-    # da mantenedora no CES
-    w_last5 = w * ((max(ano) - ano) < 5), 
-    # Classificacao pelo valor modal de toda a serie historica
-    catadm_i  = moda(catadm_it, w)[1], 
-    # Classificacao pelo valor modal somente dos cinco anos anteriores 'a 
-    # ultima aparicao da mantenedora no CES
-    catadm_i5 = moda(catadm_it, w_last5)[1],
-    .by = co_mantenedora_harm
-  ) |> 
-  select(-w, -w_last5)
- 
-## Agregacao de tipo de organizacao academica ----------------------------------
-
-# Problema:
-# `tp_organizacao_academica` e' excessivamente desagregada para o projeto
-
-# Solucao:
-# Criacao de variavel mais agregada `tp_organicao_academica_harm`
-
-ces_ies <- ces_ies |>
-  mutate(
-    across(tp_organizacao_academica, ~ if_else(.x == 5, 4, .x), .names = '{.col}_harm')
-  )
-
-## Output ----------------------------------------------------------------------
-
-write_parquet(ces_ies, here('data/clean/ces_ies.parquet'))
-
-write_xlsx(diag.tp_categoria_administrativa, here('logs/tp_categoria_administrativa.xlsx'))
-
-# CENSO DA EDUCACAO SUPERIOR - MANTENEDORAS ====================================
+# INDICADORES DE TRAJETORIA ====================================================
 
 ## Pre-processamento -----------------------------------------------------------
 
-ces_mantenedoras <- full_join(
-  ces_ies |> select(co_mantenedora_harm, no_mantenedora_harm, catadm_it, co_ies, ano),
-  ces_cursos |> select(co_ies, co_curso, ano, qt_mat)
-) |>
-  summarise(
-    num_ies = n_distinct(co_ies),
-    num_cursos = n_distinct(co_curso), 
-    qt_mat = sum(qt_mat, na.rm = TRUE),
-    .by = c(matches('harm$'), catadm_it, ano)
-  ) 
+# Lista de arquivos brutos
+traj <- list.files(
+  path = here("data/raw/INEP-TRAJETORIA/"), 
+  pattern = "\\.xlsx$",  
+  full.names =  TRUE
+)
 
-## Ranking de mantenedoras por matriculas no ano -------------------------------
+# Importacao dos arquivos brutos
+traj <- map(traj, ~ read_xlsx(.x, skip = 8)) |> bind_rows()
 
-ces_mantenedoras <- ces_mantenedoras |>
+# Selecao e padronizacao de variaveis
+# - A base de trajetorias possui somente uma linha por curso-coorte-ano; 
+#   portanto, so da para manter as variaveis que sao constantes por curso-ano,
+#   o que exclui as variaveis geograficas.
+traj <- traj |>
+  select(CO_CURSO, NO_CURSO, NU_ANO_INGRESSO:last_col()) |> 
+  rename_with(tolower, .cols = everything()) |>
+  rename(coorte = nu_ano_ingresso, ano = nu_ano_referencia) |>
   mutate(
-    ranking = row_number(desc(qt_mat)), 
-    fx_ranking = cut(ranking, breaks = c(seq(0, 20, 5), Inf), labels = FALSE),
-    .by = ano
+    across(where(is.character), padroniza_chr),
+    across(where(is.numeric), as_integer_if_possible)
+  ) |>
+  filter(!is.na(co_curso)) 
+
+# Merge com dados do CES
+# - A base de trajetoria reconstroi retrospectivamente as caracteristicas 
+#   cadastrais usando as informacoes do ultimo ano da analise; portanto, a 
+#   harmonizacao puxa os dados contemporaneos do CES, que nao estao disponiveis
+#   para todos os cursos da base de trajetorias.
+traj <- ces_cursos |> 
+  select(
+    co_ies, co_curso, co_cine_area_geral, no_cine_area_geral, tp_grau_academico, 
+    tp_modalidade_ensino, ano
+  ) |>
+  distinct() |> 
+  right_join(traj, by = join_by(co_curso, ano), relationship = "one-to-many") |>
+  mutate(
+    presente_ces = !is.na(co_ies),
+    n_presente_ces = sum(presente_ces),
+    n_ausente_ces = sum(!presente_ces),
+    pct_presente_ces = mean(presente_ces), 
+    .by = c(co_curso, coorte)
+  ) |> 
+  arrange(coorte, co_curso, ano)
+
+## Diagnostico de missing values -----------------------------------------------
+
+diag.missing_traj <- list()
+
+# Variaveis com missing values
+diag.missing_traj$variaveis_com_missing <- traj |> 
+  summarise(
+    across(
+      .cols = everything(),
+      .fns =  list(n = ~ sum(is.na(.x)), pct = ~ 100 *mean(is.na(.x))),
+      .names = "{.fn}_{.col}"
+    ) 
+  ) |>
+  pivot_longer(
+    cols = everything(),
+    names_to = c("estatistica", ".value"),
+    names_pattern = "^(n|pct)_(.*)$"
   )
+
+# Linhas com missing values
+diag.missing_traj$linhas_com_missing <- left_join(
+  traj |> filter(!presente_ces) |> count(co_curso, ano, name = "n_linhas_traj"),
+  ces_cursos |>
+    summarise(primeiro_ces = min(ano), ultimo_ces = max(ano), .by = co_curso),
+  by = join_by(co_curso),
+  relationship = "many-to-one"
+) |>
+  mutate(
+    situacao = case_when(
+      is.na(primeiro_ces) ~ "4. Curso inteiramente ausente do CES",
+      ano < primeiro_ces ~ "1. Antes da primeira aparicao do curso no CES",
+      ano > ultimo_ces ~ "3. Depois da ultima aparicao no CES",
+      .default = "2. Entre duas aparicoes no CES"
+    ),
+    situacao = factor(situacao)
+  )
+
+# Cursos podem aparecer em mais de uma situacao; calcula o total distinto antes
+totais_missing_traj <- diag.missing_traj$linhas_com_missing |>
+  summarise(
+    num_linhas_traj = sum(n_linhas_traj),
+    num_pares_curso_ano = n(),
+    num_cursos = n_distinct(co_curso)
+  ) |>
+  mutate(situacao = "Total", .before = 1)
+
+diag.missing_traj$linhas_com_missing <- diag.missing_traj$linhas_com_missing |>
+  summarise(
+    num_linhas_traj = sum(n_linhas_traj),
+    num_pares_curso_ano = n(),
+    num_cursos = n_distinct(co_curso),
+    .by = situacao
+  ) |>
+  mutate(
+    situacao = as.character(situacao)
+  ) |>
+  bind_rows(totais_missing_traj) |>
+  arrange(situacao) |>
+  mutate(
+    pct_linhas_traj = 100 * num_linhas_traj / max(totais_missing_traj$num_linhas_traj, 1),
+    pct_pares_curso_ano = 100 * num_pares_curso_ano / max(totais_missing_traj$num_pares_curso_ano, 1),
+    pct_cursos = 100 * num_cursos / max(totais_missing_traj$num_cursos, 1)
+  ) |>
+  mutate(across(matches("^pct"), ~ round(.x, 2)))
+
+# Valores unicos em linhas e variaveis com missing values
+diag.missing_traj$valores_validos_unicos <- traj |>
+  select(where(~ any(is.na(.x)))) |>
+  names() |>
+  setdiff("co_curso") |>
+  map_dfr(function(variavel_atual) {
+    traj |>
+      summarise(
+        num_valores_validos_unicos = n_distinct(
+          .data[[variavel_atual]], na.rm = TRUE
+        ),
+        num_linhas_com_na = sum(is.na(.data[[variavel_atual]])),
+        .by = co_curso
+      ) |>
+      filter(num_linhas_com_na > 0) |>
+      summarise(
+        num_cursos = n(),
+        num_linhas_com_na = sum(num_linhas_com_na),
+        .by = num_valores_validos_unicos
+      ) |>
+      mutate(variavel = variavel_atual, .before = 1)
+  }) |>
+  bind_rows(
+    tibble(
+      variavel = character(),
+      num_valores_validos_unicos = integer(),
+      num_cursos = integer(),
+      num_linhas_com_na = integer()
+    )
+  ) |>
+  arrange(variavel, num_valores_validos_unicos)
+
+# Output
+write_xlsx(diag.missing_traj, here("results/trajetorias_pre_imputacao.xlsx"))
+
+## Imputacao de missing values nos dados de trajetoria -------------------------
+
+# O preenchimento e' uma convencao de continuidade, nao uma confirmacao historica.
+
+# Inicializa lista vazia
+imputacao.traj <- list()
+
+# Variaveis para imputar
+imputacao.traj$vars <- c(
+  "tp_modalidade_ensino", "co_cine_area_geral", "no_cine_area_geral",
+  "tp_grau_academico", "co_ies"
+)
+
+# Cadastro no CES por curso-ano dos cursos que aparecem em trajetorias
+imputacao.traj$dados <- ces_cursos |>
+  semi_join(traj |> distinct(co_curso), by = join_by(co_curso)) |>
+  select(co_curso, ano, all_of(imputacao.traj$vars)) |>
+  distinct()
+
+# Interrompe se houver cadastros divergentes para a mesma chave curso-ano
+stopifnot(!anyDuplicated(imputacao.traj$dados[c("co_curso", "ano")]))
+
+# Inclui os anos de trajetorias ausentes do CEs
+imputacao.traj$dados <- full_join(
+  imputacao.traj$dados,
+  traj |> distinct(co_curso, ano),
+  by = join_by(co_curso, ano), 
+  relationship = "one-to-one"
+) 
+
+# Imputa missing values nas variaveis cadastrais
+# - preenche lacunas iniciais com a primeira observacao valida para curso-ano;
+# - preenche demais lacunas com a ultima observacao valida para curso-ano
+# - aplica a mesma convencao ao grau academico, inclusive quando o NA no CES
+#   indica nao aplicabilidade em registros ABI.
+imputacao.traj$dados <- imputacao.traj$dados |>
+  arrange(co_curso, ano) |>
+  group_by(co_curso) |>
+  fill(all_of(imputacao.traj$vars), .direction = "downup") |>
+  ungroup()
+
+# Merge com dados de trajetorias
+traj <- left_join(
+  traj,
+  imputacao.traj$dados,
+  by = join_by(co_curso, ano), 
+  relationship = "many-to-one",
+  suffix = c("", "_imputacao")
+) 
+
+# Incorpora valores imputados e cria marcas de imputacao
+traj <- reduce(
+  .x = imputacao.traj$vars,
+  .init = traj,
+  .f = function(df, var) {
+    ref <- df[[paste0(var, "_imputacao")]]
+    df[[paste0(var, "_imputado")]] <- is.na(df[[var]]) & !is.na(ref)
+    df[[var]] <- coalesce(df[[var]], ref)
+    df[[paste0(var, "_imputacao")]] <- NULL
+    df
+  }
+)
+
+# Marcacao de IES ativas a cada ano
+# IES identificada sem evidencia de atividade recebe FALSE; IES ausente, NA.
+traj <- left_join(
+  traj,
+  ces_cursos |>
+    filter(!is.na(co_ies), qt_mat > 0) |>
+    distinct(co_ies, ano) |>
+    mutate(co_ies_em_atividade = TRUE),
+   by = join_by(co_ies, ano), 
+   relationship = "many-to-one"
+) |>
+  mutate(
+    co_ies_em_atividade = if_else(
+      is.na(co_ies), NA, coalesce(co_ies_em_atividade, FALSE)
+    )
+  )
+
+## Informacoes institucionais --------------------------------------------------
+
+# Historico completo das IES presentes em trajetorias
+imputacao.ies <- ces_ies |> 
+  select(co_mantenedora_harm, co_ies, ano, catadm_it) |>
+  semi_join(distinct(traj, co_ies), by = "co_ies")
+
+stopifnot(!anyDuplicated(imputacao.ies[c("co_ies", "ano")]))
+
+# Inclui os anos necessarios para as trajetorias
+imputacao.ies <- full_join(
+  imputacao.ies,
+  traj |> distinct(co_ies, ano) |> filter(!is.na(co_ies)),
+  by = join_by(co_ies, ano),
+  relationship = "one-to-one"
+) |>
+  mutate(
+    co_mantenedora_harm_imputado = is.na(co_mantenedora_harm),
+    catadm_it_imputado = is.na(catadm_it)
+  )  
+
+# Preenche mantenedora pelo historico da IES
+imputacao.ies <- imputacao.ies |>
+  arrange(co_ies, ano) |>
+  group_by(co_ies) |>
+  fill(co_mantenedora_harm, .direction = "downup") |>
+  ungroup()
+
+# Categoria unica por mantenedora-ano, preservando todo o historico disponivel
+imputacao.mantenedoras <- ces_mantenedoras |>
+  select(co_mantenedora_harm, ano, catadm_it) |>
+  semi_join(distinct(imputacao.ies, co_mantenedora_harm), by = "co_mantenedora_harm")
+
+stopifnot(!anyDuplicated(imputacao.mantenedoras[c("co_mantenedora_harm", "ano")]))
+
+imputacao.mantenedoras <- full_join(
+  imputacao.mantenedoras,
+  imputacao.ies |>
+    distinct(co_mantenedora_harm, ano) |>
+    filter(!is.na(co_mantenedora_harm)),
+  by = join_by(co_mantenedora_harm, ano),
+  relationship = "one-to-one"
+) |>
+  arrange(co_mantenedora_harm, ano) |>
+  group_by(co_mantenedora_harm) |>
+  fill(catadm_it, .direction = "downup") |>
+  ungroup()
+
+imputacao.ies <- imputacao.ies |>
+  left_join(
+    imputacao.mantenedoras |>
+      rename(catadm_it_mantenedora = catadm_it),
+    by = join_by(co_mantenedora_harm, ano),
+    relationship = "many-to-one",
+    na_matches = "never"
+  )
+
+# Interrompe se a referencia contrariar alguma categoria observada da IES
+stopifnot(all(
+  is.na(imputacao.ies$catadm_it) |
+    (!is.na(imputacao.ies$catadm_it_mantenedora) &
+       imputacao.ies$catadm_it == imputacao.ies$catadm_it_mantenedora)
+))
+
+imputacao.ies <- imputacao.ies |>
+  mutate(
+    catadm_it = coalesce(catadm_it, catadm_it_mantenedora),
+    co_mantenedora_harm_imputado = co_mantenedora_harm_imputado & !is.na(co_mantenedora_harm),
+    catadm_it_imputado = catadm_it_imputado & !is.na(catadm_it)
+  ) |>
+  select(-catadm_it_mantenedora)
+
+# Incorpora as informacoes institucionais as trajetorias
+traj <- left_join(
+  traj,
+  imputacao.ies,
+  by = join_by(co_ies, ano),
+  relationship = "many-to-one"
+)
 
 ## Output ----------------------------------------------------------------------
 
-write_parquet(ces_mantenedoras, here('data/clean/ces_mantenedoras.parquet'))
+write_parquet(traj, here("data/clean/trajetorias.parquet"))
 
 
-# ROTULOS PARA VARIAVEIS =======================================================
+# ROTULOS ======================================================================
 
 ## Rotulos manuais para variaveis unicas ---------------------------------------
 
@@ -383,6 +727,12 @@ rotulos_vars$tp_modalidade_ensino <- data.frame(
   bloco_nome = "Modalidade de ensino", 
   grupo_code = c(1, 2),
   grupo_nome = c("Presencial", "Educação a Distância")
+)
+
+rotulos_vars$tp_grau_academico <- data.frame(
+  bloco_nome = "Grau acadêmico",
+  grupo_code = c(1, 2, 3),
+  grupo_nome = c("Bacharelado", "Licenciatura", "Tecnológico")
 )
 
 rotulos_vars$co_cine_area_geral <- data.frame(
@@ -418,10 +768,6 @@ rotulos_vars$catadm_it <- data.frame(
   )
 )
 
-rotulos_vars$catadm_i <- rotulos_vars$catadm_it
-
-rotulos_vars$catadm_i5 <- rotulos_vars$catadm_it
-
 rotulos_vars$fx_ranking <- data.frame(
   bloco_nome = 'Tamanho de mantenedoras por número de matrículas',
   grupo_code = 1:5, 
@@ -446,21 +792,49 @@ rotulos_vars$fx_pct_ead <- data.frame(
   )
 )
 
+rotulos_vars$nu_prazo_integralizacao <- data.frame(
+  bloco_nome = 'Prazo para integralização do curso',
+  grupo_code = 3:6, 
+  grupo_nome = sprintf('%s anos', 3:6)
+)
+
 rotulos_vars <- bind_rows(rotulos_vars, .id = 'bloco_var')
 
 ## Rotulos para combinacoes de variaveis ---------------------------------------
 
 rotulos_combo <- list(
-  c('catadm_it', 'tp_organizacao_academica_harm'),
-  c('catadm_it', 'tp_modalidade_ensino'),
-  c('catadm_it', 'turno'),
   c('catadm_it', 'co_cine_area_geral'),
+  c('catadm_it', 'co_cine_area_geral', 'turno'),
   c('catadm_it', 'co_cine_area_geral', 'tp_modalidade_ensino'),
-  c('catadm_it', 'co_cine_area_geral', 'turno'),  
+  c('catadm_it', 'fx_pct_ead'),
+  c('catadm_it', 'fx_pct_ead', 'co_cine_area_geral'),
+  c('catadm_it', 'fx_pct_ead', 'tp_modalidade_ensino'),
+  c('catadm_it', 'fx_pct_ead', 'turno'), 
+  c('catadm_it', 'fx_ranking'),
+  c('catadm_it', 'fx_ranking', 'co_cine_area_geral'), 
+  c('catadm_it', 'fx_ranking', 'tp_modalidade_ensino'),
+  c('catadm_it', 'fx_ranking', 'turno'), 
+  c('catadm_it', 'nu_prazo_integralizacao'),
+  c('catadm_it', 'tp_grau_academico'),
+  c('catadm_it', 'tp_modalidade_ensino'),
+  c('catadm_it', 'tp_organizacao_academica_harm'),
+  c('catadm_it', 'tp_organizacao_academica_harm', 'turno'), 
+  c('catadm_it', 'tp_organizacao_academica_harm', 'tp_modalidade_ensino'),
+  c('catadm_it', 'turno'),  
   c('co_cine_area_geral', 'tp_modalidade_ensino'),
   c('co_cine_area_geral', 'turno'), 
+  c('fx_ranking', 'co_cine_area_geral'),
+  c('fx_ranking', 'co_cine_area_geral', 'turno'),
+  c('fx_ranking', 'co_cine_area_geral', 'tp_modalidade_ensino'),
+  c('fx_ranking', 'fx_pct_ead'),
+  c('fx_ranking', 'fx_pct_ead', 'co_cine_area_geral'),
+  c('fx_ranking', 'fx_pct_ead', 'tp_modalidade_ensino'),
+  c('fx_ranking', 'fx_pct_ead', 'turno'), 
   c('fx_ranking', 'tp_modalidade_ensino'),
-  c('fx_ranking', 'turno')  
+  c('fx_ranking', 'tp_organizacao_academica_harm'),
+  c('fx_ranking', 'tp_organizacao_academica_harm', 'turno'), 
+  c('fx_ranking', 'tp_organizacao_academica_harm', 'tp_modalidade_ensino'),
+  c('fx_ranking', 'turno')
 )
 
 rotulos_combo <- map(rotulos_combo, ~ combina_rotulos(.x, rotulos_vars)) |> bind_rows()

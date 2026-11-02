@@ -1,0 +1,241 @@
+﻿"indicador_code","indicador_nome","cod_regiao","sigla_regiao","nome_regiao","bloco_var","bloco_nome","grupo_code","grupo_nome","serie_var","serie_nome","unidade","valor_2010","valor_2017","valor_2024"
+"I5","Quantidade de matrículas por região em anos selecionados",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_mat","Matrículas","Percentual",1.8085394061622366,1.83649279090474,1.4505844071565632
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mat","Matrículas","Quantidade",115367,152178,148312
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_mat","Matrículas","Percentual",1.001816111108063,0.47415396282410877,0.39549922913985347
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mat","Matrículas","Quantidade",63906,39290,40437
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_mat","Matrículas","Percentual",0.12326354460680841,0.05422178047769714,0.034789691570849934
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mat","Matrículas","Quantidade",7863,4493,3557
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_mat","Matrículas","Percentual",2.7212665278260046,3.9978697465635604,6.001324492559045
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mat","Matrículas","Quantidade",173590,331277,613593
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_mat","Matrículas","Percentual",1.5426833139599139,1.768441017008961,0.5679610316331897
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mat","Matrículas","Quantidade",98408,146539,58070
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_mat","Matrículas","Percentual",4.575581026224268,4.838687487766007,3.8936481965061054
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mat","Matrículas","Quantidade",291877,400950,398098
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_mat","Matrículas","Percentual",2.848057262759219,2.2148022443689843,1.6632641494135585
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mat","Matrículas","Quantidade",181678,183526,170057
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_mat","Matrículas","Percentual",0.3218835509871038,0.20451736339985166,0.10735216606175116
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mat","Matrículas","Quantidade",20533,16947,10976
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_mat","Matrículas","Percentual",7.361920296472104,10.504507540001386,13.945306536109635
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mat","Matrículas","Quantidade",469618,870439,1425809
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_mat","Matrículas","Percentual",4.401416206107056,3.316229678296975,1.7759760992764977
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mat","Matrículas","Quantidade",280767,274794,181581
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_mat","Matrículas","Percentual",4.413079448786372,4.9051221420125515,4.121791110642076
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mat","Matrículas","Quantidade",281511,406455,421424
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_mat","Matrículas","Percentual",3.3782801890260488,3.441471974713076,3.2954063425216784
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mat","Matrículas","Quantidade",215501,285172,336932
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_mat","Matrículas","Percentual",0.7331696194475166,0.5524032449557331,0.3389965447977674
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mat","Matrículas","Quantidade",46769,45774,34660
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_mat","Matrículas","Percentual",14.153172550934588,17.913449825483827,25.954117316473617
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mat","Matrículas","Quantidade",902833,1484369,2653625
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_mat","Matrículas","Percentual",24.34571795175274,17.904459122956364,10.485497628051153
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mat","Matrículas","Quantidade",1553017,1483624,1072068
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_mat","Matrículas","Percentual",2.483988515468297,2.5949943147383077,2.028198918008316
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mat","Matrículas","Quantidade",158454,215030,207369
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_mat","Matrículas","Percentual",1.4569961036304195,1.0798980200904187,0.7706645339682656
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mat","Matrículas","Quantidade",92942,89484,78795
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_mat","Matrículas","Percentual",0.23969217818111416,0.16262913726183992,0.08293972013517219
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mat","Matrículas","Quantidade",15290,13476,8480
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_mat","Matrículas","Percentual",4.765343865784922,7.2378534402048285,11.269092151408415
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mat","Matrículas","Quantidade",303982,599753,1152185
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_mat","Matrículas","Percentual",8.107881859503387,5.677634680120459,2.9667772627408078
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mat","Matrículas","Quantidade",517203,470468,303332
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_mat","Matrículas","Percentual",1.4291077854496346,1.591112986219003,1.3922234036133354
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_mat","Matrículas","Quantidade",91163,131845,142345
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_mat","Matrículas","Percentual",0.7381233623059359,0.5344459760149779,0.3963697049761778
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_mat","Matrículas","Quantidade",47085,44286,40526
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_mat","Matrículas","Percentual",0.1569991605287023,0.1591776729358614,0.1671313605742715
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_mat","Matrículas","Quantidade",10015,13190,17088
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_mat","Matrículas","Percentual",3.354122854390529,4.399253325172109,5.630668056950245
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_mat","Matrículas","Quantidade",213960,364537,575696
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_mat","Matrículas","Percentual",3.537897308597017,2.6361705255083727,1.2644199457116496
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_mat","Matrículas","Quantidade",225683,218442,129278
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_mat","Matrículas","Percentual",0,0.008495912187023991,0.012235564845412782
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_mat","Matrículas","Quantidade",0,704,1251
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_mat","Matrículas","Percentual",2.156492812761845,2.3287971115829453,1.8854800033606236
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_mat","Matrículas","Quantidade",137563,192972,192777
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_mat","Matrículas","Percentual",0.06703229260316836,0.07201009661927862,0.10982666478748213
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_mat","Matrículas","Quantidade",4276,5967,11229
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_mat","Matrículas","Percentual",0.2911891569466446,0.29103326463390705,0.3652281874159905
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_mat","Matrículas","Quantidade",18575,24116,37342
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_mat","Matrículas","Percentual",2.244202278878479,2.305228196098204,2.0378132747173816
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_mat","Matrículas","Quantidade",143158,191019,208352
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_mat","Matrículas","Percentual",0.08415092298732642,0.0837764522760235,0.06135387551980367
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_mat","Matrículas","Quantidade",5368,6942,6273
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_mat","Matrículas","Percentual",0.32771517232676206,0.23372206154274663,0.36530643243498595
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_mat","Matrículas","Quantidade",20905,19367,37350
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_mat","Matrículas","Percentual",0.5523423287137591,0.8747289816080397,0.6162968921176262
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_mat","Matrículas","Quantidade",35234,72483,63012
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_mat","Matrículas","Percentual",0.18922984191132958,0.264942125218643,0.34401400664085036
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_mat","Matrículas","Quantidade",12071,21954,35173
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_mat","Matrículas","Percentual",1.19799059886205,1.548319655799703,2.4061223597563175
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_mat","Matrículas","Quantidade",76420,128299,246009
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_mat","Matrículas","Percentual",0.08722349767166247,0.12012544021255228,0.24648159046302762
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_mat","Matrículas","Quantidade",5564,9954,25201
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_mat","Matrículas","Percentual",0.00774414231664293,0.0668087640161432,0.06817097279978185
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_mat","Matrículas","Quantidade",494,5536,6970
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_mat","Matrículas","Percentual",5.3302273156592355,4.474485593032773,4.610871382500482
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_mat","Matrículas","Quantidade",340016,370771,471429
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_mat","Matrículas","Percentual",0.28502833117652177,0.35264069604691484,0.390491547924145
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_mat","Matrículas","Quantidade",18182,29221,39925
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_mat","Matrículas","Percentual",0.9193739158788622,1.110900858738806,1.2243584959859817
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_mat","Matrículas","Quantidade",58647,92053,125182
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_mat","Matrículas","Percentual",6.421775148671072,6.053132276284168,4.972226441476198
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_mat","Matrículas","Quantidade",409646,501583,508375
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_mat","Matrículas","Percentual",0.2968013086659931,0.3614021054897833,0.29277329982620803
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_mat","Matrículas","Quantidade",18933,29947,29934
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_mat","Matrículas","Percentual",0.6547249065882429,0.641163804807383,1.3573456863961155
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_mat","Matrículas","Quantidade",41765,53129,138779
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_mat","Matrículas","Percentual",1.3459601521551525,2.4869731357808478,1.4695197017534611
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_mat","Matrículas","Quantidade",85859,206079,150248
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_mat","Matrículas","Percentual",0.3941987908791561,0.44846106929261154,0.583522009785909
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_mat","Matrículas","Quantidade",25146,37161,59661
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_mat","Matrículas","Percentual",3.518113689966241,4.716100163908352,5.815600159345982
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_mat","Matrículas","Quantidade",224421,390792,594604
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_mat","Matrículas","Percentual",0.3349106405926307,0.3666758464354218,0.6006674495732859
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_mat","Matrículas","Quantidade",21364,30384,61414
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_mat","Matrículas","Percentual",0.23671366190548226,0.2484692272992002,0.3635948226444606
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_mat","Matrículas","Quantidade",15100,20589,37175
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_mat","Matrículas","Percentual",8.421880180560793,7.455488781654815,6.51258722730266
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_mat","Matrículas","Quantidade",537233,617787,665866
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_mat","Matrículas","Percentual",1.3227904308110265,1.0978190848599225,1.285115753235945
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_mat","Matrículas","Quantidade",84381,90969,131394
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_mat","Matrículas","Percentual",2.407158471958445,2.566308543050018,2.8742525277786934
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_mat","Matrículas","Quantidade",153553,212653,293872
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_mat","Matrículas","Percentual",17.4200248784491,14.212092241470238,12.37845003072584
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_mat","Matrículas","Quantidade",1111226,1177662,1265609
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_mat","Matrículas","Percentual",0.7568253092366141,0.7288865117498224,0.6487587943733616
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_mat","Matrículas","Quantidade",48278,60398,66331
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_mat","Matrículas","Percentual",2.4633270183562823,1.9435847294667439,4.039095906191264
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_mat","Matrículas","Quantidade",157136,161052,412969
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_mat","Matrículas","Percentual",5.898418486239647,7.727659673066679,4.371989339507387
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_mat","Matrículas","Quantidade",376261,640340,447005
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_mat","Matrículas","Percentual",0.7753704921527853,1.0754207709123138,1.2472745059242727
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_mat","Matrículas","Quantidade",49461,89113,127525
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_mat","Matrículas","Percentual",6.62180603118193,6.919896340216873,9.363111953070986
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_mat","Matrículas","Quantidade",422406,573406,957312
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_mat","Matrículas","Percentual",0.6991047990951581,0.741280406374927,1.1115780817314214
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_mat","Matrículas","Quantidade",44596,61425,113651
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_mat","Matrículas","Percentual",0,0.07507538311857422,0.09764978370631593
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_mat","Matrículas","Quantidade",0,6221,9984
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_mat","Matrículas","Percentual",3.378358571033302,3.278456659624553,2.902547882772921
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_mat","Matrículas","Quantidade",215506,271664,296765
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_mat","Matrículas","Percentual",0.4685206101568973,0.45876719004221167,0.5454069049077526
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_mat","Matrículas","Quantidade",29887,38015,55764
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_mat","Matrículas","Percentual",0.8127743860141416,0.8225708388916793,0.9124542890153872
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_mat","Matrículas","Quantidade",51847,68161,93292
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_mat","Matrículas","Percentual",6.954851180001929,5.692080144449816,5.024582139811526
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_mat","Matrículas","Quantidade",443651,471665,513728
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_mat","Matrículas","Percentual",0.23080365855857057,0.17802797810082088,0.15298857339084473
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_mat","Matrículas","Quantidade",14723,14752,15642
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_mat","Matrículas","Percentual",0.6999983539778477,0.6490201099689634,1.3134013276027985
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_mat","Matrículas","Quantidade",44653,53780,134286
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_mat","Matrículas","Percentual",1.8653350086181018,2.5586815309730304,1.617901599650949
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_mat","Matrículas","Quantidade",118990,212021,165419
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_mat","Matrículas","Percentual",0.5535964408298146,0.6804573986723689,0.7219961321530985
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_mat","Matrículas","Quantidade",35314,56385,73819
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_mat","Matrículas","Percentual",1.8655388018369607,2.058291612048652,3.369954284369589
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_mat","Matrículas","Quantidade",119003,170557,344554
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_mat","Matrículas","Percentual",0.22412551154057483,0.30158074652518396,0.45878966887979444
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_mat","Matrículas","Quantidade",14297,24990,46908
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_mat","Matrículas","Percentual",0.014939610582511564,0.030568388593368988,0.0550844933727936
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_mat","Matrículas","Quantidade",953,2533,5632
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_mat","Matrículas","Percentual",2.0089778751108125,1.6890452694543718,1.2840105423426345
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_mat","Matrículas","Quantidade",128153,139960,131281
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_mat","Matrículas","Percentual",0.12160184605303484,0.12643703406740106,0.17891701656046047
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_mat","Matrículas","Quantidade",7757,10477,18293
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_mat","Matrículas","Percentual",0.38004300036917926,0.454265804749939,0.5371813972858563
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_mat","Matrículas","Quantidade",24243,37642,54923
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_mat","Matrículas","Percentual",3.7689047603744465,3.1639790701272386,2.531265487012158
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_mat","Matrículas","Quantidade",240419,262178,258804
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_mat","Matrículas","Percentual",0.08107834830299035,0.09898220420166302,0.10015362431417019
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_mat","Matrículas","Quantidade",5172,8202,10240
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_mat","Matrículas","Percentual",0.45381614559614614,0.37321673337486355,0.747396421444495
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_mat","Matrículas","Quantidade",28949,30926,76416
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_mat","Matrículas","Percentual",0.5888369912909752,1.1447034866306443,0.6036407602951128
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_mat","Matrículas","Quantidade",37562,94854,61718
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_mat","Matrículas","Percentual",0.3362117819130383,0.4746004809362109,0.585272742085932
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_mat","Matrículas","Quantidade",21447,39327,59840
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_mat","Matrículas","Percentual",1.26325145810129,1.6071152299121758,1.9863573941005017
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_mat","Matrículas","Quantidade",80583,133171,203091
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_mat","Matrículas","Percentual",0.198588653577394,0.15724678380244686,0.24153259301156568
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_mat","Matrículas","Quantidade",12668,13030,24695
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_mat","Matrículas","Percentual",0.6875512912259965,1.9669726240952277,2.4384864557383086
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mat","Matrículas","Quantidade",43859,162990,249318
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_mat","Matrículas","Percentual",0.5087149034764772,0.3624399583989936,0.7125676073641474
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mat","Matrículas","Quantidade",32451,30033,72855
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_mat","Matrículas","Percentual",0.4063793548063455,0.0012792140508871349,0.15898409797137072
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mat","Matrículas","Quantidade",25923,106,16255
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_mat","Matrículas","Percentual",0.015770459859398355,0.24014226791135,0.5046412500111255
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mat","Matrículas","Quantidade",1006,19899,51596
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_mat","Matrículas","Percentual",5.5791528942948085,5.560345233322609,4.6354794409745494
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mat","Matrículas","Quantidade",355895,460749,473945
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_mat","Matrículas","Percentual",1.007146087601299,2.3137844485706474,5.160943646665838
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mat","Matrículas","Quantidade",64246,191728,527670
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_mat","Matrículas","Percentual",0.36312816320388025,1.1727617193505744,2.5487630293850145
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mat","Matrículas","Quantidade",23164,97179,260593
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_mat","Matrículas","Percentual",0.9115357151535151,0.21377356318315763,0.3152002783957776
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mat","Matrículas","Quantidade",58147,17714,32227
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_mat","Matrículas","Percentual",0.10644276585021355,0.5921071527615697,0.05808714597674382
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mat","Matrículas","Quantidade",6790,49064,5939
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_mat","Matrículas","Percentual",17.120605610740842,16.786317429967255,13.302553046944174
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mat","Matrículas","Quantidade",1092126,1390971,1360092
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_mat","Matrículas","Percentual",8.785165107779179,10.470137713426606,10.836485222009971
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mat","Matrículas","Quantidade",560407,867591,1107954
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_mat","Matrículas","Percentual",1.796625341059709,3.111845063525046,5.455829562004923
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mat","Matrículas","Quantidade",114607,257858,557820
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_mat","Matrículas","Percentual",2.1782830107783098,2.6006300973964613,3.4493045142583454
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mat","Matrículas","Quantidade",138953,215497,352667
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_mat","Matrículas","Percentual",2.9148544093406272,1.6884539346572636,2.4999968212961035
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mat","Matrículas","Quantidade",185939,139911,255607
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_mat","Matrículas","Percentual",31.34849189098944,26.845839501116174,21.954192822916948
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mat","Matrículas","Quantidade",1999725,2224537,2244661
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_mat","Matrículas","Percentual",0.7966747217242788,2.7708259064498697,6.4576787852226065
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mat","Matrículas","Quantidade",50820,229600,660252
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_mat","Matrículas","Percentual",2.9576980145053744,1.7923719742062174,0.45358637511659733
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mat","Matrículas","Quantidade",188672,148522,46376
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_mat","Matrículas","Percentual",0.3588641820092914,0.7652234316292673,0.4322646074403384
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mat","Matrículas","Quantidade",22892,63409,44196
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_mat","Matrículas","Percentual",0.007461967090530435,0.4165289902487685,0.0401005722351658
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mat","Matrículas","Quantidade",476,34515,4100
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_mat","Matrículas","Percentual",12.933203637238664,11.00805928988173,9.734042246246268
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mat","Matrículas","Quantidade",825011,912165,995237
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_mat","Matrículas","Percentual",1.6754937870501951,2.33176585362557,2.5548270183571615
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_mat","Matrículas","Quantidade",106880,193218,261213
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_mat","Matrículas","Percentual",0.22088049644028115,0.17223531070057727,0.6165903109388591
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_mat","Matrículas","Quantidade",14090,14272,63042
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_mat","Matrículas","Percentual",0.13505219849773045,0.007614944019903605,0.20732973908318159
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_mat","Matrículas","Quantidade",8615,631,21198
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_mat","Matrículas","Percentual",0.11851359496724807,0.052001257974270416,0.022720397390802474
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_mat","Matrículas","Quantidade",7560,4309,2323
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_mat","Matrículas","Percentual",7.066310394316364,6.7565431195300025,5.449345006055675
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_mat","Matrículas","Quantidade",450761,559870,557157
+"","",1,"N","NORTE","total","Total",1,"Total","pct_mat","Matrículas","Percentual",7.197568903663027,8.131179297779067,8.450158852059502
+"","",1,"N","NORTE","total","Total",1,"Total","qt_mat","Matrículas","Quantidade",459134,673777,863969
+"","",2,"NE","NORDESTE","total","Total",1,"Total","pct_mat","Matrículas","Percentual",19.50885834254975,21.078744313833205,21.38554714736755
+"","",2,"NE","NORDESTE","total","Total",1,"Total","qt_mat","Matrículas","Quantidade",1244473,1746656,2186521
+"","",3,"SE","SUDESTE","total","Total",1,"Total","pct_mat","Matrículas","Percentual",47.02341975994727,44.71690631012155,44.195808942486295
+"","",3,"SE","SUDESTE","total","Total",1,"Total","qt_mat","Matrículas","Quantidade",2999631,3705394,4518709
+"","",4,"S","SUL","total","Total",1,"Total","pct_mat","Matrículas","Percentual",17.05390252256814,16.753009592415854,17.117672586260976
+"","",4,"S","SUL","total","Total",1,"Total","qt_mat","Matrículas","Quantidade",1087871,1388211,1750161
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","pct_mat","Matrículas","Percentual",9.216250471271819,9.320160485850323,8.85081247182568
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","qt_mat","Matrículas","Quantidade",587906,772300,904933
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_mat","Matrículas","Percentual",5.523705462363703,5.716831729528773,4.1226126833415275
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mat","Matrículas","Quantidade",352358,473716,421508
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_mat","Matrículas","Percentual",1.673863441299323,2.4143475682502933,4.327546168717974
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mat","Matrículas","Quantidade",106776,200061,442461
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_mat","Matrículas","Percentual",16.49409822676385,17.46547147847457,11.982901898449116
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mat","Matrículas","Quantidade",1052161,1447248,1225167
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_mat","Matrículas","Percentual",3.014760115785901,3.613272835358635,9.402645248918434
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mat","Matrículas","Quantidade",192312,299408,961354
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_mat","Matrículas","Percentual",41.64014350177888,36.2412805270555,21.357486527430307
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mat","Matrículas","Quantidade",2656231,3003075,2183652
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_mat","Matrículas","Percentual",5.383276258168385,8.475625783066054,22.838322415055984
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mat","Matrículas","Quantidade",343400,702319,2335057
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_mat","Matrículas","Percentual",14.001064427658502,12.047360365942108,7.259494617378434
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mat","Matrículas","Quantidade",893130,998285,742232
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_mat","Matrículas","Percentual",3.0528380949096374,4.705649226473745,9.858177968882543
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mat","Matrículas","Quantidade",194741,389926,1007929
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_mat","Matrículas","Percentual",7.763581054441791,7.3296189462703545,4.547238620802436
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_mat","Matrículas","Quantidade",495240,607357,464923
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_mat","Matrículas","Percentual",1.4526694168300278,1.9905415395799688,4.303573851023244
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_mat","Matrículas","Quantidade",92666,164943,440010

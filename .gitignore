@@ -1,0 +1,15 @@
+# Mantem as exclusoes locais de .git/info/exclude.
+/*
+!/.gitignore
+!/code/
+!/results/
+!/produtos/
+/produtos/*
+!/produtos/planilhas/
+
+# CSV de resultados atualmente maiores que 10 MB.
+/results/indicadorI2e.csv
+/results/indicadorI3e.csv
+/results/indicadorI4e.csv
+/results/indicadorI5e.csv
+/results/indicadorI6e.csv

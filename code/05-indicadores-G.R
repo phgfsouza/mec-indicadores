@@ -27,6 +27,13 @@
 # (b) O script produz desagregacoes identicas para todos os indicadores, que 
 #     estao hard-coded em `calcula_dimensao_G`. Essas desagregacoes sao mais 
 #     detalhadas do que o exigido pela documentacao.
+# (c) Os titulos de G.1 e G.2 mantem a referencia a modalidade da proposta
+#     original. A desagregacao efetiva e por faixas de participacao de EaD
+#     nas matriculas da IES, sem atribuir seus docentes a uma modalidade.
+# (d) Os percentuais de docentes usam o total de docentes em exercicio do
+#     mesmo grupo e ano. G.4 divide as matriculas por esse total de docentes.
+# (e) `compacta_csv()` mantem o codigo e o nome do indicador apenas na primeira
+#     linha do CSV. A conversao para Excel e feita em `07-planilhas.R`.
 
 # Inputs do script:
 # - `data/clean/ces_cursos.parquet`
@@ -94,8 +101,8 @@ rotulos_vars <- read_csv(here('data/clean/rotulos_variaveis.csv'))
 
 # INDICADOR G.1 ================================================================
 
-# Quantidade de docentes em exercicio em tempo integral por modalidade de ensino 
-# entre 2010 e 2024
+# Quantidade de docentes em exercicio em tempo integral entre 2010 e 2024,
+# por categoria administrativa, tamanho e faixa de participacao de EaD na IES.
 
 # Obs.: este indicador e' redundante, pois os mesmos numeros ja estao incluidos
 # nos resultados do indicador G.3. 
@@ -117,12 +124,13 @@ G1$fn <- function(df){
 G1$output <- calcula_dimensao_G(data_G, G1, rotulos_vars) 
   
 # Output 
-write_excel_csv(G1$output, here('results/indicadorG1.csv'))
+write_excel_csv(compacta_csv(G1$output), here('results/indicadorG1.csv'))
 
 
 # INDICADOR G.2 ================================================================
 
-# Titulacao do corpo docente por modalidade de ensino entre 2010 e 2024
+# Titulacao do corpo docente entre 2010 e 2024, por categoria administrativa,
+# tamanho e faixa de participacao de EaD na IES.
 
 # Inicializacao da lista
 G2 <- list()
@@ -144,7 +152,7 @@ G2$fn <- function(df){
 G2$output <- calcula_dimensao_G(data_G, G2, rotulos_vars) 
   
 # Output 
-write_excel_csv(G2$output, here('results/indicadorG2.csv'))
+write_excel_csv(compacta_csv(G2$output), here('results/indicadorG2.csv'))
 
 
 # INDICADOR G.3 ================================================================
@@ -171,7 +179,7 @@ G3$fn <- function(df){
 G3$output <- calcula_dimensao_G(data_G, G3, rotulos_vars) 
   
 # Output 
-write_excel_csv(G3$output, here('results/indicadorG3.csv'))
+write_excel_csv(compacta_csv(G3$output), here('results/indicadorG3.csv'))
 
 
 # INDICADOR G.4 ================================================================
@@ -195,5 +203,5 @@ G4$fn <- function(df){
 G4$output <- calcula_dimensao_G(data_G, G4, rotulos_vars) 
   
 # Output 
-write_excel_csv(G4$output, here('results/indicadorG4.csv'))
+write_excel_csv(compacta_csv(G4$output), here('results/indicadorG4.csv'))
 
