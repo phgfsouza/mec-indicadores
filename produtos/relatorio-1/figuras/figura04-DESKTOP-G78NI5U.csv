@@ -1,0 +1,46 @@
+indicador_code,indicador_nome,bloco_var,bloco_nome,grupo_code,grupo_nome,serie_var,serie_nome,unidade,ano,valor,lbl
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2010,45.90001493381795,45.9
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2011,52.69409136461304,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2012,59.02876651280004,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2013,46.88454790113897,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2014,38.49407198211095,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2015,34.23209589416053,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2016,28.00134790139762,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2017,29.92645202014345,29.9
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2018,25.461965285054788,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2019,22.111739558882995,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2020,19.17695113444154,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2021,17.38966567987298,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2022,20.82777499218894,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2023,20.276160686163557,
+NA,NA,total,Total,1,Total,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2024,21.166285229420136,21.2
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2010,57.74968335281931,57.7
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2011,59.31536536240453,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2012,66.3112549095222,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2013,54.83222784933516,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2014,47.299019210891096,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2015,38.71273704488035,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2016,34.66627811718327,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2017,35.43477702653322,35.4
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2018,32.59578387093629,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2019,33.85135782829732,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2020,28.7472253095305,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2021,24.703129429239564,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2022,29.27180859073707,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2023,30.871587144653436,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,1,Presencial,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2024,32.76825180747987,32.8
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2010,23.274206636240468,23.3
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2011,35.23931219177635,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2012,40.81767284210178,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2013,28.8264117617778,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2014,23.915330283469117,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2015,24.970842860635344,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2016,18.811556695855877,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2017,22.812157061665015,22.8
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2018,19.13601811404872,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2019,15.302474123667706,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2020,14.850639598114867,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2021,14.793799311100956,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2022,18.045579710334824,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2023,17.270829842459445,
+NA,NA,tp_modalidade_ensino,Modalidade de ensino,2,Educação a Distância,tx_ocupacao_vaga,Ingressantes por 100 vagas,Taxa,2024,17.999283819016537,18.0

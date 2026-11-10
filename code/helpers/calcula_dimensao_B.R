@@ -2,7 +2,7 @@
 #'
 #' Calcula, para cada variavel de agrupamento definida em `config$by`, a
 #' variacao de ingressantes e matriculas entre anos consecutivos de 2010 a 2024
-#' e nos periodos 2010-2016, 2016-2024 e 2010-2024. Tambem calcula a
+#' e nos periodos 2010-2017, 2017-2024 e 2010-2024. Tambem calcula a
 #' contribuicao percentual de cada grupo para o saldo total do bloco.
 #'
 #' Grupos ausentes em um dos extremos do periodo e valores `NA` em `qt_ing` ou

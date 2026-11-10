@@ -1,0 +1,24 @@
+# Publica os arquivos do projeto; mantem dados e configuracoes locais fora do Git.
+/*
+!/.gitignore
+!/AGENTS.md
+!/mec.Rproj
+!/apoio/
+!/apoio/**
+!/code/
+!/code/**
+!/docs/
+!/docs/**
+!/logs/
+!/logs/**
+!/results/
+!/results/**
+!/produtos/
+!/produtos/**
+
+# Documentos pessoais e arquivos temporarios.
+/docs/recibos/
+.Rproj.user/
+.Rhistory
+.RData
+~$*

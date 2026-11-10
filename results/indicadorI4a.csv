@@ -1,0 +1,241 @@
+﻿"indicador_code","indicador_nome","cod_regiao","sigla_regiao","nome_regiao","bloco_var","bloco_nome","grupo_code","grupo_nome","serie_var","serie_nome","unidade","valor_2010","valor_2017","valor_2024"
+"I4","Quantidade de ingressantes por região em anos selecionados",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_ing","Ingressantes","Percentual",1.2906986388687898,1.1745620773526426,0.6670278877589971
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ing","Ingressantes","Quantidade",28166,37889,33411
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_ing","Ingressantes","Percentual",0.4709404924964337,0.26858470369192367,0.18153555964779747
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ing","Ingressantes","Quantidade",10277,8664,9093
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_ing","Ingressantes","Percentual",0.17165934464256502,0.03450309039809684,0.021701215587502015
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ing","Ingressantes","Quantidade",3746,1113,1087
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_ing","Ingressantes","Percentual",2.674558902846585,4.618826101324386,6.336814844509892
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ing","Ingressantes","Quantidade",58365,148994,317407
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_ing","Ingressantes","Percentual",1.715218705277952,1.9646921474934265,0.4614353227911077
+"","",1,"N","NORTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ing","Ingressantes","Quantidade",37430,63377,23113
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_ing","Ingressantes","Percentual",4.61216490111716,3.781916908622301,2.046183061632251
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ing","Ingressantes","Quantidade",100648,121997,102492
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_ing","Ingressantes","Percentual",1.7362980695426558,1.3294074830476055,0.8329513493484445
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ing","Ingressantes","Quantidade",37890,42884,41722
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_ing","Ingressantes","Percentual",0.2529065464715206,0.1477773871767544,0.0689567604776743
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ing","Ingressantes","Quantidade",5519,4767,3454
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_ing","Ingressantes","Percentual",8.102999272761933,11.086683047109583,14.646264196627786
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ing","Ingressantes","Quantidade",176826,357634,733622
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_ing","Ingressantes","Percentual",4.445821222245694,3.007875880634807,1.2687524855578112
+"","",2,"NE","NORDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ing","Ingressantes","Quantidade",97018,97028,63551
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_ing","Ingressantes","Percentual",3.9777218614545036,3.495259157578993,2.166288409354801
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ing","Ingressantes","Quantidade",86803,112750,108508
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_ing","Ingressantes","Percentual",2.412074993046101,2.711236103438591,2.242871539983741
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ing","Ingressantes","Quantidade",52637,87459,112344
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_ing","Ingressantes","Percentual",0.780715497777731,0.41462608632034614,0.25173010795106987
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ing","Ingressantes","Quantidade",17037,13375,12609
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_ing","Ingressantes","Percentual",15.773504980458055,21.900999380618376,33.3426500158916
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ing","Ingressantes","Quantidade",344214,706482,1670112
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_ing","Ingressantes","Percentual",25.021526155137707,17.51907589997886,8.65471229818069
+"","",3,"SE","SUDESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ing","Ingressantes","Quantidade",546027,565130,433509
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_ing","Ingressantes","Percentual",2.5665958980473635,2.0506553727170767,1.2139903564349794
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ing","Ingressantes","Quantidade",56009,66150,60808
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_ing","Ingressantes","Percentual",1.3263502592990928,0.8618332580031359,0.4959935603090157
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ing","Ingressantes","Quantidade",28944,27801,24844
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_ing","Ingressantes","Percentual",0.15548322380465113,0.1075702818341384,0.05905445787288957
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ing","Ingressantes","Quantidade",3393,3470,2958
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_ing","Ingressantes","Percentual",4.583066213490885,8.930782398649885,13.284238409115229
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ing","Ingressantes","Quantidade",100013,288089,665399
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_ing","Ingressantes","Percentual",8.255824663681034,4.6990853116035165,2.5593060083019625
+"","",4,"S","SUL","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ing","Ingressantes","Quantidade",180161,151583,128194
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","pct_ing","Ingressantes","Percentual",1.4083306564068208,1.2951213932180503,0.8032444415340902
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",1,"Pública Federal","qt_ing","Ingressantes","Quantidade",30733,41778,40234
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","pct_ing","Ingressantes","Percentual",0.5345451829299308,0.4597002044145356,0.2722733929920446
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",2,"Pública Estadual","qt_ing","Ingressantes","Quantidade",11665,14829,13638
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","pct_ing","Ingressantes","Percentual",0.09114533809238169,0.11814130953023097,0.12194206514117968
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",3,"Pública Municipal","qt_ing","Ingressantes","Quantidade",1989,3811,6108
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","pct_ing","Ingressantes","Percentual",3.585554036721169,5.396711139383185,6.958264190239205
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",4,"Privada com fins lucrativos","qt_ing","Ingressantes","Quantidade",78245,174087,348535
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","pct_ing","Ingressantes","Percentual",4.054294943381286,2.624373875859555,1.0418180627582385
+"","",5,"CO","CENTRO-OESTE","catadm_it","Categoria Administrativa",5,"Privada sem fins lucrativos","qt_ing","Ingressantes","Quantidade",88474,84657,52184
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_ing","Ingressantes","Percentual",0,0.014353037604958525,0.024616006273587843
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_ing","Ingressantes","Quantidade",0,463,1233
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_ing","Ingressantes","Percentual",1.6722809567648491,2.161449662998117,1.5677980313583564
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_ing","Ingressantes","Quantidade",36493,69724,78530
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_ing","Ingressantes","Percentual",0.0752441654840074,0.07691120150734795,0.13919123742048212
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_ing","Ingressantes","Quantidade",1642,2481,6972
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_ing","Ingressantes","Percentual",0.24167949376531978,0.2398476284007864,0.29866622372495877
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_ing","Ingressantes","Quantidade",5274,7737,14960
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_ing","Ingressantes","Percentual",2.123471001439354,2.54206866021989,2.0725958566849325
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_ing","Ingressantes","Quantidade",46339,82002,103815
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_ing","Ingressantes","Percentual",0.07047839617198745,0.059892156917451124,0.039309745622623245
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_ing","Ingressantes","Quantidade",1538,1932,1969
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_ing","Ingressantes","Percentual",0.29254491623014817,0.29245476623148753,0.45632445693057366
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_ing","Ingressantes","Quantidade",6384,9434,22857
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_ing","Ingressantes","Percentual",0.6771516646511434,0.7548209776309613,0.5180541336523365
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_ing","Ingressantes","Quantidade",14777,24349,25949
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_ing","Ingressantes","Percentual",0.14705147809876964,0.20196552914968638,0.2546049699976203
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_ing","Ingressantes","Quantidade",3209,6515,12753
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_ing","Ingressantes","Percentual",0.9264380594337258,1.5390300322586845,1.9549061916542754
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_ing","Ingressantes","Quantidade",20217,49646,97920
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_ing","Ingressantes","Percentual",0.09673595209302048,0.17837446734110443,0.3424479769755493
+"","",1,"N","NORTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_ing","Ingressantes","Quantidade",2111,5754,17153
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_ing","Ingressantes","Percentual",0.024378743019179014,0.07988720930448838,0.08379025006508369
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_ing","Ingressantes","Quantidade",532,2577,4197
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_ing","Ingressantes","Percentual",5.341877502315294,4.216383046923583,3.946766339198584
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_ing","Ingressantes","Quantidade",116572,136012,197691
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_ing","Ingressantes","Percentual",0.3369032305958724,0.3464569077170982,0.42494054625573174
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_ing","Ingressantes","Quantidade",7352,11176,21285
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_ing","Ingressantes","Percentual",0.7736126685146243,0.8690252768462253,0.9429148226289975
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_ing","Ingressantes","Quantidade",16882,28033,47230
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_ing","Ingressantes","Percentual",6.099772297041237,5.883226414053205,4.887724658490346
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_ing","Ingressantes","Quantidade",133111,189781,244823
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_ing","Ingressantes","Percentual",0.4225037793925385,0.29908878361261304,0.1866264611885638
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_ing","Ingressantes","Quantidade",9220,9648,9348
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_ing","Ingressantes","Percentual",0.7827317847943548,0.7113588637602231,1.570513178846765
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_ing","Ingressantes","Quantidade",17081,22947,78666
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_ing","Ingressantes","Percentual",1.4275312077696705,1.9215400344348903,1.0892532865263203
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_ing","Ingressantes","Quantidade",31152,61985,54560
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_ing","Ingressantes","Percentual",0.3790619591252797,0.3520059222555163,0.3983880009646759
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_ing","Ingressantes","Quantidade",8272,11355,19955
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_ing","Ingressantes","Percentual",3.110489320781641,4.178438947510043,4.568854543160463
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_ing","Ingressantes","Quantidade",67878,134788,228851
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_ing","Ingressantes","Percentual",0.45132751878927463,0.49624930017316643,0.7633357663184357
+"","",2,"NE","NORDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_ing","Ingressantes","Quantidade",9849,16008,38235
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_ing","Ingressantes","Percentual",0.3184816992167183,0.36003494329155145,0.5548883036237636
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_ing","Ingressantes","Quantidade",6950,11614,27794
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_ing","Ingressantes","Percentual",8.368232664857812,8.316081788134285,6.965571131274187
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_ing","Ingressantes","Quantidade",182614,268260,348901
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_ing","Ingressantes","Percentual",1.3612228597457003,1.1276279543852405,1.4323201574146684
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_ing","Ingressantes","Quantidade",29705,36375,71744
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_ing","Ingressantes","Percentual",2.156877211328417,2.315303066094033,2.4124484720906794
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_ing","Ingressantes","Quantidade",47068,74687,120838
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_ing","Ingressantes","Percentual",18.286485973745194,15.988725890461833,14.31565506127449
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_ing","Ingressantes","Quantidade",399053,515764,717062
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_ing","Ingressantes","Percentual",0.744239032658809,0.5611324701670718,0.4532699160061139
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_ing","Ingressantes","Quantidade",16241,18101,22704
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_ing","Ingressantes","Percentual",2.9676537155358123,2.417293333308533,5.189884638174655
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_ing","Ingressantes","Quantidade",64761,77977,259958
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_ing","Ingressantes","Percentual",6.474068486854496,5.790691171610869,3.6541692686830096
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_ing","Ingressantes","Quantidade",141279,186796,183035
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_ing","Ingressantes","Percentual",0.630364640924486,0.85076622900752,0.8774717824304403
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_ing","Ingressantes","Quantidade",13756,27444,43952
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_ing","Ingressantes","Percentual",5.785231522447919,7.235604957284988,9.09590380072734
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_ing","Ingressantes","Quantidade",126247,233406,455608
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_ing","Ingressantes","Percentual",0.8726856805587314,1.0779348241892395,1.706669839662555
+"","",3,"SE","SUDESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_ing","Ingressantes","Quantidade",19044,34772,85486
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_ing","Ingressantes","Percentual",0,0.07858520589323945,0.14206609946703253
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_ing","Ingressantes","Quantidade",0,2535,7116
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_ing","Ingressantes","Percentual",3.5030695678592854,3.6005044333216154,3.0491505581225233
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_ing","Ingressantes","Quantidade",76445,116145,152730
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_ing","Ingressantes","Percentual",0.4736441500869066,0.4824542640301718,0.6282372144503343
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_ing","Ingressantes","Quantidade",10336,15563,31468
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_ing","Ingressantes","Percentual",0.7031342723426368,0.7128778677400135,0.8057998744643573
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_ing","Ingressantes","Quantidade",15344,22996,40362
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_ing","Ingressantes","Percentual",6.704383453798845,6.002700727075905,5.553794258900493
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_ing","Ingressantes","Quantidade",146305,193635,278186
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_ing","Ingressantes","Percentual",0.22609909409140838,0.15428740423299908,0.13080622311804344
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_ing","Ingressantes","Quantidade",4934,4977,6552
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_ing","Ingressantes","Percentual",0.7510210889874528,0.7643070024843465,1.6054507384402597
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_ing","Ingressantes","Quantidade",16389,24655,80416
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_ing","Ingressantes","Percentual",1.8832120735266555,1.9302820573389903,1.2957442458837565
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_ing","Ingressantes","Quantidade",41096,62267,64903
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_ing","Ingressantes","Percentual",0.45554339164221536,0.513950346549908,0.5195913862744503
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_ing","Ingressantes","Quantidade",9941,16579,26026
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_ing","Ingressantes","Percentual",1.9118525141036986,1.9916312180737914,3.2139360534852113
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_ing","Ingressantes","Quantidade",41721,64246,160984
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_ing","Ingressantes","Percentual",0.27536065188392234,0.4183460960667717,0.668006139427615
+"","",4,"S","SUL","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_ing","Ingressantes","Quantidade",6009,13495,33460
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","pct_ing","Ingressantes","Percentual",0.02721987472442168,0.07895720686788199,0.08067581618132075
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",0,"Programas Básicos","qt_ing","Ingressantes","Quantidade",594,2547,4041
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","pct_ing","Ingressantes","Percentual",1.9447088275336823,1.9064429948806465,1.319761322564313
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",1,"Educação","qt_ing","Ingressantes","Quantidade",42438,61498,66106
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","pct_ing","Ingressantes","Percentual",0.17395057988872845,0.15763541300478207,0.22647524344491524
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",2,"Artes e Humanidades","qt_ing","Ingressantes","Quantidade",3796,5085,11344
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","pct_ing","Ingressantes","Percentual",0.34872600446607577,0.41382008420862065,0.4761090978203754
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",3,"Ciências Sociais, Comunicação e Informação","qt_ing","Ingressantes","Quantidade",7610,13349,23848
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","pct_ing","Ingressantes","Percentual",3.9558634772061043,3.5531673092983502,2.8216970630089904
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",4,"Negócios, Administração e Direito","qt_ing","Ingressantes","Quantidade",86326,114618,141337
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","pct_ing","Ingressantes","Percentual",0.09591110740440165,0.09030323659447988,0.08474853741393382
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",5,"Ciências Naturais, Matemática e Estatística","qt_ing","Ingressantes","Quantidade",2093,2913,4245
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","pct_ing","Ingressantes","Percentual",0.5855022548046057,0.4859572732080558,0.9365262403033299
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",6,"Computação e TIC","qt_ing","Ingressantes","Quantidade",12777,15676,46910
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","pct_ing","Ingressantes","Percentual",0.7402522833304845,0.9129523919352669,0.5316697997339156
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",7,"Engenharia, Produção e Construção","qt_ing","Ingressantes","Quantidade",16154,29450,26631
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","pct_ing","Ingressantes","Percentual",0.3274175166767557,0.38619901184141103,0.4907030155705723
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",8,"Agricultura, Silvicultura, Pesca e Veterinária","qt_ing","Ingressantes","Quantidade",7145,12458,24579
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","pct_ing","Ingressantes","Percentual",1.2595836642258902,1.6660683650991166,1.8615131037809227
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",9,"Saúde e Bem-estar","qt_ing","Ingressantes","Quantidade",27487,53744,93242
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","pct_ing","Ingressantes","Percentual",0.21473456727043772,0.24254463546694494,0.36766291284216845
+"","",5,"CO","CENTRO-OESTE","co_cine_area_geral","Área de conhecimento (CINE Brasil)",10,"Serviços","qt_ing","Ingressantes","Quantidade",4686,7824,18416
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_ing","Ingressantes","Percentual",1.007960209492221,2.919091648020118,3.3992847982086416
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ing","Ingressantes","Quantidade",21996,94164,170268
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_ing","Ingressantes","Percentual",0.3566995031227245,0.43012612693045255,0.5970130183336342
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ing","Ingressantes","Quantidade",7784,13875,29904
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_ing","Ingressantes","Percentual",0.008981642164960689,0.0034410090154436204,0.22605599272979332
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ing","Ingressantes","Quantidade",196,111,11323
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_ing","Ingressantes","Percentual",0.021216838379473465,0.2468536467565545,0.37638732058065827
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ing","Ingressantes","Quantidade",463,7963,18853
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_ing","Ingressantes","Percentual",4.928217890972945,4.461655689537906,3.069773700442569
+"","",1,"N","NORTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ing","Ingressantes","Quantidade",107545,143924,153763
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_ing","Ingressantes","Percentual",1.5280706103713222,3.4450390260022483,6.924105239116651
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ing","Ingressantes","Quantidade",33346,111130,346824
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_ing","Ingressantes","Percentual",0.2685327708503553,1.1245899464256597,2.436325798532862
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ing","Ingressantes","Quantidade",5860,36277,122034
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_ing","Ingressantes","Percentual",1.3308410803815731,0.28547974795693964,0.3640892996037482
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ing","Ingressantes","Quantidade",29042,9209,18237
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_ing","Ingressantes","Percentual",0.21381807317197232,0.6591547269853847,0.04204485743079967
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ing","Ingressantes","Quantidade",4666,21263,2106
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_ing","Ingressantes","Percentual",15.808927477363742,13.839397259220819,9.096542658959907
+"","",2,"NE","NORDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ing","Ingressantes","Quantidade",344987,446431,455640
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_ing","Ingressantes","Percentual",11.629485264837008,14.464668897432512,15.857000368940628
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ing","Ingressantes","Quantidade",253782,466601,794267
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_ing","Ingressantes","Percentual",1.2543138231597142,3.7424538052289695,6.382652922696557
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ing","Ingressantes","Quantidade",27372,120724,319703
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_ing","Ingressantes","Percentual",1.529078753879634,2.7474441983037994,3.8470046333193317
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ing","Ingressantes","Quantidade",33368,88627,192694
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_ing","Ingressantes","Percentual",2.6129704994297116,2.2589449184356862,2.3324714071012287
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ing","Ingressantes","Quantidade",57021,72869,116832
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_ing","Ingressantes","Percentual",30.939695146568027,22.827684808534197,18.239123039304154
+"","",3,"SE","SUDESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ing","Ingressantes","Quantidade",675175,736375,913586
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_ing","Ingressantes","Percentual",0.9796863665545642,4.109680767363611,8.360018974089508
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ing","Ingressantes","Quantidade",21379,132570,418748
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_ing","Ingressantes","Percentual",3.8600440192115495,1.9762551777885657,0.6662293149682886
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ing","Ingressantes","Quantidade",84235,63750,33371
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_ing","Ingressantes","Percentual",0.07978081127141103,0.6105155995508709,0.4454039740176357
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ing","Ingressantes","Quantidade",1741,19694,22310
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_ing","Ingressantes","Percentual",0.014618080870522755,0.3568729350070897,0.0515878022797656
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ing","Ingressantes","Quantidade",319,11512,2584
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_ing","Ingressantes","Percentual",11.953190980414979,9.5966021430976145,8.089342726678879
+"","",4,"S","SUL","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ing","Ingressantes","Quantidade",260846,309567,405190
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","pct_ing","Ingressantes","Percentual",2.0541382228904483,3.412085939665162,3.686072251671812
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",1,"Top 5 mantenedoras","qt_ing","Ingressantes","Quantidade",44826,110067,184633
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","pct_ing","Ingressantes","Percentual",0.19764195233405843,0.2317876072835311,0.8366048198659356
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",2,"Top 6-10 mantenedoras","qt_ing","Ingressantes","Quantidade",4313,7477,41905
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","pct_ing","Ingressantes","Percentual",0.03464347692199123,0.02018105287435853,0.2684801722361795
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",3,"Top 11-15 mantenedoras","qt_ing","Ingressantes","Quantidade",756,651,13448
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","pct_ing","Ingressantes","Percentual",0.24057970084716132,0.0649141700751256,0.029287657099232253
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",4,"Top 16-20 mantenedoras","qt_ing","Ingressantes","Quantidade",5250,2094,1467
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","pct_ing","Ingressantes","Percentual",7.146866804537929,6.16507915250738,4.377097251791598
+"","",5,"CO","CENTRO-OESTE","fx_ranking","Tamanho de mantenedoras por número de matrículas",5,"Demais mantenedoras","qt_ing","Ingressantes","Quantidade",155961,198873,219246
+"","",1,"N","NORTE","total","Total",1,"Total","pct_ing","Ingressantes","Percentual",6.3230760841323255,8.061168120260476,7.668514830295297
+"","",1,"N","NORTE","total","Total",1,"Total","qt_ing","Ingressantes","Quantidade",137984,260037,384111
+"","",2,"NE","NORDESTE","total","Total",1,"Total","pct_ing","Ingressantes","Percentual",19.150190012138964,19.35366070659105,18.863107853643967
+"","",2,"NE","NORDESTE","total","Total",1,"Total","qt_ing","Ingressantes","Quantidade",417901,624310,944841
+"","",3,"SE","SUDESTE","total","Total",1,"Total","pct_ing","Ingressantes","Percentual",47.96554348787409,46.041196627935165,46.658252371361904
+"","",3,"SE","SUDESTE","total","Total",1,"Total","qt_ing","Ingressantes","Quantidade",1046718,1485196,2337082
+"","",4,"S","SUL","total","Total",1,"Total","pct_ing","Ingressantes","Percentual",16.887320258323026,16.64992662280775,17.612582792034075
+"","",4,"S","SUL","total","Total",1,"Total","qt_ing","Ingressantes","Quantidade",368520,537093,882203
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","pct_ing","Ingressantes","Percentual",9.673870157531589,9.894047922405557,9.197542152664758
+"","",5,"CO","CENTRO-OESTE","total","Total",1,"Total","qt_ing","Ingressantes","Quantidade",211106,319162,460699
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_ing","Ingressantes","Percentual",4.838309819913492,4.466646702614361,2.5535163555693265
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ing","Ingressantes","Quantidade",105583,144085,127904
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_ing","Ingressantes","Percentual",1.484766264218833,3.5945214176461144,5.11499847472597
+"","",1,"N","NORTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ing","Ingressantes","Quantidade",32401,115952,256207
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_ing","Ingressantes","Percentual",15.238822323413354,13.765958066810136,7.4946455694383
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ing","Ingressantes","Quantidade",332546,444062,375402
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_ing","Ingressantes","Percentual",3.9113676887256106,5.587702639780916,11.368462284205668
+"","",2,"NE","NORDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ing","Ingressantes","Quantidade",85355,180248,569439
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_ing","Ingressantes","Percentual",41.5562711337811,32.112457134637694,14.943253417492258
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ing","Ingressantes","Quantidade",906853,1035883,748498
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_ing","Ingressantes","Percentual",6.409272354092994,13.928739493297472,31.714998953869642
+"","",3,"SE","SUDESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ing","Ingressantes","Quantidade",139865,449313,1588584
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_ing","Ingressantes","Percentual",12.86624822601111,9.857963827865229,4.933083593002586
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ing","Ingressantes","Quantidade",280771,317998,247095
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_ing","Ingressantes","Percentual",4.021072032311916,6.791962794942522,12.679499199031492
+"","",4,"S","SUL","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ing","Ingressantes","Quantidade",87749,219095,635108
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","pct_ing","Ingressantes","Percentual",8.071930122823957,6.532461115048122,3.273369833433687
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",1,"Presencial","qt_ing","Ingressantes","Quantidade",176148,210724,163961
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","pct_ing","Ingressantes","Percentual",1.6019400347076316,3.361586807357435,5.9241723192310705
+"","",5,"CO","CENTRO-OESTE","tp_modalidade_ensino","Modalidade de ensino",2,"Educação a Distância","qt_ing","Ingressantes","Quantidade",34958,108438,296738

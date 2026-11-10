@@ -1,0 +1,728 @@
+{"msg":"Quarto version: 1.9.38","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"-- Searching for R binary --","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"Looking for 'Rscript' in QUARTO_R: undefined","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"Looking for 'Rscript' in R_HOME: undefined","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"Looking for 'Rscript' in PATH.","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] CMD /C where Rscript","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] Success: true, code: 0","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"Found in PATH at C:\\Program Files\\R\\R-4.6.0\\bin\\Rscript.exe","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] C:\\Program Files\\R\\R-4.6.0\\bin\\Rscript.exe C:\\Positron\\resources\\app\\quarto\\share\\rmd\\rmd.R","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"1","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11                  \r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"2","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11 [unnamed-chunk-1]\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"3","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11                  \r\n4/11 [code-a1]        \r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"5","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11                  \r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"6","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11 [tbl-b1]         \r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"7","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11                  \r\n8/11 [tbl-b2]         \r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"9","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11                  \r\n10/11 [tbl-b3]         \r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"11","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"/11                  \r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"output file: relatorio-descritivo.knit.md\r\n\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[execProcess] Success: true, code: 0","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] C:\\Positron\\resources\\app\\quarto\\bin\\tools\\pandoc -f markdown -t markdown -L C:\\Positron\\resources\\app\\quarto\\share\\filters\\quarto-internals\\leveloneanalysis.lua","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] Success: true, code: 0","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"Windows: Using code page 1252","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[NotebookContext]: Writing all notebooks to C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\6288231790d43a2f\\1b2b72ddcd723fa7.json","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"pandoc --verbose --trace","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"to: latex\nfrom: markdown-smart\noutput-file: relatorio-descritivo.tex\nstandalone: true\npdf-engine: lualatex\nvariables:\n  graphics: true\n  tables: true\ndefault-image-extension: pdf\ntoc: false\nnumber-sections: false\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"metadata","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"documentclass: scrartcl\nclassoption:\n  - DIV=11\n  - numbers=noendperiod\npapersize: letter\nheader-includes:\n  - \\KOMAoption{captions}{tableheading,figureheading}\n  - |\n    \\usepackage{float}\n    \\usepackage{caption}\n\n    \\captionsetup[figure]{\n      labelfont=bf,\n      textfont=bf\n    }\n\n    \\newenvironment{FontePequena}\n      {\\par\\begingroup\\fontsize{10pt}{12pt}\\selectfont}\n      {\\par\\endgroup\\vspace{6pt}}\nblock-headings: true\nengines:\n  - path: C:\\Positron\\resources\\app\\quarto\\share\\extension-subtrees\\julia-engine\\_extensions\\julia-engine\\julia-engine.js\ntitle: Relatório Preliminar\nsubtitle: Análise da Educação Superior à Distância no Brasil\nauthor: Pedro H. G. Ferreira de Souza\ndate: today\nlang: pt-BR\nfig-cap-location: top\ntbl-cap-location: top\nfontsize: 12pt\nmainfont: Aptos\nlinestretch: 1.5\ngeometry:\n  - top=2.5cm\n  - bottom=2.5cm\n  - left=3cm\n  - right=3cm\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[execProcess] C:\\Positron\\resources\\app\\quarto\\bin\\tools\\pandoc +RTS -K512m -RTS --defaults C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\quarto-defaultse4e6d50537c400bf.yml C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\quarto-input196940d232cbda9f.md --metadata-file C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\quarto-metadata8aa3211141c0da6.yml --verbose --trace --data-dir C:\\Positron\\resources\\app\\quarto\\share\\pandoc\\datadir","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\template.patched from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\template.patched\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\document-metadata.latex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c4","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"5eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\document-metadata.latex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\passoptions.latex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"25da99e7c63b\\passoptions.latex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\doc-class.tex from C:\\Users\\ADM\\AppData\\Local\\","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\doc-class.tex","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"c63b\\fonts.latex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"c35eaa03eacda47\\28cb25da99e7c63b\\fonts.latex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\font-settings.latex from C:\\Users\\ADM\\A","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\font-","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"settings.latex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\common.latex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda4","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"7\\28cb25da99e7c63b\\common.latex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\pandoc.tex from C:\\Users\\ADM\\Ap","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"pData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\pandoc.tex","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\tables.tex from C:\\Users\\ADM\\AppData\\L","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ocal\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\tables.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45e","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"b","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\graphics.tex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\graphics.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\citations.tex from C:\\Users\\","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"7c63b\\citations.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\babel-lang.tex from C:\\Use","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"rs\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\ba","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"bel-lang.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\tightlist.tex fro","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"m C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\ti","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ghtlist.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\biblio-config.tex from C:\\Users\\AD","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"M\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"biblio-config.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\after-header-includes.latex from C:\\Users\\AD","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"M\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\after-header-includes.latex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\hypersetup.latex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\hypersetup.latex\r\n[INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\before-title.tex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\before-title.tex\r\n[INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\title.tex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\title.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\before-body.tex from C:\\Users\\AD","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"M\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\before-body.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\toc.tex from","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":" C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\toc.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\before-bib.tex from C:\\Users\\","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\before-bib.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"63b\\biblio.tex from C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\biblio.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Loaded C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\after-body.tex from C:\\Users\\ADM\\AppData\\Local","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"\\Temp\\quarto-session1c45eb14eb81660a\\8c35eaa03eacda47\\28cb25da99e7c63b\\after-body.tex\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Plain [Str \"Pedro\",Space,Str \"H.\",Space,Str \"G.\",Space,Str  at line 1\r\n[trace] Parsed [Plain [Str \"Pedro\",Space,Str \"H.\",Space,Str \"G.\",Space,Str  at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"DIV=11\"]] at line 1\r\n[trace] Parsed [Plain [Str \"numbers=noendperiod\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"2026-06-15\"]] at line 1\r\n[trace] Parsed [Plain [Str \"scrartcl\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Plain [Str \"C:\",RawInline (Format \"tex\") \"\\\\Positron\",RawIn at line 1\r\n[trace] Parsed [Plain [Str \"top\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"12pt\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Plain [Str \"top=2.5cm\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"bottom=2.5cm\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"left=3cm\"]] at line 1\r\n[trace] Parsed [Plain [Str \"right=3cm\"]] ","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"at line 1\r\n[trace] Parsed [Plain [Str \"pt-BR\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"1.5\"]] at line 1\r\n[trace] Parsed [Plain [Str \"blue\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"Aptos\"]] at line 1\r\n[trace] Parsed [Plain [Str \"letter\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"An\\225lise\",Space,Str \"da\",Space,Str \"Educa\\231 at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Plain [Str \"top\"]] at line 1\r\n[trace] Parsed [Plain [Str \"Relat\\243r","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"io\",Space,Str \"Preliminar\"]] at line 1\r\n[trace]","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":" Parsed [Plain [Str \"\\205ndice\"]] at line 1\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [] at line 3\r\n[trace] Parsed [RawBlock (Format \"openxml\") \"<w:p><w:r><w:br w:type=\\\"page\\ at line 9\r\n[trace] Parsed [Header 1 (\"introdu\\231\\227o\",[],[]) [Str \"Introdu\\231\\227o\" at line 11\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Este\",Space,Str \"relat\\243rio\",Space,Str \"aprese at line 13\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Esta\",Space,Str \"entrega\",Space,Str \"contempla\", at line 15\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Os\",Space,Str \"indicadores\",Space,Str \"foram\",S","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"p at line 17\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Diante\",Space,Str \"do\",Space,Str \"grande\",Space, at line 19\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 1 (\"sec-metodologia\",[],[]) [Str \"Metodologia\"]] at line 22\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 2 (\"fonte-dos-dados\",[],[]) [Str \"Fonte\",Space,Str \" at line 24\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Os\",Space,Str \"indicadores\",Space,Str \"apresenta at line 26\r\n[trace] Parsed [Header 2 ","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"(\"processamento-dos-dados\",[],[]) [Str \"Processame at line 28\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"O\",Space,Str \"processamento\",Space,Str \"inicial\" at line 30\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Tamb\\233m\",Space,Str \"foram\",Space,Str \"produzid at line 32\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Str \"categoria\",Space,Str \"administrati at line 34\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"A\",Space,Str ","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"\"organiza\\231\\227o\",Space,Str \"acad at line 37\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 1 (\"sec-a\",[],[]) [Str \"Dimens\\227o\",Space,Str \"A\",S at line 39\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 2 (\"sec-a1\",[],[]) [Str \"A.1\",Space,Str \"-\",Space,St","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":" at line 43\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"A\",Space,Cit","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"e [Citation {citationId = \"fig-01\",  at line 47\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Em\",Space,Str \"termos\",Space,Str \"quantitativos, at line 52\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Pars","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ed [Para [Str \"Em\",Space,Str \"conjunto,\",Space,Str \"essas\",Spac at line 55\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-01\",[],[]) (Caption Nothing [Plain [Str \"Quant at line 57\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 60\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Nota:\",Space,Str \"","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ver\",Space,Cite [Citation {cit at line 61\r\n[trace] Parsed [Div (\"\",[],[(\"c","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ustom-style\",\"FontePequena\")]) [Para [Str \"F at line 63\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Str \"persist\\234ncia\",Space,Str \"dos\",S at line 67\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Essa\",Space,Str \"reconfigura\\231\\","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"227o\",Space,Str at line 69\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Ou\",Space,Str \"seja,\",Space,Str \"o\",Space,Str \"p at line 71\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Ver,\",Space,Str \"por\",Space,Str \"exemplo,\",Space at line 4\r\n[trace] Parsed [] at line 73\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-02\",[],[]) (Caption Nothing [Plain [Str \"Quant at line 75\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 78\r\n[trace] Parsed [Para [Str \"Nota:\",Space,Str \"ver\",Space,Cite [Citation {cit at line 79\r\n[trace] Parsed [Div (\"\",[],[(\"cu","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"stom-style\",\"FontePequena\")]) [Para [Str \"F at line 82\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 2 (\"sec-a2\",[],[]) [Str \"A.2\",Space,Str \"-\",Space,St at line 84\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Cite [Citation {citationId = \"fig-03\",  at line 86\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Cerca\",Space,Str \"de\",Space,Str \"90%\",Space,Str  at line 88\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Nos\",Space,Str \"\\250ltimos\",Space,Str \"anos,\",Sp at line 90\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-03\",[],[]) (Caption Nothing [Plain [Str \"Quant at line 92\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 95\r\n[tra","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ce] Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para [Str \"F at line 97\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Houv","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"e\",Space,Str \"um\",Space,Str \"descompasso\",Sp at line 99\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"As\",Space,Str \"taxas\",Space,Str \"de\",Space,Str \" at line 101\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-04\",[],[]) (Caption Nothing [Plain [Str \"Taxa\" at line 103\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 106\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Nota:\",Space,Str \"a\",Space,Str \"taxa\",Space,Str  at line 108\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"Para [Str \"F at line 110\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 2 (\"sec-a3\",[],[]) [Str \"A.3\",Space,Str \"-\",Space,St at line 112\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Cite [Citation {citationId = \"fig-05\",  at line 114\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"A\",Space,Str \"educa\\231\\227o\",Space,Str \"a\",Spac at line 119\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Em\",Space,Str \"contraste,\",Space,Str \"o\",Space,S at line 121\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-05\",[],[]) (Caption Nothing [Plain [Str \"Quant at","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":" line 123\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 126\r\n[trace] Parsed [Para [Str \"Nota:\",Space,Str \"ver\",","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"Space,Cite [Citation {cit at line 127\r\n[trace] Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para ","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[Str \"F at line 129\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Str \"mudan\\231a\",Space,Str \"na\",Space,S at line 135\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"No\",Space,Str \"mesmo\",Space,Str \"per\\237odo,\",Sp at line 138\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Str \"educa\\231\\227o\",Space,Str \"a\",Spac at line 141\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-06\",[],[]) (Caption Nothing [Plain [Str \"Quant at line 143\r\n[tra","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ce] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 146\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Nota:\",Space,Str \"ve","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"r\",Space,Cite [Citation {cit at line 147\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para [Str \"F at line 150\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 2 (\"sec-a4\",[],[]) [Str \"A.4\",Space,Str \"-\",Space,St at line 152\r\n[trace] Parsed [Para [Str \"A\",Space,Str \"expans\\227o\",Space,Str \"do\",Space, at line 157\r\n[trace] Parsed [Para [Str \"Como\",Space,Str \"explicado\",Space,Str \"na\",Space at line 4\r\n[trace] Parsed [] at line ","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"159\r\n[trace] Parsed [Para [S","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"tr \"A\",Space,Str \"maior\",Space,Str \"concentra\\231\\22 at line 161\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"N\\227o\",Space,Str \"obstante,\",Space,Str \"os\",Spa at line 163\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-07\",[],[]) (Caption Nothing [Plain [Str \"Quant at line 165\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 168\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Nota:\",Space,Str \"as\",Space,Str \"faixas\",Space,S at line 169\r\n[trace] Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para [Str \"F at line 171\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Cite [Citation {citationId = \"fig-08\",  at line 174\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"N\\227o\",Space,Str \"houve\",Space,Str \"recuo\",Spac at line 176\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Em\",Space,Str \"conjunto,\",Space,Str \"os\",Space,S at line 183\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-08\",[],[]) (Caption Nothing [Plain [Str \"Quant at line 185\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 188\r\n[trace] P","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"arsed [Para [Str \"Nota:\",Space,Str \"as\",Space,Str \"faixas\",Space,S at line 189\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para [Str \"F at line 192\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 2 (\"sec-a5\",[],[]) [Str \"A.5\",Space,Str \"-\",Space,St at line 194\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"A\",Space,Cite [","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"Citation {citationId = \"fig-09\",  at line 197\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Sa\\250de\",Space,Str \"e\",Space,Str \"Bem-estar\",Sp at line 201\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"O\",Space,Str \"sistema\",Space,Str \"permaneceu\",Sp at line","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":" 207\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Parte\",Space,Str \"significativa\",Space,Str \"dess at line 209\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Os\",Space,Str ","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"\"resultados\",Space,Str \"para\",Spac at line 213\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-09\",[],[]) (Caption Nothing [Plain [Str \"Quant at line 215\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 218\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Nota:\",Space,Str \"ver\",Space,Cite [Citation {cit at line 219\r\n[trace] Parsed [Div (\"\",[],[(\"custom-sty","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"le\",\"FontePequena\")]) [Para [Str \"F at line 221\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Str \"expans\\227o\",Space,Str \"da\",Space, at line 225\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [S","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"tr \"As\",Space,Str \"maiores\",Space,Str \"participa\\231 at line 232\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Esses\",Space,Str \"r","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"esultados\",Space,Str \"mostram at line 237\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Figure (\"fig-10\",[],[]) (Caption Nothing [Plain [Str \"Parti at line 239\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 242\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Nota:\",Space,Str \"ver\",Space,Cite [Citation {cit at line 243\r\n[trace]","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":" Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para [Str \"F at line 246\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Header 1 (\"dimens\\227o-b---padr\\227o-de-crescimento-do-seto at line 248\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Pa","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"rsed [Header 2 (\"b.1---apropria\\231\\227o-acumulada-da-varia\\231\\2 at line 250\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Cite [Citation {citationId = \"tbl-b1\",  at line 252\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Str \"principal\",Space,Str \"combina\\231\\ at line 254\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"As\",Space,Str \"institui\\231\\245es\",Space,Str \"p\\ at line 256\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Em\",Space,Str \"outras\",Space,Str \"palavras,\",Spa at line 258\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":" \"Os\",Space,Str \"resultados\",Space,Str \"para\",Spac at ","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"line 262\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parse","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"d [] at line 265\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [RawBlock (Format \"latex\") \"\\\\global\\\\setlength{\\\\Oldarrayru at line 435\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Div (\"\",[\"cell-output-display\"],[]) [RawBlock (Format \"late at line 436\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Div (\"tbl-b1\",[\"cell\"],[(\"tbl-cap\",\"Varia\\231\\227o de matr\\ at line 439\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"\\227o\",Space,Str \" at line 442\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Nota:\",Space,Str \"ver\",Space,Cite [Citation {cit at line 443\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para [Str \"F at line 445\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Header 2 (\"b.2---apropria\\231\\227o-acumulada-da-varia\\231\\2 at line 447\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"A\",Space,Ci","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"te [Citation {citationId = \"tbl-b2\",  at line 449\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Todas\",Space,Str \"as\",Space,Str \"\\225reas\",Space at line 451\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Str \"composi\\231\\227o\",Space,Str \"por\", at line 453\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Somente\",Space,Str \"duas\",Space,Str \"\\225reas\",S at line 456\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [] at line 459\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [RawBlock (Format \"latex\") \"\\\\global\\\\setlength{\\\\Oldarrayru at line 707\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Div (\"\",[\"cell-output-display\"],[]) [RawBlock (Format \"late at line 708\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Div (\"tbl-b2\",[\"cell\"],[(\"tbl-cap\",\"Varia\\231\\227o de  matr at line 712\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\"","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":",Space,Str \" at line 715\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Nota:\",Space,Str \"ver\",Space,Cite [Citation {cit at line 716\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Div (\"\",[],[(\"custom-style\",\"FontePequena\")]) [Para [Str \"F at line 718\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Header 2 (\"b.3---apropria\\231\\227o-acumulada-da-varia\\231\\2 at line 720\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"A\",Space,Cite [Citation {citationId = \"tbl-b3\",  at line 722\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"A\",Space,Str \"faixa\",Space,Str \"das\",Space,Str \" at line 7","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"24\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Esses\",Space,Str \"resultados\",Space,Str \"mostram at line 726\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Adicionalmente,\",Space,Str \"embora\",Space,Str \"p at line 729\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [] at line 732\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [RawBlock (Format \"latex\") \"\\\\global\\\\setlength{\\\\Oldarrayru at line 902\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Div (\"\",[\"cell-output-display\"],[]) [RawBlock (Format \"late at line 903\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Div (\"tbl-b3\",[\"cell\"],[(\"tbl-cap\",\"Varia\\231\\227o de matr\\ at line 907\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Para [Str \"Fonte:\",Space,Str \"elabora\\231\\227o\",Space,Str \" at line 910\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[trace] Parsed [Pa","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ra [Str \"Nota:\",Space,Str \"as\",Space,Str \"faixas\",Space,S at line 911\r\n[trace] Parsed [Div (\"\",[],[(\"custom-style\",\"F","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"ontePequena\")]) [Para [Str \"F at line 916\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Running filter C:/Positron/resources/app/quarto/share/filters/main.lua\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Varia\\231\\227o\",Space,Str \"de\",Space,Str \"matr\\2 at line 4\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Varia\\231\\227o\",Space,Str \"de\",Space,Str \"matr\\2 at line 4\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"trace] Parsed [Para [Str \"Varia\\231\\227o\",Space,Str \"de\",Space,Str \"matr\\2 at line 4\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Completed filter C:/Positron/resources/app/quarto/share/filters/main.lua in 312 ms\r\n[INFO] Running filter C:/Positron/resources/app/quarto/share/filters/rmarkdown/pagebreak.lua\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"INFO] Completed filter C:/Positron/resources/app/quarto/share/filters/rmarkdown/pagebreak.lua in 15 ms\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[INFO] Not rendering RawBlock (Format \"openxml\") \"<w:p><w:r><w:br w:type=\\\"page\\\"/></w:r></w:p>\"\r\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[execProcess] Success: true, code: 0","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"\nRendering PDF","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"running lualatex - 1","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"[execProcess] cmd /c C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-safe-exec936d6aef0cf8dc47.bat","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] Success: false, code: 1","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] cmd /c C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-safe-exec2d722af2a926f811.bat","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] Success: false, code: 1","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] cmd /c C:\\Users\\ADM\\AppData\\Local\\Temp\\quarto-safe-execaff5fd4e5d1f2684.bat","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] Success: false, code: 1","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] lualatex -interaction=batchmode -halt-on-error relatorio-descritivo.tex","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"[execProcess] Success: false, code: 1","level":10,"levelName":"DEBUG","loggerName":"default"}
+
+{"msg":"This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4)\r\n restricted system commands enabled.\r\n\r\nluaotfload | db : Reload initiated (formats: otf,ttf,ttc); reason: Font \"Aptos\" not found.","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"\ncompilation failed- missing packages (automatic installed disabled)","level":40,"levelName":"ERROR","loggerName":"default"}
+
+{"msg":"Package fontspec Error: \n(fontspec)                The font \"Aptos\" cannot be found; this may be but\n(fontspec)                usually is not a fontspec bug. Either there is a\n(fontspec)                typo in the font name/file, the font is not\n(fontspec)                installed (correctly), or there is a bug in the\n(fontspec)                underlying font loading engine (XeTeX/luaotfload).\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.31 \\fi\n      \n\n","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"see report\\relatorio-descritivo.log for more information.","level":20,"levelName":"INFO","loggerName":"default"}
+
+{"msg":"Error encountered when rendering files","level":30,"levelName":"WARN","loggerName":"default"}
+
+{"msg":"[NotebookContext]: Starting Cleanup","level":10,"levelName":"DEBUG","loggerName":"default"}
+

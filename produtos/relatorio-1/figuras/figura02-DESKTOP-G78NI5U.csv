@@ -1,0 +1,76 @@
+indicador_code,indicador_nome,bloco_var,bloco_nome,grupo_code,grupo_nome,serie_var,serie_nome,unidade,ano,valor,lbl
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2010,99,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2011,103,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2012,103,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2013,106,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2014,108,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2015,110,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2016,110,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2017,110,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2018,110,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2019,110,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2020,119,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2021,120,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2022,120,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2023,121,NA
+NA,NA,catadm_it,Categoria Administrativa,1,Pública Federal,qt_ies,IES,Quantidade,2024,122,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2010,108,108
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2011,110,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2012,116,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2013,119,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2014,117,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2015,119,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2016,122,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2017,123,123
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2018,128,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2019,132,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2020,129,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2021,134,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2022,133,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2023,138,NA
+NA,NA,catadm_it,Categoria Administrativa,2,Pública Estadual,qt_ies,IES,Quantidade,2024,139,139
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2010,78,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2011,76,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2012,77,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2013,75,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2014,71,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2015,68,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2016,62,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2017,62,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2018,61,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2019,58,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2020,56,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2021,59,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2022,57,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2023,56,NA
+NA,NA,catadm_it,Categoria Administrativa,3,Pública Municipal,qt_ies,IES,Quantidade,2024,55,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2010,954,954
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2011,976,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2012,990,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2013,991,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2014,1003,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2015,1015,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2016,1057,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2017,1202,1202
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2018,1343,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2019,1447,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2020,1351,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2021,1433,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2022,1485,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2023,1511,NA
+NA,NA,catadm_it,Categoria Administrativa,4,Privada com fins lucrativos,qt_ies,IES,Quantidade,2024,1511,1511
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2010,1138,1138
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2011,1100,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2012,1130,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2013,1099,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2014,1068,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2015,1051,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2016,1055,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2017,950,950
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2018,895,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2019,861,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2020,801,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2021,828,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2022,800,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2023,754,NA
+NA,NA,catadm_it,Categoria Administrativa,5,Privada sem fins lucrativos,qt_ies,IES,Quantidade,2024,734,734

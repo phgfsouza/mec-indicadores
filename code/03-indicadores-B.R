@@ -18,6 +18,17 @@
 # 3. As planilhas com resultados separados para cada indicador sao gravadas em 
 #    `results/` no formato csv.
 
+# Observacoes:
+# - Sao calculadas variacoes entre anos consecutivos de 2010 a 2024 e nos
+#   periodos 2010-2017, 2017-2024 e 2010-2024.
+# - As contribuicoes percentuais usam o saldo total do bloco no periodo;
+#   valores negativos e superiores a 100% podem ocorrer.
+# - Grupos ausentes em um extremo e contagens NA sao tratados como zero.
+#   Se todas as variacoes forem zero, as contribuicoes sao zero; se variacoes
+#   nao nulas se anularem, as contribuicoes sao NA.
+# - `compacta_csv()` mantem o codigo e o nome do indicador apenas na primeira
+#   linha do CSV. A conversao para Excel e feita em `07-planilhas.R`.
+
 # Inputs do script:
 # - `data/clean/ces_cursos.parquet`
 # - `data/clean/ces_ies.parquet`
@@ -116,7 +127,7 @@ B1$by <- c(
 B1$output <- calcula_dimensao_B(data_B, B1, rotulos_vars)
 
 # Output 
-write_excel_csv(B1$output, here('results/indicadorB1.csv'))
+write_excel_csv(compacta_csv(B1$output), here('results/indicadorB1.csv'))
 
 
 # INDICADOR B.2 ================================================================
@@ -142,9 +153,7 @@ B2$by <- c(
   'catadm_it_co_cine_area_geral',
   'catadm_it_tp_modalidade_ensino',
   'co_cine_area_geral_tp_modalidade_ensino',
-  'catadm_it_co_cine_area_geral_tp_modalidade_ensino',
-  'co_cine_area_geral_turno', 
-  'catadm_it_co_cine_area_geral_turno'
+  'co_cine_area_geral_turno'
 ) |> set_names()
 
 
@@ -152,7 +161,7 @@ B2$by <- c(
 B2$output <- calcula_dimensao_B(data_B, B2, rotulos_vars)
 
 # Output 
-write_excel_csv(B2$output, here('results/indicadorB2.csv'))
+write_excel_csv(compacta_csv(B2$output), here('results/indicadorB2.csv'))
 
 
 # INDICADOR B.3 ================================================================
@@ -181,5 +190,5 @@ B3$by <- c(
 B3$output <- calcula_dimensao_B(data_B, B3, rotulos_vars)
 
 # Output 
-write_excel_csv(B3$output, here('results/indicadorB3.csv'))
+write_excel_csv(compacta_csv(B3$output), here('results/indicadorB3.csv'))
 

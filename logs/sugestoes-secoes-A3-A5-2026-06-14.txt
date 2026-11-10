@@ -1,0 +1,114 @@
+CONTEÚDO SUGERIDO PARA AS SEÇÕES A.3, A.4 E A.5
+
+As referências às figuras pressupõem a manutenção das figuras atuais do
+relatorio-descritivo.qmd.
+
+Ressalvas editoriais:
+
+- As figuras da seção A.4 apresentam ingressantes e matrículas por tamanho da
+  mantenedora, mas não desagregam os resultados por modalidade. Por isso, o
+  texto sugerido não atribui os padrões observados especificamente ao ensino
+  presencial ou à distância.
+- As figuras da seção A.5 apresentam somente dados sobre ingressantes. Por
+  isso, o texto sugerido não descreve a distribuição das matrículas por área
+  do conhecimento.
+
+
+## A.3 - Distribuição de ingressantes e matrículas por modalidade e turno
+
+A @fig-05 apresenta a evolução do número de ingressantes por modalidade e
+turno entre 2010 e 2024. Nesse período, o total de ingressantes aumentou de
+cerca de 2,2 milhões para 5,0 milhões, crescimento de aproximadamente 130%.
+Essa expansão foi integralmente impulsionada pelo ensino à distância, cujo
+número de ingressantes aumentou quase 780%, passando de 380 mil para 3,4
+milhões.
+
+Em contraste, o número de ingressantes no ensino presencial permaneceu
+praticamente estável. Houve pequeno crescimento no turno diurno e retração de
+16% no noturno, que concentrava mais da metade dos ingressantes em 2010. O
+ensino à distância ultrapassou o presencial noturno em 2018 e, a partir de
+2020, passou a receber mais ingressantes do que os turnos diurno e noturno
+somados. Em 2024, cerca de dois em cada três estudantes ingressaram em cursos
+à distância.
+
+A mudança na composição das matrículas ocorreu de forma semelhante, mas com
+alguma defasagem, como mostra a @fig-06. O número total de matrículas cresceu
+cerca de 60% entre 2010 e 2024, de 6,4 milhões para 10,2 milhões. Mais uma vez,
+a expansão decorreu do ensino à distância, que passou de 930 mil para 5,2
+milhões de matrículas, aumento de quase 460%.
+
+No mesmo período, as matrículas presenciais diurnas cresceram cerca de 16%,
+enquanto as noturnas recuaram 21%. O ensino à distância superou o presencial
+noturno em 2021 e, em 2024, ultrapassou pela primeira vez a soma das matrículas
+presenciais diurnas e noturnas, alcançando 50,7% do total. Portanto, a expansão
+recente do ensino superior alterou não apenas a distribuição por modalidade,
+mas também reduziu fortemente a participação do turno noturno, que havia sido
+o principal segmento do sistema no início da série.
+
+
+## A.4. Distribuição de ingressantes e matrículas por tamanho da mantenedora
+
+A expansão do número de ingressantes foi acompanhada por forte aumento da
+concentração nas maiores mantenedoras, como mostra a @fig-07. Em 2010, as cinco
+maiores mantenedoras reuniam 17,2% dos ingressantes e as vinte maiores, 29,2%.
+Em 2024, essas participações haviam subido para 38,2% e 57,1%,
+respectivamente.
+
+Mais da metade do aumento líquido do número de ingressantes entre 2010 e 2024
+ocorreu nas cinco maiores mantenedoras de cada ano. Consideradas em conjunto,
+as vinte maiores responderam por quase 79% da expansão. As demais mantenedoras
+também registraram crescimento em termos absolutos, de 1,5 milhão para 2,1
+milhões de ingressantes, mas sua participação no total recuou de 70,8% para
+42,9%.
+
+A @fig-08 revela tendência semelhante para as matrículas, embora em intensidade
+menor. A participação das cinco maiores mantenedoras aumentou de 13,0% para
+27,4% entre 2010 e 2024, enquanto a parcela das vinte maiores passou de 26,0%
+para 44,9%. Mais da metade do crescimento líquido das matrículas ocorreu nas
+cinco maiores mantenedoras e cerca de três quartos, nas vinte maiores. Ao mesmo
+tempo, as demais mantenedoras ampliaram seu número de matrículas de 4,7 milhões
+para 5,6 milhões, mas perderam quase 19 pontos percentuais de participação no
+total.
+
+Em conjunto, os resultados indicam que a expansão do ensino superior ocorreu
+de forma desproporcional nas maiores mantenedoras, sobretudo no caso dos
+ingressantes. Cabe observar, contudo, que as faixas de tamanho são definidas
+por rankings recalculados a cada ano. Assim, os resultados medem a
+concentração entre as maiores mantenedoras de cada período, mas não acompanham
+necessariamente o mesmo conjunto de instituições ao longo de toda a série.
+
+
+## A.5. Distribuição de ingressantes e matrículas por área de conhecimento e modalidade
+
+A @fig-09 apresenta a distribuição dos ingressantes por área do conhecimento em
+2010, 2017 e 2024. O sistema permaneceu concentrado em poucas áreas, apesar de
+alguma diversificação ao longo do período. Em 2024, Negócios, Administração e
+Direito reunia 29,7% dos ingressantes, seguida por Saúde e Bem-estar, com
+20,7%, e Educação, com 16,8%. Juntas, as três áreas concentravam 67,2% dos
+ingressantes, proporção um pouco inferior aos 71,0% observados em 2010.
+
+Saúde e Bem-estar registrou o maior crescimento absoluto entre 2010 e 2024,
+com acréscimo de cerca de 753 mil ingressantes. Em seguida aparecem Negócios,
+Administração e Direito, com aumento de 674 mil, e Educação, com 389 mil. Essas
+três áreas responderam por quase dois terços da expansão total do número de
+ingressantes. Computação e Tecnologias da Informação e Comunicação também se
+destacou pelo dinamismo, com crescimento superior a 300%, de 117 mil para 489
+mil ingressantes.
+
+A expansão do ensino à distância alcançou todas as áreas do conhecimento, mas
+com intensidades muito diferentes, como mostra a @fig-10. Em 2010, o ensino à
+distância ainda era minoritário entre os ingressantes de todas as áreas. Em
+2017, havia se tornado predominante somente em Educação. Em 2024, já
+representava a maioria dos ingressantes em sete das onze áreas analisadas.
+
+As maiores participações do ensino à distância em 2024 foram observadas em
+Serviços, com 87,0%, e Educação, com 81,7%. A modalidade também reunia mais de
+70% dos ingressantes em Negócios, Administração e Direito, Artes e Humanidades
+e Computação e Tecnologias da Informação e Comunicação. Por outro lado, sua
+participação permanecia inferior a 50% em Ciências Sociais, Comunicação e
+Informação, Agricultura, Ciências Naturais e Programas Básicos.
+
+Esses resultados mostram que a transformação na composição do ensino superior
+não ocorreu de maneira homogênea. Embora o ensino à distância tenha avançado
+em todas as áreas, a modalidade combina elevada participação em algumas das
+áreas mais numerosas com avanço generalizado em áreas de diferentes perfis.

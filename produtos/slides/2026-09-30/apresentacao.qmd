@@ -1,0 +1,1346 @@
+---
+title: "Monitoramento da educação superior a distância"
+subtitle: "Resultados disponíveis e estrutura das fichas das dimensões A–H"
+lang: pt-BR
+format:
+  beamer:
+    pdf-engine: xelatex
+    slide-level: 2
+    aspectratio: 169
+    classoption: [t]
+    fontsize: 12pt
+    mainfont: "Segoe UI"
+    sansfont: "Segoe UI"
+    theme: default
+    navigation: empty
+    keep-tex: true
+    latex-auto-install: false
+    include-in-header: beamer-theme.tex
+filters:
+  - beamer-layout.lua
+execute:
+  echo: false
+  warning: false
+  message: false
+  freeze: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+Sys.setlocale("LC_CTYPE", "Portuguese_Brazil.utf8")
+
+library(tidyverse)
+library(here)
+library(scales)
+
+here::i_am("produtos/slides/2026-09-30/apresentacao.qmd")
+
+cores <- c(
+  azul = "#4477AA",
+  coral = "#EE6677",
+  verde = "#228833",
+  amarelo = "#CCBB44",
+  ciano = "#66CCEE",
+  roxo = "#AA3377"
+)
+
+tema_slide <- function(
+  axis_text_size_x = 14,
+  axis_text_size_y = 14,
+  legend_position = "bottom",
+  show_major_grid = TRUE
+) {
+  theme_minimal(base_size = 17) +
+    theme(
+      axis.title = element_text(size = 18, colour = "#25313c"),
+      axis.title.x = element_text(margin = margin(t = 10)),
+      axis.title.y = element_text(margin = margin(r = 10)),
+      axis.text.x = element_text(size = axis_text_size_x, colour = "#4d5964"),
+      axis.text.y = element_text(size = axis_text_size_y, colour = "#4d5964"),
+      legend.position = legend_position,
+      legend.title = element_blank(),
+      legend.text = element_text(size = 14),
+      legend.key.width = unit(1.2, "cm"),
+      legend.background = element_rect(fill = "white", colour = NA),
+      panel.border = element_rect(colour = "#25313c", fill = NA, linewidth = 0.65),
+      panel.grid.major = if (show_major_grid) element_line(colour = "grey86", linewidth = 0.55) else element_blank(),
+      panel.grid.minor = element_blank(),
+      plot.margin = margin(8, 18, 8, 8),
+      plot.background = element_rect(fill = "white", colour = NA)
+    )
+}
+
+rotulo_milhao <- label_number(
+  accuracy = 0.1,
+    decimal.mark = ".",
+    big.mark = ",",
+  suffix = " mi"
+)
+
+rotulo_percentual <- label_number(
+  accuracy = 1,
+    decimal.mark = ".",
+    big.mark = ",",
+  suffix = "%"
+)
+
+b1 <- read_csv(here("results", "indicadorB1.csv"), show_col_types = FALSE)
+b2 <- read_csv(here("results", "indicadorB2.csv"), show_col_types = FALSE)
+b3 <- read_csv(here("results", "indicadorB3.csv"), show_col_types = FALSE)
+g1 <- read_csv(here("results", "indicadorG1.csv"), show_col_types = FALSE)
+g2 <- read_csv(here("results", "indicadorG2.csv"), show_col_types = FALSE)
+g3 <- read_csv(here("results", "indicadorG3.csv"), show_col_types = FALSE)
+g4 <- read_csv(here("results", "indicadorG4.csv"), show_col_types = FALSE)
+```
+
+## Introdução {.section-slide}
+
+Dimensões, fontes e principais escolhas de processamento
+
+## Dimensões {.insights}
+
+::: {.columns}
+::: {.column width="47%"}
+
+\Rotulo{A. Rede institucional e oferta}
+
+Quem oferta e como o sistema está organizado? ***5 indicadores***.
+
+\Rotulo{B. Padrão de crescimento do setor}
+
+Com qual velocidade o sistema cresceu?   Onde surgiram as novas matrículas?  ***3 indicadores***.
+
+\Rotulo{C. Dinâmica do mercado: extinções, fusões e crescimento}
+
+O que o e-MEC revela sobre o ensino superior entre 2010 e 2024?  *1 indicador*.
+
+\Rotulo{D. Quem são os proprietários das mantenedoras das IES no Brasil?}
+
+Análise a partir dos dados abertos da Receita Federal.  *1 indicador*.
+:::
+::: {.column width="47%"}
+
+\Rotulo{E. Acesso e matrícula}
+
+Quem chega ao ensino superior e como?  *2 indicadores*.
+
+\Rotulo{F. Fluxo acadêmico e conclusão}
+
+Quem permanece e se forma?  *3 indicadores*.
+
+\Rotulo{G. Corpo docente}
+
+Quem ensina e em que condições?  ***4 indicadores***.
+
+\Rotulo{H. Equidade e Inclusão}
+
+Quem fica de fora e por quê?  *4 indicadores*.
+:::
+:::
+
+
+## Dados e métodos {.insights}
+
+\Rotulo{Fontes}
+
+Microdados públicos do Censo do Ensino Superior, 2010-2024.
+
+
+\Rotulo{Filtros}
+
+**1.** Exclusão de cursos EaD ofertados no exterior.
+
+**2.** Exclusão de cursos sequenciais de formação específica.
+
+**3.** Exclusão de IES sem cursos válidos.
+
+
+\Rotulo{Harmonização de variáveis}
+
+**1.** Código de mantenedora
+
+**2.** Categoria administrativa.
+
+**3.** Organização acadêmica.
+
+**4.** Faixa de tamanho da mantenedora segundo o ranking anual de matrículas.
+
+
+## Categoria administrativa {.insights}
+
+\Rotulo{Problemas}
+
+**1.** Mudanças de categoria administrativa entre IES que permaneceram ativas em anos consecutivos.
+
+- 399 das 3.676 IES, ou **11%**. 
+
+**2.** Mantenedoras com IES pertencentes a diferentes categorias administrativas em um mesmo ano.
+
+- 36 das 2,788 mantenedoras, ou **1%**. 
+
+\vfill 
+
+\Rotulo{Harmonização}
+
+**1.** Corrige mudanças anuais em IES públicas.
+
+- IES federais ou estaduais reclassificadas conforme o valor modal das cinco aparições mais recentes;
+- Combinações mantenedora-IES municipais reclassificadas conforme o nome e a moda.
+
+**2.** Corrige multiplicidade de categorias administrativas para uma mantenedora em um mesmo ano.
+
+- Reclassifica como públicas as mantenedoras com alguma IES pública; como "com fins lucrativos" as mantenedoras cujo nome denota empresas que visam o lucro; e agrega "sem fins lucrativos" e "especial".
+
+## Dimensão A {.section-slide}
+
+Rede institucional e oferta
+
+## A.1 {.insights .indicator-slide}
+
+\DescricaoIndicador{Número e distribuição de IES e mantenedoras por categoria administrativa e organização acadêmica entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- IES:
+  - Total
+  - Categoria administrativa
+  - Organização acadêmica
+  - Categoria administrativa + organização acadêmica
+
+- Mantenedoras: 
+  - Total
+  - Categoria administrativa
+
+## A.1 — Quantidade de mantenedoras e de IES {.chart-slide}
+ 
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura01.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior.
+
+\endgroup
+
+
+## A.1 — Quantidade de IES por categoria administrativa {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura02.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior.
+
+\endgroup
+
+
+## A.1 — Principais conclusões {.insights}
+
+\Rotulo{Expansão modesta no agregado}
+
+- Entre 2010 e 2024, o total de IES cresceu **8%**, enquanto o número de mantenedoras aumentou apenas **2%**.
+
+
+\Rotulo{Mudanças expressivas de composição}
+
+- O número de IES ligadas a mantenedoras com fins lucrativos aumentou quase **60%**; entre as sem fins lucrativos, caiu **36%**;
+- A mudança acelerou entre 2016 e 2019, impulsionado pela reclassificação de IES
+existentes;
+- Ou seja, mudança não representa apenas abertura e fechamento de instituições.
+
+## A.2  {.insights .indicator-slide}
+
+\DescricaoIndicador{Número de vagas oferecidas e taxa de ocupação por modalidade (presencial e ensino a distância) entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Ingressantes, vagas e taxa de ingressantes por 100 vagas:
+  - Total
+  - Modalidade de ensino
+
+
+## A.2 — Quantidade de vagas por modalidade de ensino {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura03.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior. Taxa de ocupação: ingressantes por 100 vagas oferecidas.
+
+\endgroup
+
+
+## A.2 — Taxa de ocupação das vagas por modalidade de ensino {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura04.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior. Taxa de ocupação: ingressantes por 100 vagas oferecidas.
+
+\endgroup
+
+
+## A.2 — Principais conclusões {.insights}
+
+\Rotulo{Forte expansão da oferta}
+
+- A oferta de vagas multiplicou-se por cinco entre 2010 e 2024; cerca de **90% da expansão** veio da EaD;
+- Desaceleração da expansão após 2021, com retração em 2024;
+- Ritmo da mudança na composição das vagas também arrefeceu.
+
+
+\Rotulo{Oferta avançou mais rapidamente do que a demanda}
+
+- A taxa de ocupação total caiu de **46% para 21%** entre 2010 e 2024. Em 2024, alcançou 33% no presencial e 18% na EaD;
+- Estabilização da oferta de vagas nos últimos anos coincidiu com recuperação nas
+taxas de ocupação, sobretudo para o ensino presencial.
+
+## A.3 * {.insights .indicator-slide}
+
+\DescricaoIndicador{Distribuição de ingressantes e matrículas por modalidade (presencial e EaD) e turno entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Ingressantes e matrículas:
+  - Total
+  - Modalidade de ensino
+  - Turno de ensino
+
+
+## A.3 — Quantidade de ingressantes por modalidade e turno {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura05.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior.
+
+\endgroup
+
+
+## A.3 — Quantidade de matrículas por modalidade e turno {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura06.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior.
+
+\endgroup
+
+
+## A.3 — Principais conclusões {.insights}
+
+\Rotulo{Quantidade de ingressantes aumentou 130\%}
+
+- Crescimento inteiramente provocado pelo EaD, que multiplicou por **nove**;
+- EaD superou o presencial noturno em 2018 e, desde 2020, supera a soma do presencial noturno e do diurno. Em 2024, quase **67%** dos ingressantes estavam no EaD;
+- Presencial noturno caiu **36%** desde o pico em 2014; já o presencial diurno atingiu seu pico histórico em 2017, mas depois recuou **20%**.
+
+ 
+
+\Rotulo{Quantidade de matrículas aumentou 60\%}
+
+- Mais uma vez, crescimento puxado por EaD, que ultrapassou **50%** do total de matrículas em 2024;
+- Forte redução absoluta e relativa do ensino presencial noturno: no pico, em 2015, eram 4.1 milhões de matrículas, representando 51% do total; em 2024, esse
+número caiu para 2.7 milhões (**-34%**), o equivalente a apenas 27% das matrículas.
+
+## A.4 * {.insights .indicator-slide}
+
+\DescricaoIndicador{Distribuição de ingressantes e matrículas por tamanho da mantenedora (presencial e EaD) entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Ingressantes e matrículas:
+  - Total
+  - Modalidade de ensino
+  - Tamanho de mantenedoras por número de matrículas
+  - Tamanho de mantenedoras por número de matrículas + Modalidade de ensino
+
+## A.4 — Quantidade de ingressantes por tamanho da mantenedora {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura07.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior. As faixas são recalculadas anualmente.
+
+\endgroup
+
+
+## A.4 — Quantidade de matrículas por tamanho da mantenedora {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura08.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior. As faixas são recalculadas anualmente.
+
+\endgroup
+
+
+## A.4 — Principais conclusões {.insights}
+
+\Rotulo{Ingressantes}
+
+- As cinco maiores mantenedoras passaram de cerca de 375 mil ingressantes em 2010
+para 1.9 milhões em 2024; com isso, sua participação subiu de **17%** para **38%**;
+- A participação das 20 maiores mantenedoras aumentou de **29%** para **57%** dos ingressantes;
+- Leve recuo da participação das maiores mantenedoras em 2023 e 2024, depois do pico em 2022.
+
+\Rotulo{Matrículas}
+
+- As cinco maiores mantenedoras passaram de cerca de 800 mil matrículas em 2010 para 2.8 milhões em 2024, subindo de **13%** para **27%** do total;
+- A participação das 20 maiores aumentou de **26% para 45%** chegando a 4.6m de matrículas;
+- O pico histórico de concentração das matrículas foi em 2023, com recuo em 2024.
+
+ 
+
+\Rotulo{Observação}
+- Como o ranking muda a cada ano, a ficha mede concentração por faixa, não a trajetória de um conjunto fixo de grupos.
+
+
+## A.5 {.insights .indicator-slide}
+
+\DescricaoIndicador{Distribuição de ingressantes e matrículas por área de conhecimento (CINE Brasil) e modalidade (presencial e ensino a distância) entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Ingressantes e matrículas:
+  - Total
+  - Área do conhecimento
+  - Modalidade de ensino
+  - Área do conhecimento + Modalidade de ensino
+
+
+## A.5 — Quantidade de ingressantes por área do conhecimento {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura09.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior.
+
+\endgroup
+
+
+## A.5 — Participação da EaD por área do conhecimento {.chart-slide}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=218mm,height=98mm,keepaspectratio]{../../relatorio/figuras/figura10.png}
+\end{center}
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior.
+
+\endgroup
+
+
+## A.5 — Principais conclusões {.insights}
+
+\Rotulo{Expansão foi generalizada, porém com diferenças de intensidade e cronologia}
+
+-  Saúde e Bem-estar registrou o maior crescimento absoluto entre 2010 e 2024, 
+com acréscimo de cerca de **753 mil** ingressantes;
+- O sistema permaneceu concentrado em poucas áreas, apesar de alguma diversificação ao longo do período: as quatro principais áreas atraíram **82%** dos ingressantes em 2010 e **77%** em 2024;
+- Concentração caiu devido ao forte crescimento de Computação e TIC e Serviços. 
+
+
+\Rotulo{EaD cresceu em todas as áreas, mas também com intensidade variável}
+
+- Em 2010, a EaD era minoritária entre os ingressantes de todas as áreas; em 2024, já reunia a maioria dos ingressantes em **sete das onze áreas** analisadas.
+- A participação do EaD chegou a **87% em Serviços** e **82% em Educação**; também superou 70% em Negócios, Artes e Humanidades e Computação e TIC.
+
+
+## Dimensão B {.section-slide}
+
+Padrões de crescimento do setor
+
+## B.1 * {.insights .indicator-slide}
+
+\DescricaoIndicador{Apropriação acumulada do saldo de ingressantes e matrículas por categoria administrativa, turno e modalidade (presencial e EaD) entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Ingressantes e matrículas:
+  - Total
+  - Categoria administrativa
+  - Modalidade de ensino
+  - Turno de ensino
+  - Categoria administrativa + Modalidade de ensino
+  - Categoria administrativa + Turno de ensino
+
+
+## B.1 — Variação de matrículas por categoria, modalidade e turno, 2010/2024 {.chart-slide .table-slide}
+
+```{r}
+#| label: tabela-b1
+#| results: asis
+
+tabela_b1 <- b1 |>
+  filter(
+    bloco_var %in% c("total", "catadm_it", "catadm_it_turno"),
+    periodo == "2010-2024",
+    serie_var %in% c("delta_qt_mat", "pct_delta_qt_mat")
+  ) |>
+  mutate(
+    grupo_code = case_when(
+      grupo_nome == "Total" ~ 999999,
+      grupo_code < 100 ~ 100 * grupo_code,
+      grupo_code > 100 ~ 100 * floor(grupo_code / 100)
+    )
+  ) |>
+  select(grupo_code, grupo_nome, serie_var, valor) |>
+  pivot_wider(names_from = serie_var, values_from = valor) |>
+  arrange(grupo_code, grupo_nome) |>
+  mutate(
+    detalhe = str_detect(grupo_nome, " - "),
+    grupo_nome = if_else(
+      detalhe,
+      paste0("\\hspace{1em}", str_replace(grupo_nome, ".+- ", "")),
+      paste0("\\textbf{", grupo_nome, "}")
+    ),
+    delta_qt_mat = number(
+      delta_qt_mat / 1e3,
+      accuracy = 1,
+      big.mark = ",",
+      decimal.mark = "."
+    ),
+    pct_delta_qt_mat = number(
+      pct_delta_qt_mat,
+      accuracy = 1,
+      big.mark = ",",
+      decimal.mark = "."
+    )
+  ) |>
+  select(
+    Grupos = grupo_nome,
+    `Variação (milhares)` = delta_qt_mat,
+    `Contribuição (%)` = pct_delta_qt_mat
+  )
+
+cat("\\begin{center}\\begingroup\\fontsize{10.5}{12}\\selectfont\n")
+latex_b1 <- knitr::kable(
+  tabela_b1,
+  format = "latex",
+  booktabs = TRUE,
+  escape = FALSE,
+  align = c("l", "r", "r"),
+  col.names = c("Grupos", "Variação (milhares)", "Contribuição (\\%)"),
+  linesep = ""
+)
+latex_b1 <- str_replace(latex_b1, fixed("{lrr}"), "{p{0.57\\textwidth}rr}")
+latex_b1 <- str_replace(
+  latex_b1, fixed("\\toprule"),
+  "\\toprule\n\\rowcolor{azulescuro}"
+)
+latex_b1 <- str_replace(
+  latex_b1,
+  fixed("Grupos & Variação (milhares) & Contribuição (\\%)"),
+  "\\textcolor{white}{\\textbf{Grupos}} & \\textcolor{white}{\\textbf{Variação (milhares)}} & \\textcolor{white}{\\textbf{Contribuição (\\%)}}"
+)
+latex_b1 <- str_replace_all(
+  latex_b1, fixed("\n\\textbf{"), "\n\\rowcolor{cinzaclaro}\\textbf{"
+)
+cat(latex_b1)
+cat("\n\\endgroup\\end{center}\n")
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base nos dados do Censo da Educação Superior.
+
+\endgroup
+
+
+## B.1 — Principais conclusões {.insights}
+
+\Rotulo{Profunda mudança de composição no ensino superior}
+
+- O sistema ganhou cerca de **3.8 milhões de matrículas** entre 2010 e 2024;
+- A combinação “privada com fins lucrativos + EaD” cresceu **4.0 milhões**, valor superior ao saldo líquido de todo o sistema;
+- Ensino presencial noturno em IES privadas sem fins lucrativos diminuiu em **936 mil**;
+- Maior crescimento do ensino presencial ocorreu nas públicas federais.
+
+
+## B.2 {.insights .indicator-slide}
+
+\DescricaoIndicador{Apropriação acumulada do saldo de ingressantes e matrículas por área de conhecimento (CINE Brasil), categoria administrativa e modalidade (presencial e ensino a distância) entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Ingressantes e matrículas:
+  - Total
+  - Área do conhecimento
+  - Categoria administrativa
+  - Modalidade de ensino
+  - Turno de ensino
+  - Área do conhecimento + Modalidade de ensino
+  - Área do conhecimento + Turno de ensino
+  - Categoria administrativa + todas as combinações
+
+
+
+## B.2 — Variação de matrículas por área e modalidade {.chart-slide}
+
+```{r}
+#| label: plot-b2
+#| fig-width: 12
+#| fig-height: 6.25
+#| dpi: 180
+#| out-width: "218mm"
+#| out-height: "98mm"
+#| fig-align: center
+#| dev: cairo_pdf
+
+dados_b2 <- b2 |>
+  filter(
+    bloco_var == "co_cine_area_geral_tp_modalidade_ensino",
+    serie_var == "delta_qt_mat",
+    periodo == "2010-2024"
+  ) |>
+  separate_wider_delim(
+    grupo_nome,
+    delim = " - ",
+    names = c("area", "modalidade"),
+    too_many = "merge"
+  ) |>
+  mutate(valor = valor / 1e6) |>
+  mutate(total = sum(valor), .by = area) |>
+  arrange(total) |>
+  mutate(area = fct_inorder(str_wrap(area, width = 28)))
+
+ggplot(dados_b2, aes(x = area, y = valor, fill = modalidade)) +
+  geom_hline(yintercept = 0, colour = "#25313c", linewidth = 0.65) +
+  geom_col(width = 0.72) +
+  coord_flip(clip = "off") +
+  scale_y_continuous(
+    name = "Variação de matrículas, 2010–2024",
+    labels = rotulo_milhao,
+    breaks = seq(-0.8, 1.6, 0.4),
+    limits = c(-0.9, 1.55)
+  ) +
+  scale_x_discrete(name = NULL) +
+  scale_fill_manual(values = c(
+    "Presencial" = cores[["coral"]],
+    "Educação a Distância" = cores[["verde"]]
+  )) +
+  guides(fill = guide_legend(nrow = 1, byrow = TRUE)) +
+  tema_slide(axis_text_size_y = 11.5)
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior e na ficha B.2.
+
+\endgroup
+
+
+## B.2 — Principais conclusões {.insights}
+
+
+\Rotulo{Saúde e Bem-estar}
+
+- Saúde e Bem-estar respondeu por **1.4 milhão de novas matrículas** entre 2010 e 2024, ou **37%** da expansão total;
+- Área com o maior crescimento absoluto no ensino presencial e o segundo maior no EaD.
+
+
+\Rotulo{Crescimento do EaD com retração do presencial}
+
+- Fenômeno muito forte em Negócios, administração e direito e em Educação, mas também presente em outras três áreas;
+
+
+\Rotulo{Crescimento do presencial mais rápido do que EaD}
+
+- Somente Ciências sociais, comunicação e informação e Agricultura, silvicultura, pesca e veterinária.
+
+## B.3 {.insights .indicator-slide}
+
+\DescricaoIndicador{Apropriação acumulada do saldo de ingressantes e matrículas por tamanho de mantenedora entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Ingressantes e matrículas:
+  - Total
+  - Modalidade de ensino
+  - Tamanho de mantenedoras por número de matrículas
+  - Turno de ensino
+  - Tamanho de mantenedoras por número de matrículas + Modalidade de ensino
+  - Tamanho de mantenedoras por número de matrículas + Turno de ensino
+
+
+## B.3 — Variação de matrículas por faixas de tamanho de mantenedoras, modalidade de ensino e turno {.chart-slide .table-slide}
+
+```{r}
+#| label: tabela-b3
+#| results: asis
+
+tabela_b3 <- b3 |>
+  filter(
+    bloco_var %in% c("total", "fx_ranking", "fx_ranking_turno"),
+    periodo == "2010-2024",
+    serie_var %in% c("delta_qt_mat", "pct_delta_qt_mat")
+  ) |>
+  mutate(
+    grupo_code = case_when(
+      grupo_nome == "Total" ~ 999999,
+      bloco_var == "fx_ranking" ~ 100 * grupo_code,
+      bloco_var == "fx_ranking_turno" ~ 100 * floor(grupo_code / 100)
+    )
+  ) |>
+  select(grupo_code, grupo_nome, serie_var, valor) |>
+  pivot_wider(names_from = serie_var, values_from = valor) |>
+  arrange(grupo_code, grupo_nome) |>
+  mutate(
+    detalhe = str_detect(grupo_nome, " - "),
+    grupo_nome = if_else(
+      detalhe,
+      paste0("\\hspace{1em}", str_replace(grupo_nome, ".+- ", "")),
+      paste0("\\textbf{", grupo_nome, "}")
+    ),
+    delta_qt_mat = number(
+      delta_qt_mat / 1e3,
+      accuracy = 1,
+      big.mark = ",",
+      decimal.mark = "."
+    ),
+    pct_delta_qt_mat = number(
+      pct_delta_qt_mat,
+      accuracy = 1,
+      big.mark = ",",
+      decimal.mark = "."
+    )
+  ) |>
+  select(
+    Grupos = grupo_nome,
+    `Variação (milhares)` = delta_qt_mat,
+    `Contribuição (%)` = pct_delta_qt_mat
+  )
+
+cat("\\begin{center}\\begingroup\\fontsize{10}{11.5}\\selectfont\n")
+latex_b3 <- knitr::kable(
+  tabela_b3,
+  format = "latex",
+  booktabs = TRUE,
+  escape = FALSE,
+  align = c("l", "r", "r"),
+  col.names = c("Grupos", "Variação (milhares)", "Contribuição (\\%)"),
+  linesep = ""
+)
+latex_b3 <- str_replace(latex_b3, fixed("{lrr}"), "{p{0.57\\textwidth}rr}")
+latex_b3 <- str_replace(
+  latex_b3, fixed("\\toprule"),
+  "\\toprule\n\\rowcolor{azulescuro}"
+)
+latex_b3 <- str_replace(
+  latex_b3,
+  fixed("Grupos & Variação (milhares) & Contribuição (\\%)"),
+  "\\textcolor{white}{\\textbf{Grupos}} & \\textcolor{white}{\\textbf{Variação (milhares)}} & \\textcolor{white}{\\textbf{Contribuição (\\%)}}"
+)
+latex_b3 <- str_replace_all(
+  latex_b3, fixed("\n\\textbf{"), "\n\\rowcolor{cinzaclaro}\\textbf{"
+)
+cat(latex_b3)
+cat("\n\\endgroup\\end{center}\n")
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base nos dados do Censo da Educação Superior.\newline
+Nota: as faixas são recalculadas anualmente e definidas pelo número total de matrículas.
+
+\endgroup
+
+
+## B.3 — Principais conclusões {.insights}
+
+\Rotulo{Aumento da concentração em grandes mantenedoras}
+
+- As cinco maiores mantenedoras responderam por **52%** do aumento das matrículas entre 2010 e 2024.
+- Consideradas em conjunto, as vinte maiores concentraram **76%** da expansão líquida.
+- Mais de 1,700 outras mantenedoras responderam pelos 24% restantes.
+
+
+\Rotulo{EaD cresceu em todas as faixas, mas principalmente entre as maiores}
+
+- Expansão do EaD foi generalizada, embora desigual, com forte ampliação de matrículas EaD nas maiores mantenedoras;
+- Retração do ensino noturno também foi bastante disseminada;
+- Ensino presencial diurno só cresceu entre as "demais mantenedoras".
+
+
+\begingroup
+\fontsize{11.5}{15.5}\selectfont
+
+\Rotulo{Observações}
+
+A ficha mede a apropriação do crescimento pelas faixas de tamanho. Ela não identifica, isoladamente, permanência ou substituição de atores no ranking.
+
+\endgroup
+
+## Dimensão G {.section-slide}
+
+Corpo docente
+
+## G.1 * {.insights .indicator-slide}
+
+\DescricaoIndicador{Quantidade de docentes em exercício em tempo integral por modalidade de ensino entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Docentes em exercício e Docentes em exercício em tempo integral:
+  - Total
+  - Categoria administrativa
+  - Tamanho de mantenedoras por número de matrículas
+  - Faixas com percentual de matrículas na educação a distância
+ 
+## G.1 — Docentes em exercício e docentes em exercício em tempo integral {.chart-slide}
+
+```{r}
+#| label: plot-g1-total
+#| fig-width: 12
+#| fig-height: 6.15
+#| dpi: 180
+#| out-width: "218mm"
+#| out-height: "98mm"
+#| fig-align: center
+#| dev: cairo_pdf
+
+rotulos_docentes_g1 <- c(
+  "qt_doc_exe" = "Docentes em exercício",
+  "qt_doc_ex_int" = "Docentes em exercício em tempo integral"
+)
+
+dados_g1_total <- g1 |>
+  filter(
+    bloco_var == "total",
+    serie_var %in% names(rotulos_docentes_g1)
+  ) |>
+  mutate(
+    docentes = recode(serie_var, !!!rotulos_docentes_g1),
+    docentes = factor(docentes, levels = unname(rotulos_docentes_g1)),
+    valor_milhares = valor / 1e3
+  )
+
+ggplot(dados_g1_total, aes(x = ano, y = valor_milhares, colour = docentes)) +
+  geom_line(linewidth = 1.35) +
+  geom_point(size = 3.5) +
+  geom_text(
+    data = filter(dados_g1_total, ano %in% c(2010, 2017, 2024)),
+    aes(label = number(valor_milhares, accuracy = 1, decimal.mark = ".", big.mark = ",")),
+    vjust = 1.7,
+    size = 5,
+    show.legend = FALSE
+  ) +
+  scale_x_continuous(name = "Ano", breaks = seq(2010, 2024, 2)) +
+  scale_y_continuous(
+    name = "Docentes (milhares)",
+    limits = c(0, 400),
+    breaks = seq(0, 400, 50),
+    labels = label_number(accuracy = 1, decimal.mark = ".", big.mark = ","),
+    expand = c(0, 0)
+  ) +
+  scale_colour_manual(values = c(
+    "Docentes em exercício" = cores[["azul"]],
+    "Docentes em exercício em tempo integral" = cores[["verde"]]
+  )) +
+  guides(colour = guide_legend(nrow = 1, byrow = TRUE)) +
+  tema_slide()
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior e na ficha G.1.
+
+\endgroup
+
+
+## G.1 — Docentes em exercício por categoria administrativa {.chart-slide}
+
+```{r}
+#| label: plot-g1-categoria
+#| fig-width: 12
+#| fig-height: 6.15
+#| dpi: 180
+#| out-width: "218mm"
+#| out-height: "98mm"
+#| fig-align: center
+#| dev: cairo_pdf
+
+ordem_categoria_g1 <- c(
+  "Pública Federal",
+  "Pública Estadual",
+  "Pública Municipal",
+  "Privada com fins lucrativos",
+  "Privada sem fins lucrativos"
+)
+
+dados_g1_categoria <- g1 |>
+  filter(bloco_var == "catadm_it", serie_var == "qt_doc_exe") |>
+  mutate(
+    categoria = factor(grupo_nome, levels = ordem_categoria_g1),
+    valor_milhares = valor / 1e3
+  )
+
+ggplot(dados_g1_categoria, aes(x = ano, y = valor_milhares, colour = categoria)) +
+  geom_line(linewidth = 1.35) +
+  geom_point(size = 3.2) +
+  scale_x_continuous(name = "Ano", breaks = seq(2010, 2024, 2)) +
+  scale_y_continuous(
+    name = "Docentes em exercício (milhares)",
+    limits = c(0, 150),
+    breaks = seq(0, 150, 25),
+    labels = label_number(accuracy = 1, decimal.mark = ".", big.mark = ","),
+    expand = c(0, 0)
+  ) +
+  scale_colour_manual(values = c(
+    "Pública Federal" = cores[["azul"]],
+    "Pública Estadual" = cores[["verde"]],
+    "Pública Municipal" = cores[["amarelo"]],
+    "Privada com fins lucrativos" = cores[["coral"]],
+    "Privada sem fins lucrativos" = cores[["roxo"]]
+  )) +
+  guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
+  tema_slide()
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior e na ficha G.1.
+
+\endgroup
+
+
+## G.1 — Principais conclusões {.insights}
+
+\Rotulo{Panorama}
+
+- Quantidade de docentes em exercício cresceu **8%**, enquanto o de docentes em exercício em tempo integral aumentou **36%**. O percentual em tempo integral foi de 45% para 57%.
+- O número de matrículas subiu **60%**.
+
+
+\Rotulo{Composição por categoria administrativa}
+
+- Quantidade de docentes cresceu **61%** nas IES públicas federais, **35%** nas IES privadas com fins lucrativos e **20%** nas IES públicas estaduais. 
+- Houve retração forte nas IES privadas sem fins lucrativos (**41%**) e modesta
+nas IES públicas municipais (**13%**).
+
+
+\Rotulo{Composição por faixas de tamanho de mantenedoras}
+
+- A quantidade de docentes em exercício nas 20 maiores mantenedoras caiu de **51** para **40 mil** entre 2010 e 2024 (**-22%**).
+
+
+## G.2 {.insights .indicator-slide}
+
+\DescricaoIndicador{Titulação do corpo docente (doutor, mestre, especialista) por modalidade de ensino entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Docentes em exercício e Docentes em exercício por nível de qualificação
+  - Total
+  - Categoria administrativa
+  - Tamanho de mantenedoras por número de matrículas
+  - Percentual de matrículas na EaD
+
+## G.2 — Titulação do corpo docente {.chart-slide}
+
+```{r}
+#| label: plot-g2
+#| fig-width: 12
+#| fig-height: 6.15
+#| dpi: 180
+#| out-width: "218mm"
+#| out-height: "98mm"
+#| fig-align: center
+#| dev: cairo_pdf
+
+rotulos_titulacao <- c(
+  "pct_doc_ex_sempg" = "Sem pós-graduação",
+  "pct_doc_ex_esp" = "Especialização",
+  "pct_doc_ex_mest" = "Mestrado",
+  "pct_doc_ex_dout" = "Doutorado"
+)
+
+dados_g2 <- g2 |>
+  filter(
+    bloco_var == "total",
+    serie_var %in% names(rotulos_titulacao)
+  ) |>
+  mutate(
+    titulacao = recode(serie_var, !!!rotulos_titulacao),
+    titulacao = factor(titulacao, levels = unname(rotulos_titulacao))
+  )
+
+ggplot(dados_g2, aes(x = ano, y = valor, fill = titulacao)) +
+  geom_col(width = 0.8, colour = "white", linewidth = 0.28) +
+  geom_text(
+    data = filter(dados_g2, ano %in% c(2010, 2017, 2024)),
+    aes(label = if_else(
+      titulacao == "Sem pós-graduação",
+      "",
+      paste0(number(valor, accuracy = 1, decimal.mark = ".", big.mark = ","), "%")
+    )),
+    position = position_stack(vjust = 0.5),
+    colour = "white",
+    fontface = "bold",
+    size = 5,
+    show.legend = FALSE
+  ) +
+  scale_x_continuous(name = "Ano", breaks = 2010:2024) +
+  scale_y_continuous(
+    name = "Composição do corpo docente",
+    labels = rotulo_percentual,
+    limits = c(0, 100),
+    breaks = seq(0, 100, 20),
+    expand = c(0, 0)
+  ) +
+  scale_fill_manual(values = c(
+    "Sem pós-graduação" = "#B8BEC5",
+    "Especialização" = cores[["roxo"]],
+    "Mestrado" = cores[["azul"]],
+    "Doutorado" = cores[["verde"]]
+  )) +
+  guides(fill = guide_legend(nrow = 1, byrow = TRUE)) +
+  tema_slide(show_major_grid = FALSE)
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior e na ficha G.2.
+
+\endgroup
+
+
+## G.2 — Principais conclusões {.insights}
+
+\Rotulo{Titulação mais elevada}
+
+- A participação de docentes com doutorado aumentou de **28% para 53%** entre 2010 e 2024.
+- A parcela com mestrado caiu de 38% para 33%, a especialização recuou de 29% para 14% e docentes sem pós-graduação passaram de 5% para **1%**.
+- Em números absolutos, os docentes com doutorado aumentaram de 98 mil para cerca de 199 mil.
+
+
+\Rotulo{Docentes com doutorado}
+
+- Participação no total cresceu em todas as categorias administrativas, mas há ainda há diferença grande entre públicas e privadas. Por exemplo:
+  - IES públicas federais: **56%** em 2010 e **77%** em 2024;
+  - IES privadas com fins lucrativos: **11%** em 2010 e **30%** em 2024.
+
+- Participação entre as maiores mantenedoras está abaixo da média total. Por exemplo:
+  - Top 5 mantenedoras: **15%** em 2010 e **40%** em 2024.
+
+
+## G.3 {.insights .indicator-slide}
+
+\DescricaoIndicador{Regime de trabalho dos docentes (tempo integral, parcial, horário) entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Docentes em exercício, em tempo integral e horistas
+  - Total
+  - Categoria administrativa
+  - Tamanho de mantenedoras por número de matrículas
+  - Percentual de matrículas na EaD
+
+## G.3 — Regime de trabalho do corpo docente {.chart-slide}
+
+```{r}
+#| label: plot-g3
+#| fig-width: 12
+#| fig-height: 6.15
+#| dpi: 180
+#| out-width: "218mm"
+#| out-height: "98mm"
+#| fig-align: center
+#| dev: cairo_pdf
+
+rotulos_regime <- c(
+  "pct_doc_ex_hor" = "Horista",
+  "pct_doc_ex_parc" = "Tempo parcial",
+  "pct_doc_ex_int" = "Tempo integral"
+)
+
+dados_g3 <- g3 |>
+  filter(
+    bloco_var == "total",
+    serie_var %in% names(rotulos_regime)
+  ) |>
+  mutate(
+    regime = recode(serie_var, !!!rotulos_regime),
+    regime = factor(regime, levels = unname(rotulos_regime))
+  )
+
+ggplot(dados_g3, aes(x = ano, y = valor, fill = regime)) +
+  geom_col(width = 0.8, colour = "white", linewidth = 0.28) +
+  geom_text(
+    data = filter(dados_g3, ano %in% c(2010, 2017, 2024)),
+    aes(label = paste0(number(valor, accuracy = 1, decimal.mark = ".", big.mark = ","), "%")),
+    position = position_stack(vjust = 0.5),
+    colour = "white",
+    fontface = "bold",
+    size = 5,
+    show.legend = FALSE
+  ) +
+  scale_x_continuous(name = "Ano", breaks = 2010:2024) +
+  scale_y_continuous(
+    name = "Composição do corpo docente",
+    labels = rotulo_percentual,
+    limits = c(0, 100),
+    breaks = seq(0, 100, 20),
+    expand = c(0, 0)
+  ) +
+  scale_fill_manual(values = c(
+    "Horista" = cores[["roxo"]],
+    "Tempo parcial" = cores[["azul"]],
+    "Tempo integral" = cores[["verde"]]
+  )) +
+  guides(fill = guide_legend(nrow = 1, byrow = TRUE)) +
+  tema_slide(show_major_grid = FALSE)
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior e na ficha G.3.
+
+\endgroup
+
+
+## G.3 — Principais conclusões {.insights}
+
+\Rotulo{Panorama}
+
+- Entre 2010 e 2024, a participação do tempo integral subiu de **45% para 57%**, enquanto a de horistas caiu de **32% para 18%**. O tempo parcial passou de 22% para 25%.
+
+
+\Rotulo{Categoria administrativa}
+
+- Em 2010, o tempo integral representava **90%** nas IES públicas federais e **21%** nas privadas com fins lucrativos.
+- Em 2024, esses percentuais eram, respectivamente, **94%** e **26%**.
+
+
+\Rotulo{Faixas de tamanho de mantenedoras}
+
+- Nas cinco maiores, a participação do tempo integral recuou de **37% para 27%**; nas demais, cresceu de **44% para 59%**. As faixas são recalculadas a cada ano e não acompanham um conjunto fixo de mantenedoras.
+
+## G.4 {.insights .indicator-slide}
+
+\DescricaoIndicador{Relação aluno por docente entre 2010 e 2024}
+
+\Rotulo{Séries}
+
+- Docentes em exercício, em tempo integral e horistas
+  - Total
+  - Categoria administrativa
+  - Tamanho de mantenedoras por número de matrículas
+  - Percentual de matrículas na EaD
+
+
+## G.4 — Matrículas por docente por categoria administrativa {.chart-slide}
+
+```{r}
+#| label: plot-g4-categoria
+#| fig-width: 12
+#| fig-height: 6.15
+#| dpi: 180
+#| out-width: "218mm"
+#| out-height: "98mm"
+#| fig-align: center
+#| dev: cairo_pdf
+
+dados_g4_categoria <- g4 |>
+  filter(bloco_var == "catadm_it", serie_var == "tx_mat_por_doc_ex") |>
+  mutate(categoria = factor(grupo_nome, levels = ordem_categoria_g1))
+
+ggplot(dados_g4_categoria, aes(x = ano, y = valor, colour = categoria)) +
+  geom_line(linewidth = 1.35) +
+  geom_point(size = 3.2) +
+  scale_x_continuous(name = "Ano", breaks = seq(2010, 2024, 2)) +
+  scale_y_continuous(
+    name = "Matrículas por docente em exercício",
+    limits = c(0, 70),
+    breaks = seq(0, 70, 10),
+    labels = label_number(accuracy = 1, decimal.mark = ".", big.mark = ",")
+  ) +
+  scale_colour_manual(values = c(
+    "Pública Federal" = cores[["azul"]],
+    "Pública Estadual" = cores[["verde"]],
+    "Pública Municipal" = cores[["amarelo"]],
+    "Privada com fins lucrativos" = cores[["coral"]],
+    "Privada sem fins lucrativos" = cores[["roxo"]]
+  )) +
+  guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
+  tema_slide()
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior e na ficha G.4.
+
+\endgroup
+
+
+## G.4 — Matrículas por docente por tamanho da mantenedora {.chart-slide}
+
+```{r}
+#| label: plot-g4-tamanho
+#| fig-width: 12
+#| fig-height: 6.15
+#| dpi: 180
+#| out-width: "218mm"
+#| out-height: "98mm"
+#| fig-align: center
+#| dev: cairo_pdf
+
+ordem_tamanho_g4 <- c(
+  "Top 5 mantenedoras",
+  "Top 6-10 mantenedoras",
+  "Top 11-15 mantenedoras",
+  "Top 16-20 mantenedoras",
+  "Demais mantenedoras"
+)
+
+dados_g4_tamanho <- g4 |>
+  filter(bloco_var == "fx_ranking", serie_var == "tx_mat_por_doc_ex") |>
+  mutate(tamanho = factor(grupo_nome, levels = ordem_tamanho_g4))
+
+ggplot(dados_g4_tamanho, aes(x = ano, y = valor, colour = tamanho)) +
+  geom_line(linewidth = 1.35) +
+  geom_point(size = 3.2) +
+  scale_x_continuous(name = "Ano", breaks = seq(2010, 2024, 2)) +
+  scale_y_continuous(
+    name = "Matrículas por docente em exercício",
+    limits = c(0, 350),
+    breaks = seq(0, 350, 50),
+    labels = label_number(accuracy = 1, decimal.mark = ".", big.mark = ",")
+  ) +
+  scale_colour_manual(values = c(
+    "Top 5 mantenedoras" = cores[["azul"]],
+    "Top 6-10 mantenedoras" = cores[["coral"]],
+    "Top 11-15 mantenedoras" = cores[["verde"]],
+    "Top 16-20 mantenedoras" = cores[["amarelo"]],
+    "Demais mantenedoras" = cores[["roxo"]]
+  )) +
+  guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
+  tema_slide()
+```
+
+
+\vfill
+\begingroup
+\fontsize{8}{10}\selectfont\color{cinzamedio}
+
+Fonte: elaboração própria com base no Censo da Educação Superior e na ficha G.4. As faixas de tamanho são recalculadas a cada ano.
+
+\endgroup
+
+
+## G.4 — Principais conclusões {.insights}
+
+\Rotulo{Panorama}
+
+- No conjunto do sistema, a razão passou de **18.5 para 27.3 matrículas por docente** entre 2010 e 2024. O indicador compara volumes agregados por IES; não mede o tamanho das turmas.
+
+
+\Rotulo{Categoria administrativa}
+
+- Nas IES privadas com fins lucrativos, a razão subiu de **25.8 para 59.4**. Nas públicas, ficou entre **10.4 e 12.7** matrículas por docente em 2024.
+
+
+\Rotulo{Faixas de tamanho de mantenedoras}
+
+- Nas cinco maiores, a razão passou de **42.8 para 315.8**; nas demais, de **16.1 para 16.8**. As faixas são recalculadas a cada ano e não representam um conjunto fixo de mantenedoras.

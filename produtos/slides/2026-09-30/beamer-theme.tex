@@ -1,0 +1,83 @@
+% Identidade visual da apresentacao: azul-escuro, branco e detalhe coral.
+\geometry{paperwidth=240mm,paperheight=135mm}
+\setkeys{Gin}{keepaspectratio}
+\definecolor{azulescuro}{HTML}{18324B}
+\definecolor{azul}{HTML}{4477AA}
+\definecolor{coral}{HTML}{EE6677}
+\definecolor{cinzamedio}{HTML}{65727E}
+\definecolor{cinzaclaro}{HTML}{EEF2F5}
+\definecolor{textocorpo}{HTML}{25313C}
+\definecolor{azulclaro}{HTML}{DCE6EE}
+\usepackage{colortbl}
+\setbeamercolor{normal text}{fg=textocorpo,bg=white}
+\setbeamercolor{structure}{fg=azul}
+\setbeamercolor{frametitle}{fg=azulescuro,bg=white}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{subtitle}{fg=azulclaro}
+\setbeamerfont{title}{size=\fontsize{30}{35}\selectfont,series=\bfseries}
+\setbeamerfont{subtitle}{size=\fontsize{16}{22}\selectfont}
+\setbeamerfont{frametitle}{size=\fontsize{19}{23}\selectfont,series=\bfseries}
+\setbeamersize{text margin left=11mm,text margin right=11mm}
+
+% Corpo maior e entrelinha explicita, inclusive nas listas aninhadas.
+\renewcommand{\normalsize}{\fontsize{13.5}{18.5}\selectfont}
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subsubbody}{size=\normalsize}
+\setbeamertemplate{itemize/enumerate body begin}{\setlength{\itemsep}{5pt}\setlength{\parsep}{0pt}}
+\setbeamertemplate{itemize/enumerate subbody begin}{\setlength{\itemsep}{3pt}\setlength{\parsep}{0pt}}
+\setbeamertemplate{itemize item}{\small\textbullet}
+\setbeamertemplate{itemize subitem}{\scriptsize\textbullet}
+\setbeamertemplate{navigation symbols}{}
+\setlength{\parskip}{6pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\tightlist}{\setlength{\itemsep}{4pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}}
+
+% As paginas plain sao reservadas as aberturas das secoes.
+\makeatletter
+\setbeamertemplate{background canvas}{%
+  \ifnum\c@framenumber=1\relax
+    \color{azulescuro}\rule{\paperwidth}{\paperheight}%
+  \else
+    \ifbeamer@plainframe
+      \color{azulescuro}\rule{\paperwidth}{\paperheight}%
+    \else
+      \color{white}\rule{\paperwidth}{\paperheight}%
+    \fi
+  \fi}
+\makeatother
+
+\setbeamertemplate{footline}{%
+  \ifnum\value{framenumber}>1\relax
+    \hfill{\color{cinzamedio}\fontsize{8}{10}\selectfont
+    \insertframenumber\,/\,\inserttotalframenumber}\hspace{11mm}\vspace{3mm}%
+  \fi}
+\setbeamertemplate{frametitle}{%
+  \vspace{3mm}\insertframetitle\par
+  \vspace{1mm}{\color{azul}\hrule height 0.6pt}\vspace{3mm}}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+\newcommand{\SubtituloAbertura}[1]{%
+  \noindent{\color{coral}\vrule width 2pt height 20pt depth 5pt}\hspace{5mm}%
+  \begin{minipage}[c]{0.84\textwidth}
+    \raggedright\color{azulclaro}\fontsize{16}{22}\selectfont #1
+  \end{minipage}\par}
+\setbeamertemplate{title page}{%
+  \vspace*{26mm}
+  \hspace*{7mm}\begin{minipage}{0.90\textwidth}
+    \raggedright{\usebeamerfont{title}\color{white}\parbox{155mm}{\raggedright\inserttitle}\par}
+    \vspace{10mm}
+    \SubtituloAbertura{\insertsubtitle}
+  \end{minipage}}
+\newcommand{\AberturaSecao}[2]{%
+  \vspace*{34mm}
+  \hspace*{7mm}\begin{minipage}{0.90\textwidth}
+    \raggedright{\color{white}\fontsize{32}{38}\selectfont\bfseries #1\par}
+    \vspace{9mm}
+    \SubtituloAbertura{#2}
+  \end{minipage}}
+\newcommand{\DescricaoIndicador}[1]{%
+  {\color{azul}\fontsize{17}{23}\selectfont\bfseries #1\par}\vspace{4mm}}
+\newcommand{\Rotulo}[1]{%
+  \par\addvspace{7pt}{\color{azul}\bfseries #1\par}\nobreak\vspace{2pt}}
+\newcommand{\TituloGrafico}[1]{{\fontsize{17.5}{21}\selectfont #1}}

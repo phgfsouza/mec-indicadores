@@ -1,0 +1,50 @@
+{
+  "produtos\\planilhas\\indicadorA1.xlsx": {
+    "bytes": 46128,
+    "sha256": "c09cf9de5bbdb964fe0fa4fcf89189d7055bc2e2b950fdbfd985bbeb9f0226c7"
+  },
+  "produtos\\planilhas\\indicadorA2.xlsx": {
+    "bytes": 169340,
+    "sha256": "6400f81c6341e6d1ac6b3eaeca8d14819dbb1a3a4f2f1194de64ab62a815959c"
+  },
+  "produtos\\planilhas\\indicadorA3.xlsx": {
+    "bytes": 84812,
+    "sha256": "f5ba8b11145585f3d6f1285dc1d50b1b052d2b8ded0c9ff304fe6097e4c7abce"
+  },
+  "produtos\\planilhas\\indicadorA4.xlsx": {
+    "bytes": 79883,
+    "sha256": "0df333313848547c05aea583e748a3aa311b8a3bd88ee91cb74d123ada247551"
+  },
+  "produtos\\planilhas\\indicadorA5.xlsx": {
+    "bytes": 249258,
+    "sha256": "da5d95c77ded7d6de88cedc21e36d1b59e020c4e71b38b538ff536e1898e836b"
+  },
+  "produtos\\planilhas\\indicadorB1.xlsx": {
+    "bytes": 58407,
+    "sha256": "5848eea6967a72602912d27d7f8b509be2ab3beea7f9d5412ab77feac0f5207e"
+  },
+  "produtos\\planilhas\\indicadorB2.xlsx": {
+    "bytes": 323259,
+    "sha256": "54d973a85f521d8d47210b264aaf0d2529cd2e452882225b5a8262a453db480b"
+  },
+  "produtos\\planilhas\\indicadorB3.xlsx": {
+    "bytes": 58529,
+    "sha256": "3c75686f9cdf7fe898af4424f59f41e3bee80d7105b624366537ccfbafdc4214"
+  },
+  "produtos\\planilhas\\indicadorG1.xlsx": {
+    "bytes": 30572,
+    "sha256": "af6196a7da653572ca6fc14718eb1f648f17b6dae440e0dac3faf8678b39a4d9"
+  },
+  "produtos\\planilhas\\indicadorG2.xlsx": {
+    "bytes": 69324,
+    "sha256": "abed215b9e8d3250db734ae0bbf915faf9c5f2686a4b16246db311dafc37c80c"
+  },
+  "produtos\\planilhas\\indicadorG3.xlsx": {
+    "bytes": 56566,
+    "sha256": "4c663bc8ab86844364294bb72ed1541804c43421cf0856a33d38d0a1a48e0797"
+  },
+  "produtos\\planilhas\\indicadorG4.xlsx": {
+    "bytes": 37921,
+    "sha256": "ea565e79f776f9c0149e745691ab1fa1c5947dd1e32a95212a623b8fcb448284"
+  }
+}

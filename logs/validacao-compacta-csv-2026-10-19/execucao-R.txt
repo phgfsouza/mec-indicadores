@@ -1,0 +1,27 @@
+R version 4.6.1 (2026-06-24 ucrt) 
+Locale: LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8 
+   dplyr    readr    purrr    tidyr  stringr  forcats openxlsx 
+ "1.2.1"  "2.2.0"  "1.2.2"  "1.3.2"  "1.6.0"  "1.0.1"  "4.2.9" 
+Sintaxe e 18 chamadas de exportacao: OK
+Casos dirigidos: OK
+Validando indicadorA1.csv 
+Validando indicadorA2.csv 
+Validando indicadorA3.csv 
+Validando indicadorA4.csv 
+Validando indicadorA5.csv 
+Validando indicadorB1.csv 
+Validando indicadorB2.csv 
+  Diferenca numerica do ciclo CSV, identica ao controle sem compactacao.
+Validando indicadorB3.csv 
+Validando indicadorG1.csv 
+Validando indicadorG2.csv 
+Validando indicadorG3.csv 
+Validando indicadorG4.csv 
+Validando indicadorI1.csv 
+Validando indicadorI2a.csv 
+Validando indicadorI2b.csv 
+Validando indicadorI2c.csv 
+Validando indicadorI2d.csv 
+Validando indicadorI2e.csv 
+  Metadados municipais reconstruidos somente para validacao.
+Todos os testes R concluidos.
